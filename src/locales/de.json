@@ -1,1 +1,436 @@
-{}
+{
+  "site": {
+    "name": "Bethe Strings Wiki",
+    "shortName": "Bethe Strings",
+    "tagline": "Bethe-String-Forschung erklärt",
+    "description": "Eine inoffizielle wissenschaftliche Referenz zu Bethe-Strings und eindimensionalen Quantensystemen.",
+    "legalNotice": "Unabhängige wissenschaftliche Referenz. In keiner Verbindung zu den zitierten Autoren, Zeitschriften oder Institutionen."
+  },
+  "nav": {
+    "home": "Heim",
+    "menu": "Speisekarte",
+    "toggleTheme": "Thema umschalten",
+    "guide": "Führung",
+    "mechanics": "Mechanik",
+    "research": "Forschung",
+    "community": "Gemeinschaft",
+    "tutorial": "Anleitung",
+    "media": "Medien"
+  },
+  "home": {
+    "meta": {
+      "title": "Bethe Strings Wiki – Gebundene Zustände, Experimente und Forschung",
+      "description": "Erforschen Sie Bethe-Strings in eindimensionalen Quantensystemen, vom Bethe-Ansatz bis hin zu experimentellen Beweisen in ultrakalten Gasen und Spinketten."
+    },
+    "hero": {
+      "eyebrow": "Unabhängige wissenschaftliche Referenz",
+      "title": "Bethe Strings Wiki",
+      "description": "Entdecken Sie Bethe-Strings, gebundene Zustände und Experimente in eindimensionalen Quantensystemen. Beginnen Sie mit klaren Erklärungen und folgen Sie der Primärrecherche.",
+      "stats": [
+        "Bethe-Ansatz",
+        "Gebundene Zustände",
+        "Eindimensionale Gase",
+        "Forschungsquellen"
+      ],
+      "primaryCta": "Entdecken Sie Forschungsartikel",
+      "secondaryCta": "Lesen Sie den Hauptartikel",
+      "tertiaryCta": "Über dieses Wiki",
+      "videoLabel": "Forschungsvideo"
+    },
+    "updates": {
+      "title": "Aktuelle Forschung",
+      "browse": "Durchsuchen Sie Forschungsartikel",
+      "viewAll": "Alle anzeigen"
+    },
+    "start": {
+      "eyebrow": "Beginnen Sie hier",
+      "title": "Ihr Bethe Strings-Lesepfad",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Anfängerleitfaden",
+          "description": "Beginnen Sie mit einer verständlichen Erklärung der Bethe-Strings und der Frage, warum gebundene Zustände in eindimensionalen Systemen entstehen."
+        },
+        {
+          "number": "2",
+          "title": "Der Bethe-Ansatz",
+          "description": "Erfahren Sie, wie Schnelligkeiten und der Bethe-Ansatz Teilchencluster beschreiben, die sich gemeinsam bewegen."
+        },
+        {
+          "number": "3",
+          "title": "Experimentelle Beweise",
+          "description": "Erfahren Sie, wie Forscher ultrakaltes Cäsium und Expansionsmessungen nutzen, um Gemische im gebundenen Zustand zu untersuchen."
+        },
+        {
+          "number": "4",
+          "title": "Lesen Sie die Forschung",
+          "description": "Befolgen Sie die Hauptdokumente und erfahren Sie, was ihre Messungen in den einzelnen physikalischen Systemen bewirken."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Beliebte Seiten",
+      "title": "Entdecken Sie die Forschung",
+      "quickLinks": [
+        "Erklärung für Anfänger",
+        "Bethe-Ansatz",
+        "Ultrakalte Atome",
+        "Primärpapiere"
+      ],
+      "cards": [
+        {
+          "badge": "Beginnen Sie hier",
+          "title": "Bethe Strings für Anfänger",
+          "description": "Eine klare Einführung in gebundene Zustände, Schnelligkeiten und eindimensionale Quantenphysik.",
+          "href": "/tutorial/bethe-strings-beginner-explanation"
+        },
+        {
+          "badge": "Führung",
+          "title": "Bethe Strings erklärt",
+          "description": "Wie sich gebundene Cluster bilden, wo sie erscheinen und warum sie wichtig sind.",
+          "href": "/guide/bethe-strings-explained"
+        },
+        {
+          "badge": "Experiment",
+          "title": "Ultrakalte Atombeweise",
+          "description": "Wie das eindimensionale Cäsiumexperiment Mischungen gebundener Zustände ableitete.",
+          "href": "/guide/bethe-strings-ultracold-atoms"
+        },
+        {
+          "badge": "Theorie",
+          "title": "Der Bethe-Ansatz",
+          "description": "Ein zugänglicher Weg von Schnelligkeiten zu Zuständen, die an viele Teilchen gebunden sind.",
+          "href": "/mechanics/bethe-strings-bethe-ansatz"
+        },
+        {
+          "badge": "Forschung",
+          "title": "Lesen der wissenschaftlichen Arbeiten",
+          "description": "Prüfen Sie Aussagen über Bethe-Strings anhand von Messungen und Originalstudien.",
+          "href": "/research/bethe-strings-scientific-paper"
+        },
+        {
+          "badge": "Führung",
+          "title": "Quantenzustände",
+          "description": "Vergleichen Sie Bethe-Strings mit benachbarten Zuständen in eindimensionalen Gasen.",
+          "href": "/guide/bethe-strings-quantum-state"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "Was sind Bethe Strings?",
+      "paragraphs": [
+        "Bethe-Strings sind Anregungen gebundener Zustände in integrierbaren eindimensionalen Quantensystemen. Im Bethe-Ansatz werden ihre Teilchen durch komplexe Schnelligkeiten beschrieben, die in regelmäßigen Mustern angeordnet sind. Derselbe Rahmen hilft bei der Erklärung gebundener Cluster in attraktiven Bose-Gasen und kollektiver Anregungen in Quantenspinketten.",
+        "Experimente untersuchen diese Zustände anhand messbarer Signaturen. Frühere Studien wiesen String-Anregungen in magnetischen Materialien spektroskopisch nach. Eine 2026 in Nature Communications veröffentlichte Studie untersuchte eine Mischung von Strings verschiedener Größe in einem eindimensionalen Cäsiumgas mit anziehenden Wechselwirkungen anhand von Expansionsenergie, Impulsverteilungen und Korrelationen."
+      ],
+      "stats": [
+        {
+          "label": "Forschungsfeld",
+          "value": "Quanten-Vielteilchenphysik"
+        },
+        {
+          "label": "Kernmethode",
+          "value": "Bethe-Ansatz"
+        },
+        {
+          "label": "Gasplattform",
+          "value": "1D ultrakaltes Cäsium"
+        },
+        {
+          "label": "Andere Plattform",
+          "value": "Quantenspinketten"
+        },
+        {
+          "label": "Schlüssel beobachtbar",
+          "value": "Energie freisetzen"
+        },
+        {
+          "label": "Primärstudium",
+          "value": "Nature Communications"
+        }
+      ],
+      "cta": "Entdecken Sie die Forschung"
+    },
+    "explore": {
+      "title": "Entdecken Sie die Bethe Strings-Forschung",
+      "description": "Verfolgen Sie die Ideen, Experimente und Primärquellen hinter Anregungen gebundener Zustände in eindimensionalen Quantensystemen.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Bethe Strings erklärt",
+          "description": "Eine leicht zugängliche Einführung in Anregungen gebundener Zustände in integrierbaren eindimensionalen Systemen.",
+          "href": "/guide/bethe-strings-explained",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Gebunden",
+              "detail": "Durch attraktive Wechselwirkungen können Teilchen zu bewegten Clustern verbunden werden."
+            },
+            {
+              "label": "1D",
+              "detail": "Eindimensionale Dynamik macht integrierbare Modelle besonders nützlich."
+            },
+            {
+              "label": "Zustände",
+              "detail": "Unterschiedliche Zeichenfolgengrößen entsprechen unterschiedlichen Bindungszuständen."
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Bethe Strings Experimentelle Beweise",
+          "description": "Entdecken Sie, was die Studie zu attraktiven Gasen im Jahr 2026 gemessen hat und wie es mit früheren Spin-Chain-Experimenten zusammenhängt.",
+          "href": "/guide/bethe-strings-ultracold-atoms",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "1D",
+              "detail": "Gebundene Cluster bleiben während der Expansion entlang der Röhren zusammen."
+            },
+            {
+              "label": "3D",
+              "detail": "Durch die Freisetzung aus den Röhren werden Cluster aufgebrochen und Bindungsenergie freigesetzt."
+            },
+            {
+              "label": "2018",
+              "detail": "Die Spektroskopie magnetischer Materialien hatte bereits über Stringsignaturen berichtet."
+            },
+            {
+              "label": "2026",
+              "detail": "Ein Cäsiumgas mit anziehenden Wechselwirkungen lieferte Hinweise auf Strings verschiedener Größe."
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Bethe Strings und der Bethe-Ansatz",
+          "description": "Erstellen Sie von eindimensionalen Modellen bis hin zu Schnelligkeitsmustern, die gebundene Zustände darstellen.",
+          "href": "/mechanics/bethe-strings-bethe-ansatz",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Beginnen Sie mit interagierenden Teilchen, die auf eine Dimension beschränkt sind."
+            },
+            {
+              "label": "2",
+              "detail": "Verwenden Sie den Bethe-Ansatz, um erlaubte Quantenzustände zu beschreiben."
+            },
+            {
+              "label": "3",
+              "detail": "Identifizieren Sie komplexe Schnelligkeiten, die um ein gemeinsames Zentrum gruppiert sind."
+            },
+            {
+              "label": "4",
+              "detail": "Interpretieren Sie jede Gruppe als einen an mehrere Teilchen gebundenen Zustand."
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Bethe Strings Forschungsarbeiten und Quellen",
+          "description": "Lesen Sie benannte Originalstudien und trennen Sie ihre experimentellen Ergebnisse von späteren Zusammenfassungen.",
+          "href": "/research/bethe-strings-scientific-paper",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Bethe",
+              "detail": "Der Ansatz von 1931 führte die zugrunde liegende Methode der exakten Lösung ein."
+            },
+            {
+              "label": "Magnete",
+              "detail": "Die Spektroskopie erbrachte frühere Beweise für magnetische Materialien."
+            },
+            {
+              "label": "Bose-Gas",
+              "detail": "Die Studie aus dem Jahr 2026 untersuchte gebundene Cluster in einem attraktiven Cäsiumgas."
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Bethe Strings Häufig gestellte Fragen",
+          "description": "Finden Sie klare Antworten zu gebundenen Zuständen, Messungen und verwandten Quantenkonzepten.",
+          "href": "/tutorial/bethe-strings-beginner-explanation",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Bedeutung",
+              "detail": "Die Wortfolge beschreibt ein Muster komplexer Schnelligkeiten."
+            },
+            {
+              "label": "Beweis",
+              "detail": "Verschiedene Experimente messen unterschiedliche Signaturen dieser Zustände."
+            },
+            {
+              "label": "Theorie",
+              "detail": "Die Integrierbarkeit erklärt, warum diese gebundenen Anregungen bestehen bleiben können."
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Bethe Strings in ultrakalten Atomen",
+          "description": "Gehen Sie durch die experimentelle Vorbereitung und Messung eines attraktiven eindimensionalen Bose-Gases.",
+          "href": "/guide/bethe-strings-experiment",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Bereiten Sie ein ultrakaltes Cäsiumgas vor."
+            },
+            {
+              "label": "2",
+              "detail": "Beschränken Sie Atome in schmalen eindimensionalen Röhren."
+            },
+            {
+              "label": "3",
+              "detail": "Wechseln Sie zwischen abstoßenden und attraktiven Interaktionen."
+            },
+            {
+              "label": "4",
+              "detail": "Vergleichen Sie die Ausdehnung entlang der Röhren mit der Freisetzung in drei Dimensionen."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Bethe Strings Lernstufen",
+          "description": "Wählen Sie eine Lesestufe, von der zentralen Idee bis hin zu spezielleren Forschungskonzepten.",
+          "href": "/tutorial/bethe-strings-tutorial",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Beginnen Sie hier: gebundene Zustände und eindimensionale Bewegung."
+            },
+            {
+              "label": "A",
+              "detail": "Als nächstes: Schnelligkeiten und der Bethe-Ansatz."
+            },
+            {
+              "label": "B",
+              "detail": "Dann: Beweise für ultrakaltes Gas und Spinketten."
+            },
+            {
+              "label": "C",
+              "detail": "Weiteres Studium: Verallgemeinerte Hydrodynamik und Transport."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Bethe Strings in Quantenzuständen",
+          "description": "Vergleichen Sie gebundene Cluster mit Nachbarzuständen in eindimensionalen Quantengasen.",
+          "href": "/guide/bethe-strings-quantum-state",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Abstoßung",
+              "detail": "Abstoßende Gase haben eher echte Geschwindigkeiten als gebundene Cluster."
+            },
+            {
+              "label": "Attraktion",
+              "detail": "Durch attraktive Interaktionen können Zeichenfolgen unterschiedlicher Größe gefüllt werden."
+            },
+            {
+              "label": "Solitonen",
+              "detail": "Das semiklassische Bild hilft dabei, Strings mit Materiewellensolitonen zu verbinden."
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Bethe Strings Häufig gestellte Fragen",
+      "description": "Kurze Antworten zur Theorie und experimentellen Beweise hinter Bethe-Strings.",
+      "items": [
+        {
+          "question": "Was sind Bethe-Strings?",
+          "answer": "Bethe-Strings sind Anregungen gebundener Zustände in bestimmten eindimensionalen integrierbaren Quantensystemen. Ihr Name leitet sich von der stringartigen Anordnung komplexer Rapiditäten in Bethe-Ansatz-Lösungen ab."
+        },
+        {
+          "question": "Wie entstehen Bethe-Strings in einem ultrakalten Gas?",
+          "answer": "Im zitierten Cäsium-Experiment sperrten Forscher Atome in enge Röhren ein und veränderten ihre Wechselwirkungen von abstoßend zu anziehend. Dadurch entstand eine Mischung aus gebundenen Clustern unterschiedlicher Größe."
+        },
+        {
+          "question": "Wie werden Bethe-Strings nachgewiesen?",
+          "answer": "Forscher vergleichen, wie sich das Gas entlang seiner eindimensionalen Röhren und nach der Freisetzung in drei Dimensionen ausdehnt. Unterschiede in der Freisetzungsenergie unterstützen zusammen mit Impuls- und Korrelationsmessungen die Interpretation des gebundenen Zustands."
+        },
+        {
+          "question": "Wurden Bethe-Strings vor dem Gasexperiment 2026 beobachtet?",
+          "answer": "Ja. Frühere Spektroskopieexperimente in magnetischen Materialien berichteten über Signaturen von Bethe-String-Anregungen. Die Studie von 2026 untersuchte eine andere Plattform: ein attraktives eindimensionales Bose-Gas."
+        },
+        {
+          "question": "Sind Bethe-Strings die Strings der Stringtheorie?",
+          "answer": "Hier ist eine Zeichenfolge ein Muster von Schnelligkeiten, das einen gebundenen Zustand in Quantenmaterie beschreibt. Es unterscheidet sich von den grundlegenden Strings, die in der Hochenergie-Stringtheorie vorgeschlagen werden."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Entdecken Sie die Bethe Strings-Forschung",
+      "description": "Lesen Sie verständliche Erklärungen und folgen Sie dann der zitierten Primärforschung für die experimentellen Details.",
+      "primary": "Durchsuchen Sie Forschungsartikel",
+      "secondary": "Lesen Sie das Nature Communications-Papier"
+    }
+  },
+  "shared": {
+    "wikiNavigation": "Wiki-Navigation",
+    "activeCodes": "Forschungsquellen",
+    "updated": "Aktualisiert",
+    "viewAllCodes": "Alle Quellen anzeigen",
+    "playOnRoblox": "Lesen Sie die Hauptarbeit",
+    "inThisSection": "In diesem Abschnitt",
+    "tableOfContents": "Inhaltsverzeichnis",
+    "nextSteps": "Nächste Schritte",
+    "needHelp": "Weiterführende Literatur",
+    "relatedReading": "Verwandte Lektüre",
+    "relatedGuides": "Verwandte Leitfäden",
+    "readMore": "Mehr lesen",
+    "officialMedia": "Offizielle Medien",
+    "home": "Heim",
+    "noGuidesAvailable": "Noch keine Artikel verfügbar. Schauen Sie bald wieder vorbei!"
+  },
+  "footer": {
+    "aboutTitle": "Bethe Strings Wiki",
+    "about": "Eine unabhängige wissenschaftliche Referenz, die Bethe-Strings und eindimensionale Quantensysteme mit Links zur Primärforschung erklärt.",
+    "quickLinks": "Quicklinks",
+    "guides": "Erkunden",
+    "legal": "Legal",
+    "copyright": "© 2026 Bethe Strings Wiki. Unabhängige wissenschaftliche Referenz.",
+    "description": "Bethe-Strings-Forschung erklärt durch zugängliche Zusammenfassungen und Primärquellen.",
+    "playGame": "Lesen Sie den Hauptartikel",
+    "officialDiscord": "Forschungsquellen",
+    "officialYoutube": "Über dieses Wiki",
+    "vvBuilder": "Forschungsüberblick",
+    "beginnerGuide": "Forschungsartikel",
+    "raceGuides": "Themen",
+    "bossGuides": "Primärquellen",
+    "buildGuide": "Um",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen"
+  },
+  "guide": {
+    "overviewTitle": "Bethe Strings-Leitfaden",
+    "overviewDescription": "Beginnen Sie mit klaren Erklärungen zu Bethe-Strings, gebundenen Zuständen und eindimensionalen Quantensystemen."
+  },
+  "mechanics": {
+    "overviewTitle": "Bethe Strings Mechanik",
+    "overviewDescription": "Entdecken Sie den Bethe-Ansatz, Rapiditäten, Quantenzustände und die Mechanik gebundener Teilchencluster."
+  },
+  "research": {
+    "overviewTitle": "Bethe Strings Forschung",
+    "overviewDescription": "Lesen Sie mehr über Experimente, wissenschaftliche Arbeiten und die Beweise hinter Bethe-String-Beobachtungen."
+  },
+  "community": {
+    "overviewTitle": "Bethe Strings-Community",
+    "overviewDescription": "Hier finden Sie Diskussionen und Community-Ressourcen zur Bethe-String-Forschung."
+  },
+  "tutorial": {
+    "overviewTitle": "Bethe Strings-Tutorials",
+    "overviewDescription": "Folgen Sie den Erklärungen und Lernressourcen für Anfänger zu Bethe-Strings und Quantenphysik."
+  },
+  "media": {
+    "overviewTitle": "Bethe Strings Medien",
+    "overviewDescription": "Entdecken Sie Videos und Nachrichtenberichte über Bethe-Strings und verwandte Experimente."
+  }
+}

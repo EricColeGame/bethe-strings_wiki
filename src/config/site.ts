@@ -28,6 +28,6 @@ export const siteConfig: SiteConfig = {
   supportEmail: "support@bethe-strings.wiki",
   gameUrl: "https://www.nature.com/articles/s41467-026-76018-0",
   heroVideoId: "",
-  locales: ["en", "es", "pt", "de", "fr"],
+  locales: ["en", "es", "pt-BR", "de"],
   defaultLocale: "en",
 };

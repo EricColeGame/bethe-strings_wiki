@@ -373,23 +373,22 @@
       "secondary": "Read the Nature Communications paper"
     }
   },
-  "bosses": {},
   "shared": {
     "wikiNavigation": "Wiki Navigation",
-    "activeCodes": "Active Codes",
+    "activeCodes": "Research Sources",
     "updated": "Updated",
-    "viewAllCodes": "View all codes",
-    "playOnRoblox": "Play on Roblox",
+    "viewAllCodes": "View all sources",
+    "playOnRoblox": "Read primary paper",
     "inThisSection": "In this section",
     "tableOfContents": "Table of Contents",
     "nextSteps": "Next Steps",
-    "needHelp": "Need Help?",
+    "needHelp": "Further Reading",
     "relatedReading": "Related Reading",
     "relatedGuides": "Related Guides",
     "readMore": "Read more",
     "officialMedia": "Official media",
     "home": "Home",
-    "noGuidesAvailable": "No guides available yet. Check back soon!"
+    "noGuidesAvailable": "No articles available yet. Check back soon!"
   },
   "footer": {
     "aboutTitle": "Bethe Strings Wiki",

@@ -1,1 +1,436 @@
-{}
+{
+  "site": {
+    "name": "Bethe Strings Wiki",
+    "shortName": "Bethe Strings",
+    "tagline": "Pesquisa de cordas Bethe explicada",
+    "description": "Uma referência científica não oficial sobre cordas de Bethe e sistemas quânticos unidimensionais.",
+    "legalNotice": "Referência científica independente. Não afiliado aos autores, periódicos ou instituições citados."
+  },
+  "nav": {
+    "home": "Lar",
+    "menu": "Menu",
+    "toggleTheme": "Alternar tema",
+    "guide": "Guia",
+    "mechanics": "Mecânica",
+    "research": "Pesquisar",
+    "community": "Comunidade",
+    "tutorial": "Tutorial",
+    "media": "Mídia"
+  },
+  "home": {
+    "meta": {
+      "title": "Bethe Strings Wiki — Estados ligados, experimentos e pesquisas",
+      "description": "Explore cordas de Bethe em sistemas quânticos unidimensionais, desde o ansatz de Bethe até evidências experimentais em gases ultrafrios e cadeias de spin."
+    },
+    "hero": {
+      "eyebrow": "Referência científica independente",
+      "title": "Bethe Strings Wiki",
+      "description": "Explore cordas de Bethe, estados ligados e experimentos em sistemas quânticos unidimensionais. Comece com explicações claras e consulte as pesquisas originais.",
+      "stats": [
+        "Bethe ansatz",
+        "Estados ligados",
+        "Gases unidimensionais",
+        "Fontes de pesquisa"
+      ],
+      "primaryCta": "Explore artigos de pesquisa",
+      "secondaryCta": "Leia o artigo principal",
+      "tertiaryCta": "Sobre esta wiki",
+      "videoLabel": "Vídeo de pesquisa"
+    },
+    "updates": {
+      "title": "Pesquisa recente",
+      "browse": "Procure artigos de pesquisa",
+      "viewAll": "Ver tudo"
+    },
+    "start": {
+      "eyebrow": "Comece aqui",
+      "title": "Seu caminho de leitura Bethe Strings",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Guia para iniciantes",
+          "description": "Comece com uma explicação acessível das cordas de Bethe e de como estados ligados se formam em sistemas unidimensionais."
+        },
+        {
+          "number": "2",
+          "title": "A Bethe Ansatz",
+          "description": "Aprenda como as rapidezes e o Bethe ansatz descrevem aglomerados de partículas que se movem juntas."
+        },
+        {
+          "number": "3",
+          "title": "Evidência Experimental",
+          "description": "Veja como os pesquisadores usam medições de expansão e césio ultrafrio para investigar misturas de estado ligado."
+        },
+        {
+          "number": "4",
+          "title": "Leia a pesquisa",
+          "description": "Acompanhe os artigos primários e saiba o que suas medidas estabelecem em cada sistema físico."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Páginas populares",
+      "title": "Explore a pesquisa",
+      "quickLinks": [
+        "Explicação para iniciantes",
+        "Bethe ansatz",
+        "Átomos ultrafrios",
+        "Artigos primários"
+      ],
+      "cards": [
+        {
+          "badge": "Comece aqui",
+          "title": "Bethe Strings para iniciantes",
+          "description": "Uma introdução clara aos estados ligados, às rapidezes e à física quântica unidimensional.",
+          "href": "/tutorial/bethe-strings-beginner-explanation"
+        },
+        {
+          "badge": "Guia",
+          "title": "Bethe Strings",
+          "description": "Como os aglomerados ligados se formam, onde aparecem e por que são importantes.",
+          "href": "/guide/bethe-strings-explained"
+        },
+        {
+          "badge": "Experimentar",
+          "title": "Evidência de átomo ultrafrio",
+          "description": "Como o experimento unidimensional do césio inferiu misturas de estados ligados.",
+          "href": "/guide/bethe-strings-ultracold-atoms"
+        },
+        {
+          "badge": "Teoria",
+          "title": "A Bethe Ansatz",
+          "description": "Uma rota acessível de rapidez para estados ligados a muitas partículas.",
+          "href": "/mechanics/bethe-strings-bethe-ansatz"
+        },
+        {
+          "badge": "Pesquisar",
+          "title": "Lendo os artigos científicos",
+          "description": "Rastreie as afirmações sobre as cordas de Bethe até medições e estudos originais.",
+          "href": "/research/bethe-strings-scientific-paper"
+        },
+        {
+          "badge": "Guia",
+          "title": "Estados Quânticos",
+          "description": "Compare as cordas de Bethe com estados próximos em gases unidimensionais.",
+          "href": "/guide/bethe-strings-quantum-state"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "O que são Bethe Strings?",
+      "paragraphs": [
+        "As cordas de Bethe são excitações de estados ligados em sistemas quânticos unidimensionais integráveis. No ansatz de Bethe, suas partículas são descritas por rapidezes complexas dispostas em padrões regulares. A mesma estrutura ajuda a explicar aglomerados ligados em gases de Bose atrativos e excitações coletivas em cadeias quânticas de spin.",
+        "Experimentos investigam esses estados por meio de sinais mensuráveis. Estudos anteriores detectaram excitações de cordas em materiais magnéticos por espectroscopia, enquanto um estudo de 2026 publicado na Nature Communications usou um gás unidimensional de césio com interações atrativas para investigar uma mistura de cordas de tamanhos diferentes por meio da energia de expansão, de distribuições de momento e de correlações."
+      ],
+      "stats": [
+        {
+          "label": "Campo de pesquisa",
+          "value": "Física quântica de muitos corpos"
+        },
+        {
+          "label": "Método principal",
+          "value": "Bethe ansatz"
+        },
+        {
+          "label": "Plataforma de gás",
+          "value": "Césio ultrafrio 1D"
+        },
+        {
+          "label": "Outra plataforma",
+          "value": "Cadeias de spin quânticas"
+        },
+        {
+          "label": "Chave observável",
+          "value": "Liberar energia"
+        },
+        {
+          "label": "Estudo primário",
+          "value": "Nature Communications"
+        }
+      ],
+      "cta": "Explore a pesquisa"
+    },
+    "explore": {
+      "title": "Explore a pesquisa Bethe Strings",
+      "description": "Siga as ideias, experimentos e fontes primárias por trás das excitações de estado ligado em sistemas quânticos unidimensionais.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Bethe Strings",
+          "description": "Uma introdução acessível às excitações de estado ligado em sistemas unidimensionais integráveis.",
+          "href": "/guide/bethe-strings-explained",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Vinculado",
+              "detail": "Interações atraentes podem unir partículas em aglomerados móveis."
+            },
+            {
+              "label": "1D",
+              "detail": "A dinâmica unidimensional torna os modelos integráveis ​​especialmente úteis."
+            },
+            {
+              "label": "Estados",
+              "detail": "Cordas de tamanhos diferentes correspondem a estados ligados distintos."
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Evidência Experimental Bethe Strings",
+          "description": "Explore o que o estudo do gás atrativo de 2026 mediu e como ele se relaciona com experimentos anteriores de cadeia de spin.",
+          "href": "/guide/bethe-strings-ultracold-atoms",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "1D",
+              "detail": "Os aglomerados ligados permanecem juntos durante a expansão ao longo dos tubos."
+            },
+            {
+              "label": "3D",
+              "detail": "A liberação dos tubos quebra os aglomerados e expõe a energia de ligação."
+            },
+            {
+              "label": "2018",
+              "detail": "A espectroscopia de material magnético já havia relatado assinaturas de cordas."
+            },
+            {
+              "label": "2026",
+              "detail": "Um gás de césio com interações atrativas forneceu evidências de cordas de tamanhos diferentes."
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Bethe Strings e Bethe Ansatz",
+          "description": "Avance dos modelos unidimensionais aos padrões de rapidezes que representam estados ligados.",
+          "href": "/mechanics/bethe-strings-bethe-ansatz",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Comece com partículas interagindo confinadas a uma dimensão."
+            },
+            {
+              "label": "2",
+              "detail": "Use o Bethe ansatz para descrever estados quânticos permitidos."
+            },
+            {
+              "label": "3",
+              "detail": "Identifique rapidezes complexas agrupadas em torno de um centro compartilhado."
+            },
+            {
+              "label": "4",
+              "detail": "Interprete cada grupo como um estado ligado a múltiplas partículas."
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Artigos e fontes de pesquisa Bethe Strings",
+          "description": "Leia os estudos originais nomeados e separe seus resultados experimentais de resumos posteriores.",
+          "href": "/research/bethe-strings-scientific-paper",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Bethe",
+              "detail": "O ansatz de 1931 introduziu o método de solução exata subjacente."
+            },
+            {
+              "label": "Ímãs",
+              "detail": "A espectroscopia estabeleceu evidências anteriores em materiais magnéticos."
+            },
+            {
+              "label": "Gás Bose",
+              "detail": "O estudo de 2026 investigou aglomerados ligados em um gás de césio com interações atrativas."
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Perguntas frequentes sobre Bethe Strings",
+          "description": "Encontre respostas claras sobre estados ligados, medições e conceitos quânticos relacionados.",
+          "href": "/tutorial/bethe-strings-beginner-explanation",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Significado",
+              "detail": "A palavra corda descreve um padrão de rapidezes complexas."
+            },
+            {
+              "label": "Evidência",
+              "detail": "Diferentes experimentos medem diferentes assinaturas desses estados."
+            },
+            {
+              "label": "Teoria",
+              "detail": "A integrabilidade explica por que essas excitações ligadas podem persistir."
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Bethe Strings em átomos ultrafrios",
+          "description": "Conheça a preparação experimental e as medições de um gás de Bose unidimensional com interações atrativas.",
+          "href": "/guide/bethe-strings-experiment",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Prepare um gás de césio ultrafrio."
+            },
+            {
+              "label": "2",
+              "detail": "Confine os átomos em tubos unidimensionais estreitos."
+            },
+            {
+              "label": "3",
+              "detail": "Varra as interações de repulsivas para atraentes."
+            },
+            {
+              "label": "4",
+              "detail": "Compare a expansão ao longo dos tubos com a liberação em três dimensões."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Níveis de aprendizagem Bethe Strings",
+          "description": "Escolha um nível de leitura, desde a ideia central até conceitos de pesquisa mais especializados.",
+          "href": "/tutorial/bethe-strings-tutorial",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Comece aqui: estados ligados e movimento unidimensional."
+            },
+            {
+              "label": "A",
+              "detail": "Próximo: rapidezes e o Bethe ansatz."
+            },
+            {
+              "label": "B",
+              "detail": "Depois: evidências de gás ultrafrio e cadeia de spin."
+            },
+            {
+              "label": "C",
+              "detail": "Estudo adicional: hidrodinâmica generalizada e transporte."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Bethe Strings em estados quânticos",
+          "description": "Compare clusters vinculados com estados vizinhos em gases quânticos unidimensionais.",
+          "href": "/guide/bethe-strings-quantum-state",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Repulsão",
+              "detail": "Os gases repulsivos têm rapidez real, em vez de aglomerados limitados."
+            },
+            {
+              "label": "Atração",
+              "detail": "Interações atraentes podem preencher strings de vários tamanhos."
+            },
+            {
+              "label": "Sólitons",
+              "detail": "A imagem semiclássica ajuda a conectar cordas com sólitons de ondas de matéria."
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Perguntas frequentes sobre Bethe Strings",
+      "description": "Respostas curtas sobre a teoria e as evidências experimentais por trás das cordas de Bethe.",
+      "items": [
+        {
+          "question": "O que são cordas Bethe?",
+          "answer": "As cordas de Bethe são excitações de estados ligados em certos sistemas quânticos unidimensionais integráveis. Seu nome vem do arranjo de rapidezes complexas em forma de corda nas soluções do ansatz de Bethe."
+        },
+        {
+          "question": "Como as cordas de Bethe se formam em um gás ultrafrio?",
+          "answer": "No citado experimento com o césio, os pesquisadores confinaram os átomos em tubos estreitos e transformaram suas interações de repulsivas em atrativas. Isso produziu uma mistura de clusters vinculados com tamanhos diferentes."
+        },
+        {
+          "question": "Como as strings Bethe são detectadas?",
+          "answer": "Os pesquisadores comparam como o gás se expande ao longo de seus tubos unidimensionais e após ser liberado em três dimensões. As diferenças na energia de liberação, juntamente com as medições de momento e correlação, apoiam a interpretação do estado ligado."
+        },
+        {
+          "question": "As cordas de Bethe foram observadas antes do experimento com gás de 2026?",
+          "answer": "Sim. Experimentos espectroscópicos anteriores em materiais magnéticos detectaram sinais de excitações de cordas de Bethe. O estudo de 2026 investigou outra plataforma: um gás de Bose unidimensional com interações atrativas."
+        },
+        {
+          "question": "As cordas de Bethe são as cordas da teoria das cordas?",
+          "answer": "Aqui, uma corda é um padrão de rapidez que descreve um estado ligado na matéria quântica. É diferente das cordas fundamentais propostas na teoria das cordas de alta energia."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Explore a pesquisa Bethe Strings",
+      "description": "Leia as explicações acessíveis e siga a pesquisa primária citada para obter os detalhes experimentais.",
+      "primary": "Procure artigos de pesquisa",
+      "secondary": "Leia o artigo Nature Communications"
+    }
+  },
+  "shared": {
+    "wikiNavigation": "Navegação Wiki",
+    "activeCodes": "Fontes de pesquisa",
+    "updated": "Atualizado",
+    "viewAllCodes": "Ver todas as fontes",
+    "playOnRoblox": "Leia o artigo primário",
+    "inThisSection": "Nesta seção",
+    "tableOfContents": "Índice",
+    "nextSteps": "Próximas etapas",
+    "needHelp": "Leitura adicional",
+    "relatedReading": "Leitura Relacionada",
+    "relatedGuides": "Guias Relacionados",
+    "readMore": "Leia mais",
+    "officialMedia": "Mídia oficial",
+    "home": "Lar",
+    "noGuidesAvailable": "Nenhum artigo disponível ainda. Volte em breve!"
+  },
+  "footer": {
+    "aboutTitle": "Bethe Strings Wiki",
+    "about": "Uma referência científica independente que explica as cordas de Bethe e os sistemas quânticos unidimensionais com links para pesquisas primárias.",
+    "quickLinks": "Links rápidos",
+    "guides": "Explorar",
+    "legal": "Jurídico",
+    "copyright": "© 2026 Bethe Strings Wiki. Referência científica independente.",
+    "description": "Pesquisa sobre cordas Bethe explicada por meio de resumos acessíveis e fontes primárias.",
+    "playGame": "Leia o artigo principal",
+    "officialDiscord": "Fontes de pesquisa",
+    "officialYoutube": "Sobre esta wiki",
+    "vvBuilder": "Visão geral da pesquisa",
+    "beginnerGuide": "Artigos de pesquisa",
+    "raceGuides": "Tópicos",
+    "bossGuides": "Fontes primárias",
+    "buildGuide": "Sobre",
+    "privacyPolicy": "política de Privacidade",
+    "termsOfService": "Termos de Serviço"
+  },
+  "guide": {
+    "overviewTitle": "Guia Bethe Strings",
+    "overviewDescription": "Comece com explicações claras sobre cordas de Bethe, estados ligados e sistemas quânticos unidimensionais."
+  },
+  "mechanics": {
+    "overviewTitle": "Mecânica Bethe Strings",
+    "overviewDescription": "Explore o Bethe ansatz, as rapidezes, os estados quânticos e a mecânica dos aglomerados de partículas ligadas."
+  },
+  "research": {
+    "overviewTitle": "Pesquisa Bethe Strings",
+    "overviewDescription": "Leia sobre experimentos, artigos científicos e as evidências por trás das observações das cordas de Bethe."
+  },
+  "community": {
+    "overviewTitle": "Comunidade Bethe Strings",
+    "overviewDescription": "Encontre discussões e recursos da comunidade relacionados à pesquisa das cordas Bethe."
+  },
+  "tutorial": {
+    "overviewTitle": "Tutoriais Bethe Strings",
+    "overviewDescription": "Siga explicações para iniciantes e recursos de aprendizagem sobre cordas Bethe e física quântica."
+  },
+  "media": {
+    "overviewTitle": "Mídia Bethe Strings",
+    "overviewDescription": "Explore vídeos e cobertura de notícias sobre cordas de Bethe e experimentos relacionados."
+  }
+}
