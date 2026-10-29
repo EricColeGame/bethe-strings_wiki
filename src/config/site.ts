@@ -25,7 +25,7 @@ export const siteConfig: SiteConfig = {
   tagline: "Bethe strings research explained",
   description: "An unofficial science reference on Bethe strings and one-dimensional quantum systems.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://bethe-strings.wiki",
-  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://bethe-strings.wiki").hostname.replace(/^www\./, "")}`,
+  supportEmail: "support@bethe-strings.wiki",
   gameUrl: "https://www.nature.com/articles/s41467-026-76018-0",
   heroVideoId: "",
   locales: ["en", "es", "pt", "de", "fr"],

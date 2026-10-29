@@ -3,8 +3,8 @@ import { LegalPage } from "@/components/legal-page";
 export default function AboutPage() {
   return (
     <LegalPage title="About">
-      <p>VV Ultimatum Wiki is an independent fan-built guide hub covering progression routes, races, bosses, builds, and essential game knowledge for new and veteran players alike.</p>
-      <p>The layout, navigation, article cards, and detail format are reproduced from the target VV: ULTIMATUM wiki pages requested for this implementation.</p>
+      <p>Bethe Strings Wiki is an independent science reference explaining bound-state patterns in one-dimensional quantum systems.</p>
+      <p>We summarize research for curious readers and link to primary sources, including the Nature Communications paper “Probing Bethe strings in an attractive one-dimensional Bose gas.” Contact us at support@bethe-strings.wiki.</p>
     </LegalPage>
   );
 }

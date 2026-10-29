@@ -3,9 +3,9 @@ import { LegalPage } from "@/components/legal-page";
 export default function CopyrightPage() {
   return (
     <LegalPage title="Copyright">
-      <p>VV: ULTIMATUM, Roblox, Bleach-inspired concepts, logos, and related media belong to their respective owners.</p>
-      <p>This clone is a non-official fan wiki implementation for educational and guide presentation purposes.</p>
-      <p>If you own rights to content displayed here and have a concern, please contact the site operator for review.</p>
+      <p>Bethe Strings Wiki publishes original educational summaries. Cited papers, figures, and linked materials remain the property of their respective rights holders.</p>
+      <p>This site is independent and is not affiliated with the authors, publishers, or institutions cited here.</p>
+      <p>For a rights concern about material on bethe-strings.wiki, contact support@bethe-strings.wiki.</p>
     </LegalPage>
   );
 }
