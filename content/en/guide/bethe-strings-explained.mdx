@@ -1,0 +1,105 @@
+export const metadata = {
+  title: "Bethe Strings Explained: Bound States in One-Dimensional Quantum Matter",
+  description: "Bethe strings explained for curious readers: how multi-particle bound states form in 1D quantum systems and how physicists detect them in the lab.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+## What Are Bethe Strings?
+
+Some of the most striking objects in quantum physics are not particles at all — they are arrangements of particles that refuse to come apart. **Bethe strings explained** in one sentence: they are clusters of particles bound together in a one-dimensional quantum system by attractive interactions, held stable by the special mathematics of integrability. If you have ever wondered how a gas of atoms can behave like a set of nested molecules without ever forming a real molecule, this is the answer.
+
+The concept is not new. Hans Bethe introduced the underlying framework in 1931 while studying metals, and the "Bethe ansatz" he developed still anchors the field today. What *is* new is that physicists can now create and control the conditions in which Bethe strings form, then measure their signatures in the laboratory. That shift — from mathematical curiosity to measurable object — is why **Bethe strings explained** properly has become a topic of active experimental research rather than a historical footnote.
+
+## The Anatomy of a Bethe String
+
+To understand how Bethe strings work, you need one idea: the **rapidity**. In an integrable one-dimensional system, particles are best described not by ordinary momentum but by rapidities — generalized momenta assigned to emergent quasiparticles that scatter without ever losing their identity.
+
+In a repulsive gas, rapidities are real numbers. Push the interaction to the attractive side and they become complex, acquiring imaginary parts. The rapidities then organize into vertical clusters that share the same real part, spaced evenly along the imaginary axis by an amount set by the interaction strength. Each cluster is one Bethe string.
+
+| Interaction regime | Sign of coupling | Rapidity structure | Physical result |
+|---|---|---|---|
+| Non-interacting | Zero | Real, evenly spread | Quasi-condensate |
+| Weakly to strongly repulsive | Positive | Real | Gradual fermionization toward the Tonks-Girardeau limit |
+| Quench to strong attraction | Negative | Complex, gas-like | Super Tonks-Girardeau excited state |
+| Attractive, finite-rate sweep | Negative | Complex, clustered | A mixture of Bethe strings of many sizes |
+| Attractive, adiabatic ground state | Negative | One giant cluster | A single bound state containing every particle |
+
+Two numbers describe any string of size *n*. Its spatial extent shrinks as 2/(|c|(n−1)), so bigger strings are tighter. Its binding energy grows roughly with n², meaning a long string is far more deeply bound than the sum of its short cousins. The center-of-mass motion adds a separate kinetic term, which is why experimentalists can distinguish a string's travel from its internal glue.
+
+| String size *n* | Bond length at |c| = 1 μm⁻¹ | Relative binding per particle (n²−1) |
+|---|---|---|
+| 2 | 2.00 μm | 3 |
+| 4 | 0.67 μm | 15 |
+| 6 | 0.40 μm | 35 |
+| 10 | 0.22 μm | 99 |
+
+## Where Bethe Strings Show Up
+
+Bethe strings are not confined to cold atoms. They appear wherever a system is one-dimensional and integrable — meaning its particles pass through each other in a way that preserves their quantum labels. This absence of diffractive collisions is precisely what stops a bound state from decaying into lower-energy configurations.
+
+| Platform | Example | Why it matters |
+|---|---|---|
+| Ultracold 1D Bose gas | Cesium atoms in optical lattice tubes | Dense intermixtures can be realized and probed through bulk observables |
+| Quantum spin chains | Heisenberg-type magnets | Large strings drive anomalous spin transport |
+| Quantum magnets | SrCo₂V₂O₈, studied with terahertz spectroscopy and neutron scattering | Two- and three-string states identified spectroscopically; dispersions resolved in later neutron work |
+| High-energy theory | Integrable structures in gauge/string duality | Bethe-ansatz methods solve otherwise intractable models |
+| Semiclassical limit | Bright solitons of the nonlinear Schrödinger equation | Strings converge to solitons and soliton trains |
+
+That last row is the intuitive bridge for most people. In the semiclassical regime, a Bethe string looks like a bright soliton — a self-trapped wavepacket of matter. Soliton trains have been produced in attractive Bose gases for years, but they only survive at weak interactions. Bethe strings are the fully quantum version, and they persist where solitons would collapse.
+
+## How Physicists Detect Bethe Strings
+
+The clearest recent demonstration used attractively interacting cesium atoms confined to an array of one-dimensional tubes, with roughly 7 to 30 atoms per tube across thousands of tubes. Starting from a repulsive gas, the team swept the interaction strength through zero and into the attractive regime at a finite rate — fast enough to land in a far-from-equilibrium state, slow enough to avoid a violent collapse.
+
+That sweep produces a dense intermixture of strings rather than one giant bound state. The distribution of sizes is set by the initial temperature and density, not by any deliberate tuning of individual strings.
+
+| Measurement | What is recorded | Signature of Bethe strings |
+|---|---|---|
+| Release energy during in-tube expansion | Growth of the cloud's second moment | Stays low — strings scatter but stay intact |
+| Release energy after 3D release | Same, with confinement removed | Jumps sharply — binding converts to kinetic energy |
+| Energy difference | Average binding energy per particle | Places a lower bound on the largest string present |
+| Momentum distribution | Profile after a two-step time-of-flight | Broadens as strings form and tighten |
+| Tan's contact | Derived from internal and potential energy | Reveals modified short-range pair correlations |
+
+The release-energy trick is elegant. Expand the gas inside the tubes and the strings remain bound, so the measured energy reflects only their center-of-mass motion. Drop the confinement entirely and the strings break apart, dumping their binding energy into the expansion. In the repulsive regime the two numbers match; in the attractive regime they diverge by exactly the binding energy. In one reported dataset, that gap implied strings of at least six particles, with modeling suggesting even larger ones.
+
+Momentum distributions tell a complementary story. As the gas approaches the non-interacting point, the distribution narrows. Cross into attraction and it broadens, nearly doubling in width by the end of the sweep — a direct consequence of the uncertainty principle applied to tightly bound clusters.
+
+## Size, Temperature, and Survival
+
+Not every sweep produces the same mixture. Temperature is the dominant knob: hotter gases have kinetic energy that overwhelms the attractive binding, so large strings become rare.
+
+| Initial temperature | Typical string population | Effect on momentum broadening |
+|---|---|---|
+| Very low (a few nK) | Many large strings | Strong broadening in the attractive regime |
+| Intermediate | Mixed sizes, dominated by short strings | Moderate broadening |
+| High (tens of nK) | Mostly pairs and small clusters | Broadening nearly disappears |
+
+There is also a hard limit on how far you can push attraction. As strings tighten, three-body recombination becomes likely, and the tightest, largest strings are lost first. Any real experiment therefore samples a truncated distribution — a detail that theory must account for when comparing predictions to data.
+
+## Why Bethe Strings Matter
+
+The interest here is not purely taxonomic. Large Bethe strings turn out to govern how energy and spin move through integrable systems. In spin chains, they are implicated in anomalous transport and in the emergence of Kardar–Parisi–Zhang universality — the same mathematical scaling class that describes growing interfaces and burning fronts. A one-dimensional magnet and a flame front, it turns out, can share a universal language.
+
+Bethe strings explained at this level become a tool as much as a curiosity. They offer a controllable testbed for far-from-equilibrium quantum dynamics, where textbook thermodynamics does not apply and where new theoretical frameworks — generalized hydrodynamics in particular — can be checked against real measurements rather than simulations alone.
+
+For readers who want the primary literature, the [Nature Communications study on probing Bethe strings in an attractive 1D Bose gas](https://www.nature.com/articles/s41467-026-76018-0) is the most complete public account of the experimental protocol and its results.
+
+## Frequently Asked Questions
+
+**Are Bethe strings real particles?**
+
+No. They are collective bound states — clusters of particles that behave as a single composite excitation. Each string has its own center-of-mass momentum and internal binding energy, but it is not a new fundamental particle.
+
+**Why do Bethe strings only form in one dimension?**
+
+In one dimension, integrable systems lack the diffractive collisions that would otherwise let a bound state break up. That protection is what keeps strings stable long enough to observe. In three dimensions, attractive gases typically collapse instead.
+
+**What does temperature do to Bethe strings?**
+
+Higher temperature suppresses large strings. When kinetic energy dominates the interaction energy, the probability of binding many particles together drops sharply, and the mixture shifts toward pairs and small clusters.
+
+**Where can I read a full Bethe strings explained treatment?**
+
+Start with the experimental paper linked above, then follow its references into the Lieb-Liniger model and generalized hydrodynamics. Together they cover the theory, the measurement protocol, and the open questions.

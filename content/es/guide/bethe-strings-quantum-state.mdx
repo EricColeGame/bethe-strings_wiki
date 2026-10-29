@@ -1,0 +1,126 @@
+export const metadata = {
+  title: "Estado cuántico de cuerdas de Bethe explicado: estados ligados en gases cuánticos unidimensionales",
+  description: "Una guía práctica del estado cuántico de cuerdas de Bethe: cómo se forman los estados ligados en gases de Bose atractivos en 1D, cómo los detectan los laboratorios y por qué importan.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+Imagina un gas de átomos que se atraen entre sí, comprimido dentro de un tubo tan estrecho que solo pueden moverse en línea recta. La intuición clásica dice que debería colapsar en una masa densa. En cambio, bajo las condiciones adecuadas, los átomos se organizan en grupos estables de dos, tres, diez o más partículas: la disposición que los físicos llaman **estado cuántico de cuerdas de Bethe**. Ese nombre abarca una familia de estados ligados de múltiples partículas predicha por primera vez por Hans Bethe en 1931, y el **estado cuántico de cuerdas de Bethe** importa porque gobierna el transporte anómalo en cadenas de espín cuánticas, aparece en experimentos con átomos ultrafríos y conecta la física de materia condensada de laboratorio con la teoría de cuerdas.
+
+Esta guía explica qué es realmente el estado, cómo lo crean y detectan los físicos experimentales, qué mediciones cuentan como evidencia y cómo leer la literatura sin perderse en las matemáticas.
+
+## ¿Qué es el estado cuántico de cuerdas de Bethe?
+
+El hogar natural de las cuerdas de Bethe es el modelo de Lieb-Liniger: un gas unidimensional de bosones con un término de energía cinética y una interacción de contacto de intensidad **c̃**. Cuando la interacción es repulsiva (c̃ > 0), los autoestados del modelo pueden etiquetarse mediante un conjunto de **rapideces** —momentos generalizados de cuasipartículas estables— y esas rapideces son números puramente reales.
+
+Si se cambia el signo a atractivo (c̃ < 0), las rapideces se vuelven complejas. Se organizan en grupos verticales que comparten la misma parte real λ, espaciados simétricamente a lo largo del eje imaginario a intervalos de abs(c̃). Cada grupo es una cuerda de Bethe, y el número de rapideces dentro de ella es el tamaño de la cuerda *n*. Una cuerda de tamaño *n* se comporta como un único objeto compuesto con su propio momento de centro de masa y su propia energía de ligadura.
+
+| Símbolo | Expresión | Qué describe |
+|---|---|---|
+| n | entero ≥ 2 | Número de partículas ligadas dentro de la cuerda |
+| θ_j | λ + i·abs(c̃)(n + 1 − 2j)/2 | Rapideces de los constituyentes, espaciadas a lo largo del eje imaginario |
+| λ | Re(θ) | Parte real compartida; fija el momento del centro de masa |
+| Δz_n | 2 / [abs(c̃)(n − 1)] | Extensión espacial (longitud de enlace) del grupo |
+| E_com | nℏ²λ² / (2m) | Energía cinética del centro de masa |
+| E_b,n | ℏ²c̃²n(n² − 1) / (24m) | Energía de ligadura que mantiene unida la cuerda |
+| E_n | E_com − E_b,n | Energía total de la cuerda |
+
+De esas fórmulas se desprenden directamente dos consecuencias. Primera, las cuerdas más grandes son **más compactas**: la longitud de enlace se reduce aproximadamente como 1/n. Segunda, las cuerdas más grandes están **más profundamente ligadas**, ya que la energía de ligadura escala pronunciadamente con n. Una cuerda solo está bien definida físicamente cuando su longitud de enlace se mantiene cómodamente mayor que la longitud de confinamiento transversal; a distancias más cortas, la pérdida molecular de corto alcance toma el control y el modelo unidimensional deja de describir la realidad.
+
+## Por qué importa el estado cuántico de cuerdas de Bethe
+
+Los estados ligados suelen decaer. En un sistema integrable, en gran medida no pueden hacerlo, porque la dinámica integrable carece de las colisiones difractivas que dispersarían un grupo hacia configuraciones de menor energía. Esa estabilidad es lo que convierte al estado cuántico de cuerdas de Bethe en una característica duradera de la dinámica, y no en un artefacto transitorio.
+
+Las consecuencias van mucho más allá de los gases de Bose unidimensionales:
+
+- **Transporte anómalo.** Ahora se entiende que las cuerdas grandes controlan el transporte en cadenas de espín integrables, incluida la aparición de la superdifusión de Kardar-Parisi-Zhang (KPZ).
+- **Imanes cuánticos.** Las excitaciones de cuerdas se han observado experimentalmente en compuestos magnéticos, no solo predicho sobre el papel.
+- **Gases atómicos fríos.** Los tubos de átomos ultrafríos ofrecen la realización más limpia y sintonizable disponible.
+- **Teoría de alta energía.** Las estructuras de cuerdas de Bethe aparecen en la caja de herramientas de integrabilidad usada para estudiar teorías de gauge y teoría de cuerdas.
+
+| Plataforma | Qué se observa | Por qué importa |
+|---|---|---|
+| Gas de Bose 1D ultrafrío | Grupos ligados de tamaño sintonizable | Control directo sobre la intensidad de interacción y la temperatura |
+| Cadenas de espín cuánticas | Excitaciones de cuerdas en espectroscopia | Explica el transporte anómalo de espín |
+| Imanes cuánticos | Dispersiones de cuerdas de muchos cuerpos | Conecta la teoría con materiales reales |
+| Teoría de gauge/cuerdas | Soluciones de cuerdas integrables | Estructura matemática compartida entre campos |
+
+## Cómo crean y detectan las cuerdas de Bethe los físicos
+
+El estado fundamental de un gas atractivo de N partículas es un único grupo gigante que contiene las N partículas constituyentes, no un punto de partida útil si se quiere una *mezcla* de tamaños. Para poblar cuerdas de muchas longitudes diferentes, los laboratorios usan un barrido a velocidad finita. Comienzan en el régimen repulsivo y llevan la interacción a través del punto no interactuante hasta el lado atractivo, lo bastante rápido como para que el sistema nunca siga el estado fundamental. El resultado es un gas muy alejado del equilibrio que contiene cuerdas de muchos tamaños, con la distribución fijada principalmente por la temperatura y la densidad iniciales.
+
+Un experimento representativo usa átomos de cesio. Se carga un condensado de Bose-Einstein en dos haces de red cruzados, lo que produce miles de tubos unidimensionales independientes. Una resonancia de Feshbach sintoniza la intensidad de interacción, y una rampa controlada lleva el gas desde c̃ ≈ +3.4 μm⁻¹ hacia abajo, a través de cero, a aproximadamente −0.038 μm⁻¹ por milisegundo.
+
+| Parámetro | Valor típico |
+|---|---|
+| Especie atómica | Cesio (Cs) |
+| Confinamiento | Dos haces de red cruzados a 90°, espaciado ≈ 532 nm |
+| Tubos poblados | 3,000–5,000 |
+| Átomos por tubo | 7–30 |
+| Interacción inicial | c̃ ≈ +3.4 μm⁻¹ (régimen Tonks-Girardeau moderado) |
+| Velocidad de rampa | ≈ −0.038 μm⁻¹ ms⁻¹ |
+| Temperatura 1D | 3–35 nK |
+
+La detección se basa en un protocolo de expansión en dos pasos. Primero, el gas se expande *dentro* de los tubos durante un tiempo t₁D, diluyéndose hasta que las interacciones son despreciables. Después, se apaga el confinamiento transversal y la nube se expande libremente en 3D durante t₃D. Comparar las dos etapas es todo el truco: los estados ligados sobreviven a la expansión dentro del tubo, pero se deshacen al liberarse en 3D, convirtiendo la energía de ligadura en energía cinética.
+
+## Leer la evidencia: tres firmas
+
+**Energía de liberación.** En el régimen repulsivo, las energías de liberación 1D y 3D coinciden: no existen estados ligados que romper. En el régimen atractivo se separan marcadamente: el valor 1D se aplana mientras que el valor 3D asciende, porque la energía de ligadura se libera solo cuando las cuerdas se desgarran. A partir del tamaño de esa brecha, los experimentadores pueden establecer una cota inferior para las cuerdas más grandes presentes, estimada en n ≥ 6 en los datos publicados.
+
+**Distribución de momento.** A medida que la interacción se aproxima a cero desde el lado repulsivo, el perfil de momento se estrecha. Pasado el cero, se ensancha de nuevo, casi duplicando su anchura para cuando c̃ alcanza −2 μm⁻¹. Una cuerda con longitud de enlace Δz libera momento en una ventana del orden de 1/(2Δz), de modo que las cuerdas más compactas y grandes producen perfiles más anchos.
+
+**Contacto de Tan.** Las cuerdas de Bethe modifican fuertemente las correlaciones de pares de corto alcance, y el contacto de Tan —proporcional a c̃² multiplicado por la función de correlación de pares integrada en la trampa— sigue ese cambio. Una relación del teorema del virial conecta el contacto con la energía interna y potencial, y la relación sobrevive en estados fuera del equilibrio descritos por hidrodinámica generalizada.
+
+| Observable | Régimen repulsivo | Régimen atractivo | Interpretación |
+|---|---|---|---|
+| Energía de liberación 1D vs 3D | Iguales | 1D ≈ 35 Hz vs 3D ≈ 110 Hz (en unidades de h) | Energía de ligadura liberada al deshacerse en 3D |
+| FWHM del momento | Se estrecha hacia c̃ = 0 | Se ensancha ~2× para c̃ = −2 μm⁻¹ | Ensanchamiento por principio de incertidumbre debido a la longitud de enlace |
+| Contacto de Tan | Sigue la relación virial de equilibrio | Modificado por correlaciones de pares reforzadas | Firma de correlación de corto alcance |
+| Pérdida de átomos | Despreciable | Crece con la atracción | Pérdida de tres cuerpos; ruptura de integrabilidad |
+
+La temperatura es el principal parámetro para controlar el tamaño de las cuerdas. Una temperatura más alta significa que la energía cinética domina sobre la energía de interacción, así que los grupos grandes se vuelven menos probables y la energía de ligadura media por partícula disminuye. La densidad actúa en sentido contrario: los tubos más densos favorecen cuerdas más grandes.
+
+## Cuerdas de Bethe frente a otros estados cuánticos 1D
+
+Ayuda situar el estado cuántico de cuerdas de Bethe en el mapa de las fases unidimensionales, porque varios regímenes cercanos son fáciles de confundir con él.
+
+| Estado | Interacción | Estructura de rapideces | Imagen física |
+|---|---|---|---|
+| Cuasicondensado | Repulsiva débil | Real, densamente empaquetada | Gas coherente con interacciones débiles |
+| Tonks-Girardeau (TG) | Repulsiva fuerte | Real | Los bosones se fermionizan; comportamiento tipo núcleo duro |
+| Super Tonks-Girardeau (sTG) | Quench hacia atracción fuerte | Compleja | Excitado, similar a un gas; no colapsa |
+| Estado gigante de Bethe | Barrido adiabático de + a − | Un grupo de N | Estado fundamental del gas atractivo |
+| Cuerdas de Bethe (fuera del equilibrio) | Barrido a velocidad finita a través de cero | Varios grupos de diferente n | Mezcla alejada del equilibrio |
+
+La distinción clave: un barrido **adiabático** produce un único grupo gigante, mientras que un barrido a **velocidad finita** produce una distribución de cuerdas más pequeñas. Si se quiere una mezcla densa de tamaños, la velocidad del barrido no es un detalle: es el mecanismo.
+
+## Consejos prácticos para trabajar con esta física
+
+- **Separar rapidez de momento.** En el régimen repulsivo, la distribución de momento tras la expansión dentro del tubo se corresponde limpiamente con la distribución de rapideces. En el régimen atractivo esa correspondencia se rompe, y tratarlas como intercambiables llevará por mal camino.
+- **Usar hidrodinámica generalizada (GHD) para la dinámica.** Una vez que el gas está lejos del equilibrio, la GHD es la herramienta teórica práctica; reproduce energías de liberación, perfiles de momento y mediciones del contacto en todo el rango de interacción.
+- **Vigilar la pérdida de tres cuerpos.** Es el proceso dominante de ruptura de integrabilidad. Es despreciable en el lado repulsivo, pero se vuelve significativo a medida que las cuerdas se compactan, y elimina preferentemente las cuerdas más grandes, lo que puede simular una distribución de cuerdas menor que la real.
+- **Comprobar el confinamiento transversal.** Las cuerdas solo están bien definidas cuando la longitud de enlace supera ampliamente la longitud del oscilador transversal.
+- **Tratar la temperatura como un parámetro de primer orden.** Un cambio de ±10% en la temperatura inicial supuesta desplaza notablemente los perfiles predichos cerca del punto no interactuante.
+
+| Error | Síntoma | Solución |
+|---|---|---|
+| Suponer rapidez = momento | Anchuras inconsistentes en el lado atractivo | Restringir la correspondencia a c̃ > 0 |
+| Ignorar la pérdida de tres cuerpos | Los datos caen por debajo de la teoría con atracción fuerte | Incluir la pérdida en el ajuste del modelo |
+| Usar un modelo inicial de dos parámetros | Mal ajuste a mayor temperatura | Refinar la estimación de densidad y temperatura |
+| Pasar por alto la variación entre tubos | Los tamaños de cuerda parecen inconsistentes | Promediar sobre la distribución de la población de tubos |
+
+El tratamiento experimental y teórico original, publicado en [Nature Communications sobre la exploración de cuerdas de Bethe en un gas de Bose unidimensional atractivo](https://www.nature.com/articles/s41467-026-76018-0), sigue siendo el recorrido más completo del protocolo de medición, la comparación con GHD y el análisis de pérdidas.
+
+## FAQ
+
+**¿Qué es exactamente el estado cuántico de cuerdas de Bethe?**
+Es un estado de un gas cuántico unidimensional en el que las partículas se ligan en grupos estables de múltiples partículas. Cada grupo corresponde a un conjunto de rapideces complejas que comparten una parte real común, y el grupo se comporta como una única cuasipartícula compuesta con su propio momento y energía de ligadura.
+
+**¿Las cuerdas de Bethe son partículas reales?**
+No. Son estados ligados emergentes construidos a partir de las partículas subyacentes. Lo que es real es la consecuencia medible: la brecha de energía de liberación, la distribución de momento ensanchada y las correlaciones de pares modificadas reflejan todas la presencia de estos grupos.
+
+**¿Por qué las cuerdas de Bethe solo se forman en una dimensión?**
+En tres dimensiones, las interacciones atractivas suelen impulsar el colapso del gas. En una dimensión, la integrabilidad suprime las colisiones difractivas que permitirían que un grupo decayera, así que las interacciones atractivas producen estados ligados estables en lugar de colapso.
+
+**¿Qué tan grande puede llegar a ser una cuerda de Bethe?**
+En principio, el estado fundamental de un gas atractivo de N partículas es un único grupo con las N partículas constituyentes. En experimentos fuera del equilibrio, las cuerdas más grandes observadas están limitadas por la temperatura, la densidad y la pérdida de tres cuerpos, con datos publicados que implican grupos de al menos seis partículas y teoría que predice una cola de otros más grandes.

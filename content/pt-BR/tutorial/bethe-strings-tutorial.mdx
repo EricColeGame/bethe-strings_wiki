@@ -1,0 +1,99 @@
+export const metadata = {
+  title: "Tutorial de Bethe Strings: Domine os Estados Ligados Quânticos 1D Passo a Passo",
+  description: "Um tutorial prático sobre Bethe strings que aborda rapididades, energia de ligação, detecção experimental e as armadilhas dos gases quânticos atrativos 1D.",
+  category: "tutorial",
+  date: "2026-10-20",
+}
+
+## O que são Bethe Strings?
+
+Bethe strings são estados ligados de múltiplas partículas que surgem em sistemas quânticos integráveis unidimensionais quando as partículas se atraem mutuamente. Em vez de colapsar, o gás se organiza em aglomerados de duas, três ou muitas partículas que viajam juntas e se comportam como uma única quasipartícula emergente. A ideia remonta à solução de Hans Bethe, de 1931, para a cadeia de spin unidimensional, e é por isso que um tutorial sério sobre Bethe strings precisa começar pelo ansatz, e não pelo aparato de laboratório.
+
+Por que isso importa? Porque esses estados ligados não são curiosidades frágeis. Sistemas integráveis não têm colisões difrativas, então uma string não pode espalhar-se para um estado de energia mais baixa e se desfazer. Essa estabilidade faz das strings as portadoras do transporte anômalo — incluindo o comportamento superdifusivo de Kardar–Parisi–Zhang observado em cadeias de spin — e as leva para gases atômicos frios, ímãs quânticos e até para a teoria de altas energias. Um bom tutorial sobre Bethe strings deve, portanto, conectar três camadas: a matemática das rapididades, a assinatura experimental e as consequências físicas.
+
+O cenário mais limpo é o modelo de Lieb–Liniger: bósons em uma linha com uma interação de contato de intensidade c̃. c̃ positivo significa repulsão; c̃ negativo significa atração. O sinal de c̃ determina tudo sobre o padrão de rapididades.
+
+| Regime | Interação | Estrutura de rapididades | Quadro físico |
+|---|---|---|---|
+| Repulsivo | c̃ > 0 | Rapididades reais | Quase-condensado evoluindo para o gás de Tonks–Girardeau à medida que c̃ cresce |
+| Não interagente | c̃ = 0 | Momentos de partícula livre | Ponto de cruzamento do gás ideal |
+| Atrativo, com quench | c̃ < 0 | Rapididades complexas agrupadas em aglomerados | Estado de super Tonks–Girardeau |
+| Atrativo, adiabático | c̃ < 0 | Um único aglomerado gigante | "Estado gigante de Bethe" do estado fundamental |
+
+## Lendo o padrão de rapididades
+
+Todo autoestado do Hamiltoniano de Lieb–Liniger é rotulado por um conjunto de rapididades θ, que atuam como os momentos generalizados de quasipartículas estáveis. No regime repulsivo, as rapididades são números reais. Aumente a interação o suficiente e os bósons se fermionizam no estado de Tonks–Girardeau, mas as rapididades permanecem no eixo real.
+
+Cruze para a atração e o quadro muda qualitativamente. As rapididades tornam-se complexas e se organizam em aglomerados que compartilham a mesma parte real λ = Re(θ) e são espaçados simetricamente ao longo do eixo imaginário com separação |c̃|. Cada aglomerado *é* uma Bethe string. Uma string isolada de tamanho n tem função de onda proporcional a exp(i Σ θⱼzⱼ), com rapididades θⱼ = λ + i|c̃|(n + 1 − 2j)/2.
+
+Essa única fórmula é o ganho de qualquer tutorial sobre Bethe strings: ela mostra que uma string é um objeto ligado com uma escada interna de momentos imaginários, e não apenas um par frouxo.
+
+| Propriedade | Expressão | O que ela diz |
+|---|---|---|
+| Contagem de constituintes | n | Quantas partículas compartilham uma string |
+| Espaçamento entre rapididades | \|c̃\| ao longo do eixo imaginário | Estrutura interna do estado ligado |
+| Extensão espacial | Δz_n = 2 / [\|c̃\|(n − 1)] | Comprimento de ligação; diminui à medida que n ou \|c̃\| crescem |
+| Energia de ligação | E_b,n = ℏ²c̃²n(n² − 1) / (24m) | Cresce acentuadamente com o tamanho da string |
+| Energia do centro de massa | E_com,n = nℏ²λ² / (2m) | Energia cinética carregada pela string inteira |
+
+Duas consequências práticas decorrem disso. Primeiro, strings maiores são mais compactas: dobrar n encurta o comprimento de ligação e aumenta a energia de ligação por partícula, de modo que strings grandes são os objetos mais fortemente ligados do gás. Segundo, as strings só são bem definidas enquanto seu comprimento de ligação permanece muito maior que o comprimento de confinamento transversal; em distâncias menores, a perda molecular de curto alcance assume o controle e a descrição de Lieb–Liniger deixa de valer.
+
+## Como os experimentos realmente as detectam
+
+Um tutorial moderno sobre Bethe strings não pode parar na teoria, porque a pergunta interessante é como se constroem evidências de que uma string existe. A resposta é um protocolo de expansão em duas etapas.
+
+1. **Prepare um gás unidimensional.** Carregue um condensado de Bose–Einstein em um par de feixes de rede cruzados, produzindo milhares de tubos independentes. A intensidade da interação é definida por c̃ ≈ 4a₃D/a⊥², em que a₃D é ajustado com uma ressonância de Feshbach.
+2. **Varra a interação passando por zero.** Varra c̃ de repulsivo para atrativo a uma taxa finita. Passar pelo ponto não interagente converte o estado inicial em uma distribuição de strings, em vez de um único aglomerado gigante.
+3. **Expanda primeiro em 1D, depois em 3D.** Durante a expansão dentro do tubo, as strings se espalham, mas permanecem ligadas. Liberar o confinamento transversal as quebra e converte energia de ligação em energia cinética.
+4. **Compare as duas energias de liberação.** No regime repulsivo, os valores 1D e 3D concordam. No regime atrativo, o valor 3D excede o 1D em aproximadamente a energia média de ligação por partícula.
+5. **Verifique a distribuição de momento.** Após cruzar zero, o perfil de momento se alarga — quase dobrando de largura nos dados publicados — porque uma string de comprimento de ligação Δz libera momento em uma janela Δp ≈ ℏ/(2Δz).
+6. **Meça o contato de Tan.** O contato C = c̃²G₂ liga correlações de pares de curto alcance à termodinâmica por meio de C = (2mc̃/ℏ²)(U − E_V).
+
+| Medida | O que você compara | Assinatura das strings |
+|---|---|---|
+| Energia de liberação | Expansão 1D vs 3D | A energia 3D excede a 1D quando c̃ < 0 |
+| Largura de momento | f(p/ℏ) ao longo da varredura | Alargamento após cruzar c̃ = 0 |
+| Contato de Tan | Contato vs intensidade da interação | Acompanha as correlações de pares, corresponde à teoria |
+| Varredura de temperatura | Largura vs T com c̃ fixo | O alargamento enfraquece à medida que a temperatura sobe |
+
+A dependência com a temperatura é a parte sutil. Temperatura mais alta significa que a energia cinética domina a energia de interação, o que suprime a probabilidade de formar strings grandes e reduz a energia média de ligação por partícula. Um tutorial cuidadoso sobre Bethe strings sempre citará a temperatura 1D junto com a intensidade da interação, porque as duas juntas definem a distribuição de tamanhos das strings.
+
+## Onde as Bethe strings aparecem
+
+Strings não se restringem a átomos frios. A mesma matemática aparece em várias plataformas, e a hidrodinâmica generalizada (GHD) é atualmente a teoria de trabalho para descrever como um gás de strings evolui fora do equilíbrio. O [estudo da Nature Communications sobre a sondagem de Bethe strings em um gás de Bose 1D atrativo](https://www.nature.com/articles/s41467-026-76018-0) é um bom ponto de entrada para ver teoria e experimento lado a lado.
+
+| Plataforma | Sistema típico | O que é medido |
+|---|---|---|
+| Gás de Bose 1D ultrafrio | Átomos de césio com interação atrativa em tubos de rede | Energia de liberação, distribuição de momento, contato de Tan |
+| Cadeias de spin quânticas | Materiais de Heisenberg anisotrópicos | Transporte de spin, dispersão de excitações |
+| Ímãs quânticos | Isolantes magnéticos de baixa dimensionalidade | Espectros de espalhamento mostrando modos de string |
+| Teoria de altas energias | Modelos integráveis de gauge e de cordas | Espectro de excitações compostas |
+
+No limite semiclássico, as strings convergem para sólitons brilhantes da equação de Schrödinger não linear, e trens de sólitons aparecem em condensados fracamente atrativos. Essa correspondência é uma intuição útil, mas um atalho perigoso: a linguagem de sólitons falha assim que se entra no regime quântico, em que apenas o ansatz de Bethe e a GHD fornecem respostas quantitativas.
+
+## Armadilhas comuns e como evitá-las
+
+| Armadilha | Por que ela prejudica | Solução |
+|---|---|---|
+| Tratar strings como sólitons | Sólitons pressupõem acoplamento fraco e semiclássico | Trabalhe no regime quântico com GHD |
+| Ignorar a temperatura | O movimento térmico suprime strings grandes | Informe T junto com c̃ em cada conjunto de dados |
+| Esquecer a perda de três corpos | Strings grandes fortemente ligadas decaem mais rápido | Inclua um modelo de perdas ou permaneça em atração fraca |
+| Supor uma varredura adiabática | Taxas de varredura finitas deixam o sistema longe do equilíbrio | Ajuste a taxa de varredura à simulação |
+| Usar a teoria de Gross–Pitaevskii | Ela falha para gases 1D fortemente correlacionados | Use o ansatz de Bethe ou a GHD |
+| Citar apenas o tamanho médio das strings | As distribuições são amplas e assimétricas | Informe a distribuição de probabilidade completa |
+
+Uma verificação de sanidade útil: calcule um limite inferior para a maior string presente a partir da energia de ligação por partícula medida. Se a energia de ligação média exceder E_b,n/n para algum n, o sistema deve conter strings de pelo menos esse tamanho — uma estimativa rápida que normalmente fica na faixa de seis ou mais constituintes antes de qualquer modelagem detalhada.
+
+## Perguntas frequentes
+
+**O que é uma Bethe string em linguagem simples?**
+É um aglomerado de partículas em um gás quântico atrativo unidimensional que se move como um único objeto. Matematicamente, as rapididades das partículas tornam-se complexas e se alinham ao longo do eixo imaginário com espaçamento fixo. Qualquer tutorial sobre Bethe strings que valha a pena ler deve mostrar tanto a imagem quanto o padrão de rapididades.
+
+**As Bethe strings existem fora de uma dimensão?**
+A solução exata de string é um fenômeno unidimensional ligado à integrabilidade. No entanto, estados ligados do tipo string e suas assinaturas aparecem em gases quase 1D, cadeias de spin e ímãs quânticos, e é por isso que o conceito se difunde tanto.
+
+**Por que as Bethe strings atrativas não colapsam?**
+Porque sistemas integráveis não têm colisões difrativas. Sem essas colisões, um estado ligado de múltiplas partículas não tem canal de decaimento para estados de energia mais baixa, então ele sobrevive mesmo que a interação seja atrativa. A perda de três corpos é o principal processo que, eventualmente, remove as strings maiores.
+
+**Para onde devo ir depois deste tutorial sobre Bethe strings?**
+Leia o artigo de Bethe de 1931 para a origem, a solução de Lieb–Liniger para o modelo e o trabalho de McGuire para o caso atrativo. Depois, acompanhe um tratamento moderno de GHD para ver como as distribuições de strings evoluem no tempo — é aí que está a maior parte da pesquisa atual.

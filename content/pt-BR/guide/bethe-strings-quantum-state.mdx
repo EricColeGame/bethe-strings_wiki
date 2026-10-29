@@ -1,0 +1,126 @@
+export const metadata = {
+  title: "Estado Quântico de Cordas de Bethe Explicado: Estados Ligados em Gases Quânticos Unidimensionais",
+  description: "Um guia prático sobre o estado quântico de cordas de Bethe: como estados ligados se formam em gases de Bose atrativos unidimensionais, como laboratórios os detectam e por que importam.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+Imagine um gás de átomos que se atraem mutuamente, comprimido em um tubo tão estreito que só podem se mover em linha reta. A intuição clássica diz que ele deveria colapsar em uma aglomeração densa. Em vez disso, sob as condições certas, os átomos se organizam em aglomerados estáveis de duas, três, dez ou mais partículas — o arranjo que os físicos chamam de **estado quântico de cordas de Bethe**. Esse nome cobre uma família de estados ligados de múltiplas partículas prevista pela primeira vez por Hans Bethe em 1931, e o **estado quântico de cordas de Bethe** importa porque governa o transporte anômalo em cadeias de spin quânticas, aparece em experimentos com átomos ultrafrios e conecta a física da matéria condensada de laboratório à teoria das cordas.
+
+Este guia percorre o que o estado realmente é, como experimentalistas o criam e detectam, quais medições contam como evidência e como ler a literatura sem se perder na matemática.
+
+## O que é o estado quântico de cordas de Bethe?
+
+O lar natural das cordas de Bethe é o modelo de Lieb-Liniger: um gás unidimensional de bósons com um termo de energia cinética e uma interação de contato de intensidade **c̃**. Quando a interação é repulsiva (c̃ > 0), os autoestados do modelo podem ser rotulados por um conjunto de **rapidezes** — momentos generalizados de quasipartículas estáveis — e essas rapidezes são números puramente reais.
+
+Inverta o sinal para atrativo (c̃ < 0) e as rapidezes se tornam complexas. Elas se organizam em aglomerados verticais que compartilham a mesma parte real λ, espaçados simetricamente ao longo do eixo imaginário em intervalos de abs(c̃). Cada aglomerado é uma corda de Bethe, e o número de rapidezes dentro dele é o tamanho *n* da corda. Uma corda de tamanho *n* se comporta como um único objeto composto, com seu próprio momento de centro de massa e sua própria energia de ligação.
+
+| Símbolo | Expressão | O que descreve |
+|---|---|---|
+| n | inteiro ≥ 2 | Número de partículas ligadas dentro da corda |
+| θ_j | λ + i·abs(c̃)(n + 1 − 2j)/2 | Rapidezes dos constituintes, espaçadas ao longo do eixo imaginário |
+| λ | Re(θ) | Parte real compartilhada; define o momento do centro de massa |
+| Δz_n | 2 / [abs(c̃)(n − 1)] | Extensão espacial (comprimento de ligação) do aglomerado |
+| E_com | nℏ²λ² / (2m) | Energia cinética do centro de massa |
+| E_b,n | ℏ²c̃²n(n² − 1) / (24m) | Energia de ligação que mantém a corda unida |
+| E_n | E_com − E_b,n | Energia total da corda |
+
+Duas consequências decorrem diretamente dessas fórmulas. Primeiro, cordas maiores são **mais compactas**: o comprimento de ligação diminui aproximadamente como 1/n. Segundo, cordas maiores são **mais profundamente ligadas**, já que a energia de ligação cresce acentuadamente com n. Uma corda só é fisicamente bem definida quando seu comprimento de ligação permanece confortavelmente maior que o comprimento de confinamento transversal; em distâncias menores, a perda molecular de curto alcance assume o controle e o modelo unidimensional deixa de descrever a realidade.
+
+## Por que o estado quântico de cordas de Bethe importa
+
+Estados ligados geralmente decaem. Em um sistema integrável, eles em grande parte não podem, porque a dinâmica integrável carece das colisões difrativas que espalhariam um aglomerado para configurações de energia mais baixa. É essa estabilidade que faz do estado quântico de cordas de Bethe uma característica duradoura da dinâmica, e não um artefato transitório.
+
+As consequências vão muito além dos gases de Bose unidimensionais:
+
+- **Transporte anômalo.** Agora se entende que cordas grandes controlam o transporte em cadeias de spin integráveis, incluindo o surgimento da superdifusão de Kardar-Parisi-Zhang (KPZ).
+- **Magnetos quânticos.** Excitações de corda foram observadas experimentalmente em compostos magnéticos, não apenas previstas no papel.
+- **Gases atômicos frios.** Tubos de átomos ultrafrios proporcionam a realização mais limpa e ajustável disponível.
+- **Teoria de altas energias.** Estruturas de cordas de Bethe aparecem na caixa de ferramentas da integrabilidade usada para estudar teorias de gauge e teoria das cordas.
+
+| Plataforma | O que é observado | Por que importa |
+|---|---|---|
+| Gás de Bose 1D ultrafrio | Aglomerados ligados de tamanho ajustável | Controle direto sobre a intensidade da interação e a temperatura |
+| Cadeias de spin quânticas | Excitações de corda em espectroscopia | Explica transporte de spin anômalo |
+| Magnetos quânticos | Dispersões de cordas de muitos corpos | Conecta a teoria a materiais reais |
+| Teoria de gauge/cordas | Soluções de corda integráveis | Estrutura matemática compartilhada entre campos |
+
+## Como os físicos criam e detectam cordas de Bethe
+
+O estado fundamental de um gás atrativo de N partículas é um único aglomerado gigante contendo todos os N constituintes — não é um ponto de partida útil se você quer uma *mistura* de tamanhos. Para popular cordas de muitos comprimentos diferentes, os laboratórios usam uma varredura a taxa finita. Eles começam no regime repulsivo e fazem a interação variar passando pelo ponto sem interação até o lado atrativo, rápido o suficiente para que o sistema nunca acompanhe o estado fundamental. O resultado é um gás longe do equilíbrio contendo cordas de muitos tamanhos, com a distribuição definida principalmente pela temperatura e densidade iniciais.
+
+Um experimento representativo usa átomos de césio. Um condensado de Bose-Einstein é carregado em dois feixes de rede cruzados, produzindo milhares de tubos unidimensionais independentes. Uma ressonância de Feshbach ajusta a intensidade da interação, e uma rampa controlada leva o gás de c̃ ≈ +3,4 μm⁻¹ para baixo, passando por zero, a aproximadamente −0,038 μm⁻¹ por milissegundo.
+
+| Parâmetro | Valor típico |
+|---|---|
+| Espécie atômica | Césio (Cs) |
+| Confinamento | Dois feixes de rede cruzados a 90°, espaçamento ≈ 532 nm |
+| Tubos povoados | 3.000–5.000 |
+| Átomos por tubo | 7–30 |
+| Interação inicial | c̃ ≈ +3,4 μm⁻¹ (regime Tonks-Girardeau moderado) |
+| Taxa de rampa | ≈ −0,038 μm⁻¹ ms⁻¹ |
+| Temperatura 1D | 3–35 nK |
+
+A detecção depende de um protocolo de expansão em duas etapas. Primeiro, o gás se expande *dentro* dos tubos por um tempo t₁D, diluindo-se até que as interações sejam desprezíveis. Em seguida, o confinamento transversal é desligado e a nuvem se expande livremente em 3D por t₃D. Comparar as duas etapas é o truque inteiro: estados ligados sobrevivem à expansão dentro do tubo, mas se desfazem na liberação em 3D, convertendo energia de ligação em energia cinética.
+
+## Lendo as evidências: três assinaturas
+
+**Energia de liberação.** No regime repulsivo, as energias de liberação 1D e 3D concordam — não existem estados ligados para se desfazer. No regime atrativo, elas se separam acentuadamente: o valor 1D atinge um patamar enquanto o valor 3D sobe, porque a energia de ligação só é liberada quando as cordas são desfeitas. A partir do tamanho dessa lacuna, os experimentalistas podem estabelecer um limite inferior para as maiores cordas presentes, estimado em n ≥ 6 nos dados publicados.
+
+**Distribuição de momento.** À medida que a interação se aproxima de zero pelo lado repulsivo, o perfil de momento estreita. Passando de zero, ele se alarga novamente, quase dobrando de largura quando c̃ atinge −2 μm⁻¹. Uma corda com comprimento de ligação Δz libera momento ao longo de uma janela da ordem de 1/(2Δz), de modo que cordas mais compactas e maiores produzem perfis mais largos.
+
+**Contato de Tan.** As cordas de Bethe modificam fortemente as correlações de pares de curto alcance, e o contato de Tan — proporcional a c̃² vezes a função de correlação de pares integrada na armadilha — acompanha essa mudança. Uma relação do teorema do virial conecta o contato à energia interna e potencial, e a relação sobrevive em estados fora do equilíbrio descritos pela hidrodinâmica generalizada.
+
+| Observável | Regime repulsivo | Regime atrativo | Interpretação |
+|---|---|---|---|
+| Energia de liberação 1D vs 3D | Iguais | 1D ≈ 35 Hz vs 3D ≈ 110 Hz (em unidades de h) | Energia de ligação liberada na desintegração 3D |
+| FWHM do momento | Estreita em direção a c̃ = 0 | Alarga ~2× em c̃ = −2 μm⁻¹ | Alargamento pelo princípio da incerteza devido ao comprimento de ligação |
+| Contato de Tan | Segue a relação virial de equilíbrio | Modificado por correlações de pares intensificadas | Assinatura de correlação de curto alcance |
+| Perda de átomos | Desprezível | Cresce com a atração | Perda de três corpos; quebra da integrabilidade |
+
+A temperatura é o principal botão para o tamanho das cordas. Temperatura mais alta significa que a energia cinética domina a energia de interação, então aglomerados grandes se tornam menos prováveis e a energia média de ligação por partícula cai. A densidade funciona ao contrário: tubos mais densos favorecem cordas maiores.
+
+## Cordas de Bethe vs. outros estados quânticos 1D
+
+Ajuda situar o estado quântico de cordas de Bethe no mapa das fases unidimensionais, porque vários regimes próximos são fáceis de confundir com ele.
+
+| Estado | Interação | Estrutura de rapidezes | Imagem física |
+|---|---|---|---|
+| Quase-condensado | Repulsiva fraca | Reais, densamente empacotadas | Gás coerente e fracamente interagente |
+| Tonks-Girardeau (TG) | Repulsiva forte | Reais | Bósons se fermionizam; comportamento tipo núcleo duro |
+| Super Tonks-Girardeau (sTG) | Quench para atração forte | Complexas | Excitado, semelhante a gás — não colapsa |
+| Estado gigante de Bethe | Varredura adiabática de + para − | Um aglomerado de N | Estado fundamental do gás atrativo |
+| Cordas de Bethe (não equilíbrio) | Varredura a taxa finita através de zero | Vários aglomerados de n diferentes | Mistura longe do equilíbrio |
+
+A distinção-chave: uma varredura **adiabática** produz um único aglomerado gigante, enquanto uma varredura **a taxa finita** produz uma distribuição de cordas menores. Se você quer uma mistura densa de tamanhos, a taxa de varredura não é um detalhe — é o mecanismo.
+
+## Dicas práticas para trabalhar com essa física
+
+- **Separe rapidezes de momento.** No regime repulsivo, a distribuição de momento após a expansão dentro do tubo mapeia de forma limpa a distribuição de rapidezes. No regime atrativo, esse mapeamento se desfaz, e tratá-los como intercambiáveis vai te levar ao erro.
+- **Use hidrodinâmica generalizada (GHD) para a dinâmica.** Uma vez que o gás está longe do equilíbrio, a GHD é a ferramenta teórica prática; ela reproduz energias de liberação, perfis de momento e medições de contato em toda a faixa de interação.
+- **Fique atento à perda de três corpos.** Ela é o principal processo de quebra da integrabilidade. É desprezível no lado repulsivo, mas se torna significativa à medida que as cordas ficam mais compactas, e remove preferencialmente as maiores cordas — o que pode simular uma distribuição de cordas menor do que a real.
+- **Verifique o confinamento transversal.** As cordas só são bem definidas quando o comprimento de ligação excede em muito o comprimento do oscilador transversal.
+- **Trate a temperatura como um parâmetro de primeira classe.** Uma mudança de ±10% na temperatura inicial assumida desloca os perfis previstos de forma perceptível perto do ponto sem interação.
+
+| Pegadinha | Sintoma | Correção |
+|---|---|---|
+| Presumir rapidez = momento | Larguras inconsistentes no lado atrativo | Restrinja o mapeamento a c̃ > 0 |
+| Ignorar a perda de três corpos | Dados ficam abaixo da teoria com atração forte | Inclua a perda no ajuste do modelo |
+| Usar um modelo de estado inicial com dois parâmetros | Ajuste ruim em temperaturas mais altas | Refine a estimativa de densidade e temperatura |
+| Negligenciar a variação entre tubos | Tamanhos de corda parecem inconsistentes | Faça a média sobre a distribuição da população de tubos |
+
+O tratamento experimental e teórico original, publicado na [Nature Communications sobre a sondagem de cordas de Bethe em um gás de Bose unidimensional atrativo](https://www.nature.com/articles/s41467-026-76018-0), continua sendo o passo a passo mais completo do protocolo de medição, da comparação com GHD e da análise de perdas.
+
+## Perguntas frequentes
+
+**O que exatamente é o estado quântico de cordas de Bethe?**
+É um estado de um gás quântico unidimensional no qual as partículas se ligam em aglomerados estáveis de múltiplas partículas. Cada aglomerado corresponde a um grupo de rapidezes complexas que compartilham uma parte real comum, e o aglomerado se comporta como uma única quasipartícula composta, com seu próprio momento e energia de ligação.
+
+**Cordas de Bethe são partículas reais?**
+Não. Elas são estados ligados emergentes construídos a partir das partículas subjacentes. O que é real é a consequência mensurável: a lacuna de energia de liberação, a distribuição de momento alargada e as correlações de pares modificadas refletem todas a presença desses aglomerados.
+
+**Por que as cordas de Bethe só se formam em uma dimensão?**
+Em três dimensões, interações atrativas normalmente levam um gás ao colapso. Em uma dimensão, a integrabilidade suprime as colisões difrativas que permitiriam que um aglomerado decaísse, então interações atrativas produzem estados ligados estáveis em vez de colapso.
+
+**Qual é o tamanho máximo que uma corda de Bethe pode atingir?**
+Em princípio, o estado fundamental de um gás atrativo de N partículas é um único aglomerado com todos os N constituintes. Em experimentos fora do equilíbrio, as maiores cordas observadas são limitadas pela temperatura, pela densidade e pela perda de três corpos, com dados publicados implicando aglomerados de pelo menos seis partículas e a teoria prevendo uma cauda de cordas maiores.

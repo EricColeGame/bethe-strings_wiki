@@ -1,0 +1,128 @@
+export const metadata = {
+  title: "Bethe Strings Physics Lecture: Bound States in 1D Quantum Gases Explained",
+  description: "A complete Bethe strings physics lecture: rapidities, binding energy, string size, and how ultracold 1D Bose gases reveal these exotic bound states.",
+  category: "tutorial",
+  date: "2026-10-20",
+}
+
+Why do attractive interactions in a one-dimensional quantum gas create stable clusters instead of a collapse? That question sits at the heart of any good Bethe strings physics lecture, because the answer rewrites how physicists think about bound states in integrable systems. In this Bethe strings physics lecture walkthrough, you get the concepts, the formulas, and the experimental signatures arranged in a teaching-friendly order — so you can explain the topic or study it without drowning in notation.
+
+## What Are Bethe Strings? The Core Definition
+
+In 1931, Hans Bethe solved the one-dimensional Heisenberg spin chain by writing many-body eigenstates as superpositions of plane waves with carefully chosen momenta. Those momenta are called **rapidities** (θ), and they behave like generalized momenta for emergent quasiparticles.
+
+In a repulsive 1D gas, rapidities are real numbers. Make the interaction attractive and they turn complex: rapidities cluster together, sharing the same real part λ while sitting at evenly spaced imaginary values separated by |c̃|. Each cluster is one **Bethe string**, and its size *n* is simply the number of rapidities inside it.
+
+| Quantity | Symbol / expression | What it tells you |
+|---|---|---|
+| String size | *n* | Number of rapidities (particles) bound in the cluster |
+| Real part | λ ≡ Re(θ) | Center-of-mass momentum of the whole string |
+| Imaginary spacing | \|c̃\| | Gap between neighboring rapidities in the cluster |
+| Spatial extent | Δz_n = 2 / [\|c̃\|(n−1)] | Bond length of the bound state |
+| Binding energy | E_b,n = ℏ²c̃²n(n²−1)/(24m) | Energy recovered if the string breaks apart |
+| Center-of-mass energy | E_com,n = nℏ²λ²/(2m) | Kinetic energy of the string moving as a unit |
+
+Two consequences follow immediately. First, a string gets **tighter** as *n* grows or as the attraction strengthens, because Δz_n shrinks. Second, the true ground state of *N* attractive particles is one giant string with *N* constituents — so any *smaller* string you observe has to be created out of equilibrium.
+
+## The Interaction Regimes a Bethe Strings Physics Lecture Must Cover
+
+The Lieb-Liniger (LL) model is the canonical stage for this physics: free kinetic energy plus a contact interaction of strength c̃. The sign of c̃ decides everything.
+
+| Regime | Sign of c̃ | Rapidity structure | Physical picture |
+|---|---|---|---|
+| Non-interacting | c̃ = 0 | Real, degenerate | Ideal Bose gas / quasi-condensate |
+| Repulsive | c̃ > 0 | Real | Weakly to strongly interacting; fermionization at strong coupling (Tonks-Girardeau) |
+| Super Tonks-Girardeau | Quench to c̃ → −∞ | Complex but gas-like | Excited, metastable gaseous state |
+| Attractive, equilibrium | c̃ < 0 | Complex clusters | Giant string ground state |
+| Attractive, quenched | c̃ < 0 after a finite ramp | Mixed cluster sizes | Non-equilibrium gas of Bethe strings |
+
+That last row is the experimental sweet spot. Sweeping the interaction from repulsive, through zero, into the attractive side at a **finite rate** traps the gas in a far-from-equilibrium state populated by strings of many different sizes.
+
+## Core Formulas a Bethe Strings Physics Lecture Should Put on the Board
+
+The LL Hamiltonian is the starting point: kinetic energy for particles of mass *m*, plus a delta-function interaction term weighted by ℏ²c̃/2m. Diagonalizing it via the Bethe ansatz produces a set of rapidities that label every eigenstate.
+
+For an isolated string of size *n*, the rapidities are symmetric about the real axis:
+
+**θ_j = λ + i\|c̃\|(n+1−2j)/2**, for j = 1 … n.
+
+| Concept | Expression | Teaching note |
+|---|---|---|
+| LL Hamiltonian | Ĥ = −(ℏ²/2m)Σ∂²/∂z² + (ℏ²c̃/2m)Σδ(z_i−z_j) | Kinetic term plus contact interaction |
+| Rapidity set | θ_j = λ + i\|c̃\|(n+1−2j)/2 | Symmetric spacing along the imaginary axis |
+| String extent | Δz_n = 2/[\|c̃\|(n−1)] | Shrinks with larger *n* or stronger attraction |
+| Binding energy | E_b,n = ℏ²c̃²n(n²−1)/(24m) | Scales roughly as *n*³ |
+| Total string energy | E_n = E_com,n − E_b,n | Center-of-mass energy minus binding |
+| Tan's contact | C = c̃²G₂ | Probes local pair correlations |
+| Virial relation | C = (2mc̃/ℏ²)(U − E_V) | Connects contact to internal and potential energy |
+
+A useful sanity check for students: strings are only well defined when Δz_n is much larger than the transverse confinement length. Push the attraction too far and the description breaks down as short-range molecular loss takes over.
+
+## How Experiments Actually Detect Bethe Strings
+
+The clearest demonstration to date comes from ultracold cesium atoms loaded into an array of one-dimensional tubes, as reported in the [published Nature Communications study on probing Bethe strings in an attractive 1D Bose gas](https://www.nature.com/articles/s41467-026-76018-0). A Feshbach resonance tunes the interaction, and a controlled ramp carries the gas from the repulsive side through the non-interacting point into the attractive regime.
+
+Detection uses a two-step **rapidity measurement protocol**: first the cloud expands inside the tubes for a time t_1D, then it is released into three dimensions for t_3D. The logic is elegant — during 1D expansion the strings scatter but stay bound, so the release energy stays low. During the 3D release, confinement disappears, the strings break, and their binding energy converts into kinetic energy.
+
+| Observable | Repulsive regime | Attractive regime | Interpretation |
+|---|---|---|---|
+| Release energy in 1D (E_1D) | Matches E_3D | Plateaus at a low value | Only center-of-mass motion is measured |
+| Release energy in 3D (E_3D) | Matches E_1D | Rises well above E_1D | Binding energy dumped into kinetic energy |
+| Momentum width (FWHM) | Narrows approaching c̃ = 0 | Broadens sharply away from c̃ = 0 | Tighter binding releases a wider momentum window |
+| Tan's contact | Follows the virial relation | Modified by enhanced pair correlations | Short-range correlation probe |
+
+The gap between E_3D and E_1D is the average binding energy per particle. Because binding energy grows monotonically with string size, that gap sets a **lower bound** on the largest string present — in the reported data, at least six constituents, with hydrodynamic modeling predicting an even broader distribution.
+
+The momentum distribution tells the same story from a different angle. In the repulsive regime the distribution is effectively the rapidity distribution, and it narrows as interactions weaken. Cross into attraction and quasiparticles bind, broadening the profile — a direct consequence of the uncertainty principle acting on a string of finite bond length.
+
+## Temperature, String Size, and the Limits of the Measurement
+
+Temperature is the dial that decides how large the strings get. Higher thermal energy overwhelms the interaction energy, so large clusters become statistically unlikely. Any honest Bethe strings physics lecture should spend a few minutes on the failure modes too.
+
+| Effect | What happens | Why it matters |
+|---|---|---|
+| Thermal energy | Higher temperature suppresses large strings | Kinetic energy dominates over interaction energy |
+| Three-body loss | Tightly bound strings disappear fastest | Loss rates grow steeply with *n* and with \|c̃\| |
+| Integrability breaking | Theory overestimates large strings at strong attraction | Explains the residual data–theory gap |
+| Transverse confinement | Strings ill-defined when Δz_n approaches the tube width | Short-range molecular processes take over |
+
+Reported experiments spanned roughly 3–35 nK in 1D temperature, with the clearest binding signatures appearing at the colder end. Modeling the whole expansion with generalized hydrodynamics (GHD) reproduces the data well across the interaction range, which is itself a notable result: a hydrodynamic framework built for integrable systems quantitatively describes a finite, trapped, lossy gas.
+
+## Building Your Own Bethe Strings Physics Lecture: A Step-by-Step Plan
+
+Whether you are teaching a seminar or revising for an exam, sequencing matters more than density. Here is a structure that works.
+
+1. **Open with the puzzle.** Attractive bosons in 3D collapse; in 1D integrable systems they form stable clusters. That contrast buys you attention immediately.
+2. **Introduce the Bethe ansatz on a spin chain.** Rapidities are easier to accept when students have seen them label eigenstates before.
+3. **Draw the rapidity plane.** Real axis for repulsion, symmetric complex pairs for attraction — one picture replaces a page of algebra.
+4. **Derive the string ansatz.** Show θ_j = λ + i|c̃|(n+1−2j)/2 and let students verify the symmetry.
+5. **Do the energy budget explicitly.** Center-of-mass energy minus binding energy explains almost every measurement that follows.
+6. **Walk through the 1D-to-3D expansion.** This is the payoff: a bound state that survives one expansion and shatters in the other.
+7. **Close with open questions.** Large strings drive anomalous transport and the Kardar-Parisi-Zhang universality class, and the same mathematics appears in high-energy physics and string theory.
+
+| Segment | Suggested time | Core takeaway |
+|---|---|---|
+| Bethe ansatz basics | 8 min | Eigenstates are labeled by rapidities |
+| The rapidity plane | 7 min | Complex clusters *are* Bethe strings |
+| Energy budget | 10 min | Center-of-mass energy versus binding energy |
+| Experimental signatures | 12 min | 1D versus 3D release energies diverge |
+| Open problems | 5 min | KPZ transport, cold atoms, AdS/CFT |
+
+If you only have ten minutes, teach the rapidity plane and the two release-energy measurements. Those two ideas carry most of the conceptual weight.
+
+## FAQ
+
+**What exactly is a Bethe string in simple terms?**
+It is a cluster of particles in a one-dimensional attractive quantum gas that behaves like a single composite object. Mathematically, it is a group of complex rapidities sharing the same real part and spaced evenly along the imaginary axis.
+
+**Why do Bethe strings appear only in one-dimensional integrable systems?**
+Integrable systems lack diffractive collisions, so a bound state has no pathway to decay into lower-lying states. That protection is what allows strings to persist as stable excitations in spin chains, quantum magnets, and cold atomic gases.
+
+**What should a beginner Bethe strings physics lecture include first?**
+Start with the rapidity picture rather than the full algebraic Bethe ansatz. Once students can see real versus complex rapidities on a plane, the formulas for bond length and binding energy become bookkeeping instead of mystery.
+
+**How do experiments prove Bethe strings exist?**
+By comparing two expansion protocols. Strings survive expansion inside a one-dimensional tube but break apart when released into three dimensions, producing a measurable release-energy difference and a characteristic broadening of the momentum distribution.
+
+**Are Bethe strings useful outside cold atoms?**
+Yes. They shape anomalous transport in integrable spin chains, underlie Kardar-Parisi-Zhang superdiffusion, and appear in the integrability toolbox used in high-energy theory — which is exactly why the topic keeps earning space in modern physics curricula.

@@ -1,0 +1,120 @@
+export const metadata = {
+  title: "Pesquisa sobre cordas de Bethe explicada: estados ligados em gases quânticos 1D",
+  description: "Um guia prático para a pesquisa sobre cordas de Bethe: como esses estados ligados quânticos 1D se formam, como os laboratórios os detectam e o que as evidências mais recentes mostram.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+## Por que a pesquisa sobre cordas de Bethe de repente importa
+
+A pesquisa sobre cordas de Bethe está na interseção de três áreas que raramente dividem uma manchete: física atômica ultrafria, magnetismo quântico e teoria de altas energias. Esses estados ligados de múltiplas partículas foram previstos na década de 1930, inferidos indiretamente em ímãs e cadeias de spin, e agora são realizados como intermisturas densas fora do equilíbrio em gases quânticos unidimensionais. Entender as **Cordas de Bethe** já não é um exercício esotérico — elas influenciam como energia e spin viajam por sistemas integráveis e conectam experimentos de bancada à classe de universalidade de Kardar–Parisi–Zhang.
+
+Se você vem acompanhando as **Cordas de Bethe** na literatura e achou os diagramas de rapidezas impenetráveis, este guia é para você. Abaixo há um percurso em linguagem simples sobre o que esses objetos são, como um laboratório moderno os constrói e detecta, e quais números realmente importam quando você lê um artigo.
+
+## O que são cordas de Bethe, exatamente?
+
+Uma corda de Bethe é um estado ligado de várias partículas em um sistema quântico integrável unidimensional. No modelo de Lieb–Liniger — a descrição padrão de um gás de Bose 1D com interações de contato — os autoestados são rotulados por um conjunto de rapidezas, que se comportam como momentos generalizados para quasipartículas emergentes.
+
+No regime repulsivo, essas rapidezas são números reais. Leve a interação para o lado atrativo e elas se tornam complexas, agrupando-se em torno de uma parte real comum, com partes imaginárias espaçadas uniformemente pela força da interação. Esse agrupamento *é* a corda. Uma corda de tamanho *n* contém *n* partículas ligadas entre si, e sua extensão espacial diminui à medida que a interação se torna mais atrativa.
+
+| Propriedade | Expressão | O que isso indica |
+|---|---|---|
+| Tamanho da corda | *n* partículas | Quantos átomos estão ligados entre si |
+| Espaçamento de rapidezas | \|c̃\| entre as partes imaginárias | Definido inteiramente pela força da interação |
+| Extensão espacial | Δz_n = 2 / [\|c̃\|(*n* − 1)] | Cordas maiores são mais compactas |
+| Energia de ligação | E_b,n = ℏ²c̃²*n*(*n*² − 1) / (24*m*) | Cresce rapidamente com *n* |
+| Estado fundamental | Uma única corda gigante de *N* partículas | Cordas menores exigem preparação fora do equilíbrio |
+
+A percepção central para quem está começando na pesquisa sobre **Cordas de Bethe**: cordas menores não aparecem em equilíbrio. Se você resfriar um gás 1D atrativo e deixá-lo se estabilizar, obterá um único agrupamento gigante. Para obter uma *distribuição* de tamanhos de corda, é preciso levar o sistema para fora do equilíbrio — que é exatamente o que os experimentos recentes fazem.
+
+## Onde as cordas de Bethe aparecem na física
+
+O motivo pelo qual este tema continua reaparecendo é que a mesma matemática descreve sistemas radicalmente diferentes.
+
+| Sistema | O que os pesquisadores observam | Por que importa |
+|---|---|---|
+| Cadeias de spin quânticas | Estados ligados estáveis de múltiplos spins | Transporte anômalo de spin e energia |
+| Ímãs quânticos | Assinaturas de cordas no espalhamento de nêutrons | Explica dispersões que modelos simples não capturam |
+| Gases atômicos ultrafrios | Misturas densas de cordas de diferentes tamanhos | Ambiente de teste controlável e ajustável |
+| Teoria de altas energias | Estruturas de estados ligados em teorias de campo integráveis | Conexões com a teoria de cordas e AdS/CFT |
+
+A estabilidade notável delas vem de uma propriedade exclusiva dos sistemas integráveis: a ausência de colisões difrativas. Em um gás comum, estados ligados acabam se desfazendo em colisões. Em um sistema 1D integrável, as partículas passam umas pelas outras sem difratar, então um estado ligado não tem em que decair. É por isso que as **Cordas de Bethe** podem persistir longe do equilíbrio por tempo suficiente para serem medidas.
+
+Cordas grandes também estão implicadas no transporte superdifusivo. Trabalhos sobre cadeias de spin integráveis mostram que cordas longas definem o expoente anômalo de transporte e impulsionam o surgimento do escalonamento de Kardar–Parisi–Zhang — a mesma matemática usada para descrever interfaces em crescimento.
+
+## Como um experimento moderno cria cordas de Bethe
+
+A investigação recente mais detalhada das **Cordas de Bethe** usou átomos ultrafrios de césio confinados em um arranjo de tubos unidimensionais. A receita é elegante e vale a pena ser entendida passo a passo.
+
+1. **Comece com um condensado de Bose–Einstein.** Um condensado de Bose–Einstein de césio é preparado em uma armadilha dipolar óptica cruzada e levitado contra a gravidade com um gradiente de campo magnético.
+2. **Carregue em uma rede 1D.** Dois feixes de rede que se cruzam a 90 graus criam milhares de tubos independentes, cada um contendo cerca de 7 a 30 átomos.
+3. **Ajuste a interação.** Uma ressonância de Feshbach controla o comprimento de espalhamento, que é mapeado para a força de interação 1D.
+4. **Faça uma varredura de repulsiva para atrativa.** A interação é varrida através do ponto sem interação a uma taxa quase constante, em vez de sofrer um salto.
+5. **Sonde com uma expansão em duas etapas.** O gás primeiro se expande dentro dos tubos e depois é liberado em três dimensões.
+
+| Parâmetro | Valor típico | Papel |
+|---|---|---|
+| Átomos por tubo | 7–30 | Define o tamanho típico da corda |
+| Tubos povoados | 3.000–5.000 | Fornece estatística |
+| Temperatura 1D | 3–35 nK | Controla o tamanho máximo que as cordas podem atingir |
+| Interação inicial | ≈ +3,4 μm⁻¹ | Regime de Tonks–Girardeau moderadamente interativo |
+| Taxa de varredura | ≈ −0,038 μm⁻¹ ms⁻¹ | Lenta o suficiente para mapear para uma distribuição de cordas |
+| Espaçamento da rede | 532,2 nm | Fixado pelo comprimento de onda do laser |
+
+A escolha de projeto crucial é a taxa de varredura *finita*. Varrer devagar demais produz o agrupamento gigante de equilíbrio. Varrer rápido demais produz uma bagunça desordenada. Uma varredura moderada passa pelo ponto sem interação e deixa o gás em um estado longe do equilíbrio, povoado por **Cordas de Bethe** de muitos tamanhos diferentes.
+
+## Três maneiras de detectar uma corda de Bethe
+
+Como as cordas são objetos ligados, elas respondem ao confinamento de modo diferente das partículas livres. Essa diferença é o princípio de detecção.
+
+| Assinatura | O que é medido | O que uma corda faz |
+|---|---|---|
+| Energia de liberação | Segundo momento da nuvem em expansão em 1D vs. 3D | Permanece baixa em 1D e salta em 3D |
+| Distribuição de momento | Largura do perfil após a expansão | Alarga-se notavelmente no lado atrativo |
+| Contato de Tan | Correlações de pares de curto alcance via balanço de energia | Desloca-se à medida que a ligação altera a equação de estado |
+
+**Energia de liberação** é o sinal mais limpo. Durante a expansão dentro dos tubos, as cordas se espalham, mas permanecem intactas, então a energia de liberação 1D permanece baixa. No instante em que o confinamento transversal é desligado, os estados ligados se desfazem e sua energia de ligação se converte em energia cinética. Os experimentos veem a energia de liberação 1D formando um platô perto de *h* × 35 Hz, enquanto o valor 3D sobe em direção a *h* × 110 Hz com uma interação de −1,0 μm⁻¹. No regime repulsivo, os dois números concordam — sem estados ligados, sem discrepância.
+
+**Distribuição de momento** conta uma história complementar. Partindo de um perfil em forma de sino com cerca de *ℏ* × 6,0 μm⁻¹ de largura, a distribuição se estreita à medida que a interação se aproxima de zero, depois volta a se alargar e quase dobra de largura ao final da varredura. Um argumento simples de princípio de incerteza explica isso: uma corda fortemente ligada libera momento em uma ampla janela.
+
+**O contato de Tan** liga correlações microscópicas à termodinâmica. O contato é proporcional à probabilidade de encontrar duas partículas no mesmo ponto e pode ser extraído da energia interna e potencial do gás aprisionado. Sua dependência com a interação fornece uma verificação independente de que as **Cordas de Bethe** realmente estão se formando.
+
+## Lendo os números: tamanho da corda, ligação e perda
+
+A teoria prevê um escalonamento limpo: cordas maiores são mais compactas e mais fortemente ligadas. Com uma força de interação de −1 μm⁻¹, os números são estes.
+
+| Tamanho da corda *n* | Comprimento de ligação (μm) | Energia total de ligação (Hz, em unidades de *h*) | Ligação por partícula (nK) |
+|---|---|---|---|
+| 2 | 2,00 | ≈ 19 | ≈ 0,5 |
+| 3 | 1,00 | ≈ 76 | ≈ 1,2 |
+| 4 | 0,67 | ≈ 190 | ≈ 2,3 |
+| 6 | 0,40 | ≈ 665 | ≈ 5,3 |
+| 10 | 0,22 | ≈ 3.135 | ≈ 15,0 |
+
+Duas restrições práticas decorrem desta tabela. Primeiro, as cordas só são bem definidas quando seu comprimento de ligação é muito maior que o comprimento do oscilador transversal — caso contrário, processos moleculares de curto alcance passam a dominar e o modelo 1D deixa de valer. Segundo, cordas fortemente ligadas são frágeis de outra maneira: a recombinação de três corpos as destrói. Ajustes aos dados de perda de átomos são consistentes com um coeficiente de perda de três corpos em torno de 1,1 × 10⁻⁸ cm² s⁻¹, que se converte em um valor 3D plausível. Essa perda explica por que experimento e teoria divergem ligeiramente nas configurações mais atrativas.
+
+A temperatura importa na mesma medida. Uma temperatura 1D mais alta significa que a energia cinética domina sobre a energia de interação, o que suprime a formação de cordas grandes e achata o alargamento do momento.
+
+## Dicas práticas para acompanhar a pesquisa sobre cordas de Bethe
+
+- **Verifique a taxa de varredura primeiro.** Qualquer afirmação sobre uma distribuição de cordas depende de como a interação foi varrida. Protocolos adiabáticos e de taxa finita produzem estados qualitativamente diferentes.
+- **Distinga observáveis 1D de 3D.** Uma grande diferença entre as duas energias de liberação é a evidência isolada mais forte de estados ligados.
+- **Fique atento à temperatura.** Um resultado obtido a 3 nK e outro a 35 nK não são diretamente comparáveis; as populações de cordas diferem substancialmente.
+- **Procure comparações com a hidrodinâmica generalizada.** A GHD é atualmente o único arcabouço tratável nesse regime quântico, e a concordância ao longo de toda a faixa de interação é uma validação significativa.
+- **Trate os limites inferiores com honestidade.** Extrair um tamanho mínimo de corda a partir da energia de ligação é uma estimativa conservadora; simulações normalmente preveem uma distribuição mais ampla.
+
+Para o relatório experimental principal por trás de grande parte do que foi dito acima, consulte o [estudo da Nature Communications que investiga cordas de Bethe em um gás de Bose atrativo unidimensional](https://www.nature.com/articles/s41467-026-76018-0), que inclui os métodos completos, tabelas de parâmetros e detalhes das simulações.
+
+## Perguntas frequentes
+
+**Cordas de Bethe são a mesma coisa que sólitons?**
+Não exatamente. No limite semiclássico, as cordas convergem para sólitons brilhantes da equação de Schrödinger não linear, mas os experimentos discutidos aqui operam profundamente no regime quântico, onde essa aproximação falha. Trens de sólitons são um fenômeno semiclássico de interação fraca; cordas de Bethe são os objetos quânticos exatos.
+
+**Por que as cordas de Bethe permanecem estáveis em vez de decair?**
+Porque sistemas integráveis não têm colisões difrativas. Sem difração, um agrupamento ligado não tem canal pelo qual perder partículas para estados de menor energia, então sobrevive por muito mais tempo do que a intuição com gases comuns sugeriria.
+
+**Qual é o tamanho máximo que uma corda de Bethe pode atingir?**
+Em princípio, tão grande quanto o número de partículas: o verdadeiro estado fundamental de *N* partículas atrativas é uma única corda gigante. Na prática, temperatura finita, taxa de varredura finita e perda de três corpos limitam a distribuição observável, com as medições atuais estabelecendo um limite inferior de aproximadamente seis constituintes e simulações prevendo cordas maiores.
+
+**O que torna a pesquisa sobre cordas de Bethe digna de acompanhamento?**
+Os mesmos objetos aparecem em cadeias de spin, ímãs quânticos, gases frios e teoria de altas energias, e parecem controlar o transporte anômalo. Qualquer avanço na criação e manipulação delas alimenta diretamente várias áreas ao mesmo tempo.

@@ -1,0 +1,101 @@
+export const metadata = {
+  title: "Guia do experimento de cordas de Bethe: como os físicos sondam estados ligados quânticos",
+  description: "Um guia prático do experimento de cordas de Bethe: como gases ultrafrios unidimensionais formam estados ligados de múltiplas partículas e como os laboratórios os detectam.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+## Por que a atração nem sempre significa colapso
+
+Poucos resultados da física quântica são tão contraintuitivos quanto este: em uma dimensão, a atração não precisa terminar em colapso. Um experimento de cordas de Bethe bem projetado mostra que partículas com interação atrativa podem, em vez disso, se prender umas às outras em aglomerados estáveis de múltiplas partículas — e esses aglomerados sobrevivem justamente porque o sistema subjacente é integrável. É por isso que o experimento de cordas de Bethe se tornou uma referência para testar a integrabilidade quântica no laboratório, transformando uma previsão que remonta ao trabalho de Hans Bethe de 1931 em algo que uma câmera pode capturar.
+
+Este guia detalha como esses experimentos são construídos, o que os detectores realmente registram e como interpretar os resultados sem exagerar nas conclusões. Se você já se perguntou como uma "corda" teórica de rapidezes complexas se torna uma energia de liberação mensurável, este é o passo a passo que você procura.
+
+## O que é, de fato, uma corda de Bethe
+
+Comece pelo modelo. O hamiltoniano de Lieb-Liniger descreve bósons em uma dimensão com uma interação de contato de intensidade *c̃*. Seu termo cinético é comum; o termo de interação é uma função delta que só atua quando duas partículas ocupam o mesmo ponto. As soluções do ansatz de Bethe rotulam cada autoestado com um conjunto de **rapidezes** — momentos generalizados para quasipartículas emergentes.
+
+No regime repulsivo (*c̃* > 0), essas rapidezes são reais. Fortaleça a repulsão o bastante e o gás se fermioniza no estado de Tonks-Girardeau. Inverta o sinal, e algo estrutural muda: as rapidezes se tornam complexas, agrupando-se em torno de uma parte real compartilhada e se empilhando simetricamente ao longo do eixo imaginário, com um espaçamento definido por |*c̃*|. Esses agrupamentos são as cordas.
+
+| Regime | Interação | Estrutura de rapidezes | O que se observa |
+|---|---|---|---|
+| Quase-condensado | *c̃* → 0 | Rapidezes se aglomeram perto de zero | Distribuição de momento estreita |
+| Repulsivo (Lieb-Liniger) | *c̃* > 0 | Rapidezes reais | Fermionização em direção ao Tonks-Girardeau |
+| Super Tonks-Girardeau | Quench para *c̃* < 0 forte | Gás excitado fortemente correlacionado | Gasoso, não ligado |
+| Atrativo, varredura a taxa finita | *c̃* < 0 | Rapidezes complexas em agrupamentos verticais | Uma mistura de cordas de vários tamanhos |
+| Travessia adiabática | *c̃* < 0 | Um aglomerado gigante | Estado de Bethe gigante do estado fundamental |
+
+Duas leis de escala fazem a maior parte do trabalho explicativo em qualquer experimento de cordas de Bethe. A extensão espacial de uma corda de tamanho *n* diminui conforme 2/(|*c̃*|(*n* − 1)), então cordas maiores são mais compactas. Sua energia de ligação cresce aproximadamente como *n*(*n*² − 1), então cordas maiores também são muito mais frágeis contra perdas. Uma corda com quatro constituintes em *c̃* = −1 µm⁻¹ tem comprimento de ligação próximo de 0,67 µm e energia de ligação em torno de *k*_B* × 9 nK — números pequenos que exigem amostras muito frias e muito limpas.
+
+## Por que os físicos se importam além dos átomos frios
+
+Cordas não são uma curiosidade dos átomos frios. Elas aparecem como excitações estáveis em cadeias de spin quânticas e ímãs quânticos, onde sua estabilidade remonta à ausência de colisões difrativas em sistemas integráveis — estados ligados simplesmente não podem decair em configurações de energia mais baixa. Hoje se entende que cordas grandes moldam o transporte anômalo em cadeias de spin integráveis e impulsionam o surgimento da universalidade de Kardar-Parisi-Zhang, a mesma classe de escala que governa interfaces em crescimento.
+
+O alcance vai além. Estruturas integráveis desse tipo aparecem na teoria de altas energias e na teoria das cordas por meio da integrabilidade AdS/CFT. Uma plataforma controlável capaz de criar intermisturas densas de cordas de diferentes tamanhos é, portanto, valiosa muito além da matéria condensada.
+
+## Dentro do aparato: montando o experimento
+
+A demonstração recente mais citada usou césio ultrafrio. Um condensado de Bose-Einstein tridimensional é preparado em uma armadilha de dipolo óptico com feixes cruzados e levitado contra a gravidade por uma força magnética, depois carregado em dois feixes de rede que se cruzam a 90° no plano horizontal. O resultado são milhares de tubos unidimensionais independentes, cada um contendo um punhado de átomos.
+
+| Parâmetro | Valor típico | Por que importa |
+|---|---|---|
+| Espécie atômica | Césio (Cs) | Ressonância de Feshbach ampla para ajuste |
+| Armadilha | Feixes de dipolo cruzados, levitação magnética | Condensado 3D estável como ponto de partida |
+| Rede | Espaçamento de 532,2 nm, profundidade ~25 *E*_r | Cria cerca de 3.000–5.000 tubos isolados |
+| Confinamento transversal | *ω*⊥/2*π* ≈ 10,5 kHz | Define *a*⊥ ≈ 83 nm e impõe física 1D |
+| Confinamento longitudinal | *ω*_z*/2*π* ≈ 29,3 Hz | Define *a*_ho ≈ 1,6 µm |
+| Átomos por tubo | 7–30 | Controla a densidade que define o tamanho das cordas |
+| Temperatura 1D | 3–35 nK | Equilibra a energia cinética com a de interação |
+| Rampa de interação | ≈ −0,038 µm⁻¹ ms⁻¹ | Taxa finita cria um estado fora do equilíbrio |
+
+O movimento-chave é a varredura. Em vez de saltar diretamente para a atração, o experimento varia *c̃* de um valor moderadamente repulsivo para baixo, passando por zero e entrando no lado atrativo a uma taxa controlada. Passar pelo ponto sem interação a uma taxa finita — em vez de adiabaticamente — impede que o sistema entre em colapso em um único aglomerado gigante e, em vez disso, povoa uma ampla distribuição de tamanhos de corda. A distribuição é determinada principalmente pela temperatura inicial e pela densidade atômica em cada tubo.
+
+## Três maneiras de detectar uma corda
+
+Como as cordas são estados ligados, elas deixam impressões digitais na forma como a nuvem se expande quando o confinamento é removido. O protocolo padrão é uma liberação em duas etapas: primeiro, deixa-se o gás expandir dentro dos tubos por um tempo *t*₁D; depois, desliga-se o confinamento transversal e deixa-se a nuvem voar em 3D por *t*₃D. Durante a fase 1D, as cordas colidem, mas permanecem ligadas; durante a liberação 3D, elas se desfazem.
+
+| Observável | Como é medido | Assinatura das cordas |
+|---|---|---|
+| Energia de liberação | Segundo momento da nuvem em função de *t*₁D e *t*₃D | A energia de liberação 3D excede a 1D pela energia de ligação |
+| Distribuição de momento | Perfil longitudinal após a expansão, convertido em momento | Alargamento que cresce à medida que as interações se tornam mais atrativas |
+| Contato de Tan | Extraído da energia interna e potencial pela relação do virial | O contato escala com correlações de pares e acompanha a formação de cordas |
+
+A comparação das energias de liberação é a evidência mais clara. No regime repulsivo, as energias de liberação 1D e 3D coincidem, porque não há estados ligados a serem rompidos. No lado atrativo, elas divergem acentuadamente — o valor 1D atinge um patamar em torno de *h* × 35 Hz, enquanto o valor 3D sobe na direção de *h* × 110 Hz em *c̃* = −1,0 µm⁻¹. A diferença é a energia de ligação média, e fornece um limite inferior independente de modelo para a maior corda presente.
+
+As distribuições de momento contam uma história complementar. Em uma execução representativa, a largura total à meia altura diminui de cerca de ℏ × 6,0 µm⁻¹ no início da rampa para ℏ × 3,0 µm⁻¹ perto de interação zero, e então quase dobra em *c̃* = −2,0 µm⁻¹. O princípio da incerteza de Heisenberg explica o ressurgimento: uma corda mais compacta libera momento em uma janela mais ampla.
+
+## Temperatura, tamanho e perda
+
+A temperatura é a variável mestre. Temperatura mais alta significa que a energia cinética domina a energia de interação, então a probabilidade de montar uma corda grande cai. Isso aparece como um alargamento mais fraco da distribuição de momento em *T* mais altas.
+
+| Temperatura 1D | Probabilidade de cordas grandes | Alargamento do momento | Nota prática |
+|---|---|---|---|
+| ≈ 3 nK | Alta | Forte | Melhor regime para cordas de *n* grande |
+| ≈ 15 nK | Moderada | Moderado | Escolha comum para comparações hidrodinâmicas |
+| ≈ 35 nK | Baixa | Fraco | A energia cinética mascara o efeito |
+
+As perdas também importam. A recombinação de três corpos escala de forma acentuada com o tamanho da corda, então cordas grandes fortemente ligadas desaparecem primeiro à medida que a atração se fortalece. Ajustar curvas de perda com uma única taxa global de três corpos fornece um coeficiente próximo de 1,1 × 10⁻⁸ cm² s⁻¹, que se converte em aproximadamente 1,5 × 10⁻²⁷ cm⁶ s⁻¹ em três dimensões — consistente com medições independentes.
+
+## Dicas práticas para interpretar os resultados
+
+- **Verifique a taxa de varredura antes dos números.** Uma rampa lenta produz um único aglomerado gigante; uma rampa rápida produz uma distribuição. Quase todo tamanho de corda relatado é condicional à rampa.
+- **Confie na diferença, não no valor absoluto.** A diferença entre as energias de liberação 1D e 3D isola a energia de ligação; energias de liberação absolutas misturam o movimento do centro de massa.
+- **Trate as estimativas de tamanho como limites inferiores**, a menos que um modelo hidrodinâmico completo as sustente.
+- **Fique atento ao canal de perdas.** A discordância entre dados e simulação geralmente se concentra onde a perda de três corpos pesa.
+- **Confirme que você ainda está em 1D.** A ausência de excitação transversal em imagens de tempo de voo é o teste de consistência padrão.
+
+Para todos os detalhes experimentais, o relatório revisado por pares sobre [sondagem de cordas de Bethe em um gás de Bose atrativo unidimensional](https://www.nature.com/articles/s41467-026-76018-0) na *Nature Communications* é o melhor ponto de partida.
+
+## Perguntas frequentes
+
+**O que é uma corda de Bethe em termos simples?**
+É um aglomerado ligado de partículas em um sistema quântico unidimensional, mantido unido por interações atrativas e descrito por um empilhamento de rapidezes complexas. No limite semiclássico, as cordas convergem para os sólitons brilhantes da equação de Schrödinger não linear.
+
+**Por que as cordas precisam de uma dimensão?**
+A integrabilidade é o ingrediente que importa. Em 1D, as colisões não são difrativas, então um estado ligado não tem canal de decaimento para estados de energia mais baixa. Remova essa proteção e o aglomerado se dissolve.
+
+**Como um experimento de cordas de Bethe prova que as cordas existem?**
+Nenhuma medição isolada prova isso sozinha. A evidência vem de três sinais convergentes: uma diferença entre as energias de liberação 1D/3D igual à energia de ligação, um alargamento da distribuição de momento dependente da interação e o contato de Tan acompanhando correlações de pares de curto alcance. A concordância com a hidrodinâmica generalizada nos três é o que sustenta a conclusão.
+
+**O que limita a maior corda que se pode observar?**
+Temperatura e perda. Nuvens mais quentes raramente montam aglomerados grandes, e cordas mais compactas sofrem recombinação de três corpos mais rapidamente. Os tamanhos relatados são, portanto, estimativas conservadoras do que o sistema realmente produziu.

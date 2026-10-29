@@ -1,0 +1,101 @@
+export const metadata = {
+  title: "Guía del experimento de cuerdas de Bethe: cómo los físicos sondean estados ligados cuánticos",
+  description: "Una guía práctica del experimento de cuerdas de Bethe: cómo los gases ultrafríos unidimensionales forman estados ligados de múltiples partículas y cómo los laboratorios los detectan.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+## Por qué la atracción no siempre significa colapso
+
+Pocos resultados en la física cuántica son tan contraintuitivos como este: en una dimensión, la atracción no tiene por qué terminar en colapso. Un experimento de cuerdas de Bethe bien diseñado muestra que las partículas con interacción atractiva pueden, en cambio, unirse en grupos estables de múltiples partículas —y esos grupos sobreviven precisamente porque el sistema subyacente es integrable. Por eso el experimento de cuerdas de Bethe se ha convertido en una referencia para probar la integrabilidad cuántica en el laboratorio, convirtiendo una predicción que se remonta al trabajo de Hans Bethe de 1931 en algo que una cámara puede capturar.
+
+Esta guía desglosa cómo se construyen esos experimentos, qué registran realmente los detectores y cómo leer los resultados sin sobreinterpretarlos. Si alguna vez te has preguntado cómo una «cuerda» teórica de rapideces complejas se convierte en una energía de liberación medible, este es el recorrido que buscas.
+
+## Qué es realmente una cuerda de Bethe
+
+Empecemos por el modelo. El hamiltoniano de Lieb-Liniger describe bosones en una dimensión con una interacción de contacto de intensidad *c̃*. Su término cinético es ordinario; el término de interacción es una función delta que solo actúa cuando dos partículas ocupan el mismo punto. Las soluciones del ansatz de Bethe etiquetan cada autoestado con un conjunto de **rapideces**: momentos generalizados para cuasipartículas emergentes.
+
+En el régimen repulsivo (*c̃* > 0), esas rapideces son reales. Si se aumenta la repulsión lo suficiente, el gas se fermioniza y pasa al estado de Tonks-Girardeau. Si se cambia el signo, algo cambia estructuralmente: las rapideces se vuelven complejas, se agrupan en torno a una parte real compartida y se apilan simétricamente a lo largo del eje imaginario con un espaciado determinado por |*c̃*|. Esos grupos son las cuerdas.
+
+| Régimen | Interacción | Estructura de rapideces | Qué se observa |
+|---|---|---|---|
+| Cuasicondensado | *c̃* → 0 | Las rapideces se agrupan cerca de cero | Distribución de momento estrecha |
+| Repulsivo (Lieb-Liniger) | *c̃* > 0 | Rapideces reales | Fermionización hacia Tonks-Girardeau |
+| Super Tonks-Girardeau | Transición súbita a *c̃* < 0 fuerte | Gas excitado fuertemente correlacionado | Gaseoso, no ligado |
+| Atractivo, barrido a velocidad finita | *c̃* < 0 | Rapideces complejas en grupos verticales | Una mezcla de cuerdas de muchos tamaños |
+| Cruce adiabático | *c̃* < 0 | Un único grupo gigante | Estado de Bethe gigante del estado fundamental |
+
+Dos leyes de escala hacen la mayor parte del trabajo explicativo en cualquier experimento de cuerdas de Bethe. La extensión espacial de una cuerda de tamaño *n* se reduce como 2/(|*c̃*|(*n* − 1)), así que las cuerdas más grandes son más compactas. Su energía de ligadura crece aproximadamente como *n*(*n*² − 1), así que las cuerdas más grandes también son mucho más frágiles frente a las pérdidas. Una cuerda con cuatro constituyentes a *c̃* = −1 µm⁻¹ tiene una longitud de enlace cercana a 0,67 µm y una energía de ligadura de alrededor de *k*_B* × 9 nK —cifras pequeñas que exigen muestras muy frías y muy limpias.
+
+## Por qué a los físicos les importa más allá de los átomos fríos
+
+Las cuerdas no son una curiosidad de los átomos fríos. Aparecen como excitaciones estables en cadenas de espín cuánticas y en imanes cuánticos, donde su estabilidad se debe a la ausencia de colisiones difractivas en sistemas integrables: los estados ligados simplemente no pueden decaer en configuraciones de menor energía. Ahora se entiende que las cuerdas grandes moldean el transporte anómalo en cadenas de espín integrables e impulsan la aparición de la universalidad de Kardar-Parisi-Zhang, la misma clase de escala que gobierna las interfaces en crecimiento.
+
+Su alcance va más allá. Estructuras integrables de este tipo aparecen en la teoría de altas energías y en la teoría de cuerdas a través de la integrabilidad AdS/CFT. Por tanto, una plataforma controlable capaz de crear mezclas densas de cuerdas de diferentes tamaños es valiosa mucho más allá de la materia condensada.
+
+## Dentro del aparato: cómo se construye el experimento
+
+La demostración reciente más citada utilizó cesio ultrafrío. Se prepara un condensado de Bose-Einstein tridimensional en una trampa de dipolo óptico de haces cruzados y se levita contra la gravedad mediante una fuerza magnética; después, se carga en dos haces de red que se cruzan a 90° en el plano horizontal. El resultado son miles de tubos unidimensionales independientes, cada uno con un puñado de átomos.
+
+| Parámetro | Valor típico | Por qué importa |
+|---|---|---|
+| Especie atómica | Cesio (Cs) | Resonancia de Feshbach amplia para ajustar |
+| Trampa | Haces dipolares cruzados, levitación magnética | Condensado 3D estable como punto de partida |
+| Red | Espaciado de 532,2 nm, profundidad ~25 *E*_r | Crea aproximadamente 3.000–5.000 tubos aislados |
+| Confinamiento transversal | *ω*⊥/2*π* ≈ 10,5 kHz | Fija *a*⊥ ≈ 83 nm e impone la física 1D |
+| Confinamiento longitudinal | *ω*_z*/2*π* ≈ 29,3 Hz | Fija *a*_ho ≈ 1,6 µm |
+| Átomos por tubo | 7–30 | Controla la densidad que determina el tamaño de las cuerdas |
+| Temperatura 1D | 3–35 nK | Equilibra la energía cinética y la de interacción |
+| Rampa de interacción | ≈ −0,038 µm⁻¹ ms⁻¹ | Una velocidad finita crea un estado alejado del equilibrio |
+
+La clave está en el barrido. En lugar de saltar directamente a la atracción, el experimento hace un barrido de *c̃* desde un valor moderadamente repulsivo, pasando por cero, hasta el lado atractivo a una velocidad controlada. Pasar por el punto sin interacción a velocidad finita —en lugar de adiabáticamente— impide que el sistema colapse en un único grupo gigante y, en cambio, puebla una amplia distribución de tamaños de cuerda. La distribución está determinada principalmente por la temperatura inicial y la densidad atómica en cada tubo.
+
+## Tres formas de detectar una cuerda
+
+Como las cuerdas son estados ligados, dejan huellas en cómo se expande la nube una vez que se elimina el confinamiento. El protocolo estándar es una liberación en dos pasos: primero se deja expandir el gas dentro de los tubos durante un tiempo *t*₁D y luego se apaga el confinamiento transversal para dejarlo volar en 3D durante *t*₃D. Durante la fase 1D, las cuerdas se dispersan pero permanecen ligadas; durante la liberación 3D, se deshacen.
+
+| Observable | Cómo se mide | Firma de las cuerdas |
+|---|---|---|
+| Energía de liberación | Segundo momento de la nube frente a *t*₁D y *t*₃D | La energía de liberación 3D supera a la 1D en la energía de ligadura |
+| Distribución de momento | Perfil longitudinal tras la expansión, convertido a momento | Ensanchamiento que crece a medida que las interacciones se vuelven más atractivas |
+| Contacto de Tan | Extraído de la energía interna y potencial mediante la relación del virial | El contacto escala con las correlaciones de pares y sigue la formación de cuerdas |
+
+La comparación de energías de liberación es la evidencia más clara. En el régimen repulsivo, las energías de liberación 1D y 3D coinciden, porque no hay estados ligados que romper. En el lado atractivo divergen bruscamente: el valor 1D se estabiliza en torno a *h* × 35 Hz, mientras que el valor 3D asciende hacia *h* × 110 Hz a *c̃* = −1,0 µm⁻¹. La diferencia es la energía de ligadura promedio y proporciona una cota inferior independiente del modelo para la cuerda más grande presente.
+
+Las distribuciones de momento cuentan una historia complementaria. En una ejecución representativa, el ancho total a mitad de altura se estrecha desde aproximadamente ℏ × 6,0 µm⁻¹ al inicio de la rampa hasta ℏ × 3,0 µm⁻¹ cerca de interacción nula, y luego casi se duplica para *c̃* = −2,0 µm⁻¹. El principio de incertidumbre de Heisenberg explica el rebote: una cuerda más compacta libera momento en una ventana más amplia.
+
+## Temperatura, tamaño y pérdidas
+
+La temperatura es la variable maestra. Una temperatura más alta implica que la energía cinética domina sobre la energía de interacción, por lo que disminuye la probabilidad de ensamblar una cuerda grande. Eso se manifiesta como un menor ensanchamiento de la distribución de momento a mayor *T*.
+
+| Temperatura 1D | Probabilidad de cuerdas grandes | Ensanchamiento del momento | Nota práctica |
+|---|---|---|---|
+| ≈ 3 nK | Alta | Fuerte | Mejor régimen para cuerdas de *n* grande |
+| ≈ 15 nK | Moderada | Moderado | Opción habitual para comparaciones hidrodinámicas |
+| ≈ 35 nK | Baja | Débil | La energía cinética diluye el efecto |
+
+Las pérdidas también importan. La recombinación de tres cuerpos escala abruptamente con el tamaño de la cuerda, así que las cuerdas grandes fuertemente ligadas desaparecen primero a medida que se intensifica la atracción. Ajustar las curvas de pérdida con una única tasa global de tres cuerpos da un coeficiente cercano a 1,1 × 10⁻⁸ cm² s⁻¹, que se convierte en aproximadamente 1,5 × 10⁻²⁷ cm⁶ s⁻¹ en tres dimensiones, en consonancia con mediciones independientes.
+
+## Consejos prácticos para leer los resultados
+
+- **Comprueba la velocidad del barrido antes que las cifras.** Una rampa lenta produce un único grupo gigante; una rampa rápida produce una distribución. Casi todos los tamaños de cuerda reportados dependen de la rampa.
+- **Confía en la diferencia, no en el valor absoluto.** La brecha entre las energías de liberación 1D y 3D aísla la energía de ligadura; las energías de liberación absolutas mezclan el movimiento del centro de masa.
+- **Trata las estimaciones de tamaño como cotas inferiores** salvo que las respalde un modelo hidrodinámico completo.
+- **Vigila el canal de pérdidas.** Las discrepancias entre datos y simulación suelen concentrarse donde afectan las pérdidas de tres cuerpos.
+- **Confirma que sigues en 1D.** La ausencia de excitación transversal en las imágenes de tiempo de vuelo es la verificación básica habitual.
+
+Para conocer todos los detalles experimentales, el informe revisado por pares sobre [cómo sondear cuerdas de Bethe en un gas de Bose unidimensional atractivo](https://www.nature.com/articles/s41467-026-76018-0) en *Nature Communications* es el mejor punto de partida.
+
+## Preguntas frecuentes
+
+**¿Qué es una cuerda de Bethe en términos sencillos?**
+Es un grupo ligado de partículas en un sistema cuántico unidimensional, mantenido unido por interacciones atractivas y descrito por una pila de rapideces complejas. En el límite semiclásico, las cuerdas convergen a los solitones brillantes de la ecuación de Schrödinger no lineal.
+
+**¿Por qué las cuerdas necesitan una dimensión?**
+La integrabilidad es el ingrediente que importa. En 1D, las colisiones no son difractivas, así que un estado ligado no tiene canal de decaimiento hacia estados de menor energía. Si se elimina esa protección, el grupo se disuelve.
+
+**¿Cómo demuestra un experimento de cuerdas de Bethe que las cuerdas existen?**
+Ninguna medición por sí sola lo logra. La evidencia proviene de tres señales convergentes: una discrepancia entre las energías de liberación 1D y 3D igual a la energía de ligadura, un ensanchamiento de la distribución de momento que depende de la interacción y un contacto de Tan que sigue las correlaciones de pares a corta distancia. La concordancia con la hidrodinámica generalizada en las tres es lo que sustenta la conclusión.
+
+**¿Qué limita la cuerda más grande que se puede observar?**
+La temperatura y las pérdidas. Las nubes más calientes rara vez forman grupos grandes, y las cuerdas más compactas sufren recombinación de tres cuerpos más rápido. Por tanto, los tamaños reportados son estimaciones conservadoras de lo que el sistema produjo realmente.

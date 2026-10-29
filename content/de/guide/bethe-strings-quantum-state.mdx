@@ -1,0 +1,126 @@
+export const metadata = {
+  title: "Bethe-Strings-Quantenzustand erklärt: Gebundene Zustände in eindimensionalen Quantengasen",
+  description: "Ein praktischer Leitfaden zum Bethe-Strings-Quantenzustand: wie gebundene Zustände in attraktiven eindimensionalen Bose-Gasen entstehen, wie Labore sie nachweisen und warum sie wichtig sind.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+Stellen Sie sich ein Gas aus Atomen vor, die sich gegenseitig anziehen und in eine so enge Röhre gezwängt sind, dass sie sich nur geradlinig bewegen können. Die klassische Intuition sagt, dass es zu einem dichten Klumpen kollabieren sollte. Stattdessen organisieren sich die Atome unter den richtigen Bedingungen zu stabilen Clustern aus zwei, drei, zehn oder mehr Teilchen — eine Anordnung, die Physiker als **Bethe-Strings-Quantenzustand** bezeichnen. Dieser Name umfasst eine Familie von Mehrteilchen-Bindungszuständen, die erstmals 1931 von Hans Bethe vorhergesagt wurden, und der **Bethe-Strings-Quantenzustand** ist wichtig, weil er den anomalen Transport in Quantenspin-Ketten bestimmt, in Experimenten mit ultrakalten Atomen auftritt und die Laborphysik der kondensierten Materie mit der Stringtheorie verbindet.
+
+Dieser Leitfaden führt durch die Frage, was der Zustand tatsächlich ist, wie Experimentatoren ihn erzeugen und nachweisen, welche Messungen als Beleg gelten und wie man die Literatur liest, ohne sich in der Mathematik zu verlieren.
+
+## Was ist der Bethe-Strings-Quantenzustand?
+
+Die natürliche Heimat der Bethe-Strings ist das Lieb-Liniger-Modell: ein eindimensionales Gas aus Bosonen mit einem kinetischen Energie-Term und einer Kontaktwechselwirkung der Stärke **c̃**. Wenn die Wechselwirkung abstoßend ist (c̃ > 0), lassen sich die Eigenzustände des Modells durch einen Satz von **Rapiditäten** kennzeichnen — verallgemeinerte Impulse stabiler Quasiteilchen — und diese Rapiditäten sind rein reelle Zahlen.
+
+Kehrt man das Vorzeichen ins Anziehende um (c̃ < 0), werden die Rapiditäten komplex. Sie ordnen sich zu vertikalen Clustern an, die denselben Realteil λ teilen und entlang der imaginären Achse in Abständen von abs(c̃) symmetrisch verteilt sind. Jeder Cluster ist ein Bethe-String, und die Anzahl der Rapiditäten darin ist die Größe *n* des Strings. Ein String der Größe *n* verhält sich wie ein einzelnes zusammengesetztes Objekt mit eigenem Schwerpunktimpuls und eigener Bindungsenergie.
+
+| Symbol | Ausdruck | Was es beschreibt |
+|---|---|---|
+| n | integer ≥ 2 | Anzahl der im String gebundenen Teilchen |
+| θ_j | λ + i·abs(c̃)(n + 1 − 2j)/2 | Rapiditäten der Bestandteile, entlang der imaginären Achse angeordnet |
+| λ | Re(θ) | Gemeinsamer Realteil; legt den Schwerpunktimpuls fest |
+| Δz_n | 2 / [abs(c̃)(n − 1)] | Räumliche Ausdehnung (Bindungslänge) des Clusters |
+| E_com | nℏ²λ² / (2m) | Kinetische Schwerpunktenergie |
+| E_b,n | ℏ²c̃²n(n² − 1) / (24m) | Bindungsenergie, die den String zusammenhält |
+| E_n | E_com − E_b,n | Gesamtenergie des Strings |
+
+Aus diesen Formeln folgen unmittelbar zwei Konsequenzen. Erstens sind größere Strings **enger**: Die Bindungslänge schrumpft ungefähr wie 1/n. Zweitens sind größere Strings **stärker gebunden**, da die Bindungsenergie steil mit n skaliert. Ein String ist nur dann physikalisch wohldefiniert, wenn seine Bindungslänge komfortabel größer als die transversale Einschlusslänge bleibt; bei kürzeren Abständen übernimmt der kurzreichweitige Molekülverlust, und das eindimensionale Modell beschreibt die Realität nicht mehr.
+
+## Warum der Bethe-Strings-Quantenzustand wichtig ist
+
+Gebundene Zustände zerfallen normalerweise. In einem integrablen System können sie das weitgehend nicht, weil der integrablen Dynamik die diffraktiven Stöße fehlen, die einen Cluster in niedriger liegende Konfigurationen streuen würden. Diese Stabilität macht den Bethe-Strings-Quantenzustand zu einem dauerhaften Merkmal der Dynamik statt zu einem vorübergehenden Artefakt.
+
+Die Konsequenzen reichen weit über eindimensionale Bose-Gase hinaus:
+
+- **Anomaler Transport.** Man versteht heute, dass große Strings den Transport in integrablen Spin-Ketten steuern, einschließlich der Entstehung von Kardar-Parisi-Zhang-(KPZ-)Superdiffusion.
+- **Quantenmagnete.** String-Anregungen wurden experimentell in magnetischen Verbindungen beobachtet, nicht nur auf dem Papier vorhergesagt.
+- **Kalte atomare Gase.** Röhren aus ultrakalten Atomen bieten die sauberste und am besten abstimmbare Realisierung, die verfügbar ist.
+- **Hochenergietheorie.** Bethe-String-Strukturen tauchen im Integrabilitäts-Werkzeugkasten auf, mit dem Eichtheorien und die Stringtheorie untersucht werden.
+
+| Plattform | Was beobachtet wird | Warum es wichtig ist |
+|---|---|---|
+| Ultrakaltes 1D-Bose-Gas | Gebundene Cluster einstellbarer Größe | Direkte Kontrolle über Wechselwirkungsstärke und Temperatur |
+| Quanten-Spin-Ketten | String-Anregungen in der Spektroskopie | Erklärt anomalen Spin-Transport |
+| Quantenmagnete | Dispersionen von Vielteilchen-Strings | Verbindet Theorie mit realen Materialien |
+| Eich-/Stringtheorie | Integrable String-Lösungen | Gemeinsame mathematische Struktur über Felder hinweg |
+
+## Wie Physiker Bethe-Strings erzeugen und nachweisen
+
+Der Grundzustand eines anziehenden Gases aus N Teilchen ist ein einziger riesiger Cluster, der alle N Bestandteile enthält — kein nützlicher Ausgangspunkt, wenn man eine *Mischung* von Größen möchte. Um Strings vieler unterschiedlicher Längen zu bevölkern, verwenden Labore einen Sweep mit endlicher Rate. Sie beginnen im abstoßenden Regime und verändern die Wechselwirkung mit einer Rampe durch den nichtwechselwirkenden Punkt auf die anziehende Seite, schnell genug, dass das System dem Grundzustand nie folgt. Das Ergebnis ist ein Gas fern vom Gleichgewicht, das Strings vieler Größen enthält, wobei die Verteilung hauptsächlich durch Anfangstemperatur und -dichte festgelegt wird.
+
+Ein repräsentatives Experiment verwendet Cäsiumatome. Ein Bose-Einstein-Kondensat wird in zwei gekreuzte Gitterstrahlen geladen, wodurch Tausende unabhängige eindimensionale Röhren entstehen. Eine Feshbach-Resonanz stimmt die Wechselwirkungsstärke ab, und eine kontrollierte Rampe führt das Gas von c̃ ≈ +3,4 μm⁻¹ durch null auf etwa −0,038 μm⁻¹ pro Millisekunde.
+
+| Parameter | Typischer Wert |
+|---|---|
+| Atomart | Cäsium (Cs) |
+| Einschluss | Zwei unter 90° gekreuzte Gitterstrahlen, Abstand ≈ 532 nm |
+| Bevölkerte Röhren | 3.000–5.000 |
+| Atome pro Röhre | 7–30 |
+| Startwechselwirkung | c̃ ≈ +3,4 μm⁻¹ (moderates Tonks-Girardeau-Regime) |
+| Rampenrate | ≈ −0,038 μm⁻¹ ms⁻¹ |
+| 1D-Temperatur | 3–35 nK |
+
+Der Nachweis beruht auf einem zweistufigen Expansionsprotokoll. Zuerst expandiert das Gas für eine Zeit t₁D im Inneren der Röhren und verdünnt sich, bis die Wechselwirkungen vernachlässigbar sind. Dann wird der transversale Einschluss abgeschaltet, und die Wolke expandiert für t₃D frei in 3D. Der Vergleich der beiden Stufen ist der eigentliche Kniff: Gebundene Zustände überstehen die Expansion in der Röhre, brechen aber bei der 3D-Freisetzung auseinander, wobei Bindungsenergie in kinetische Energie umgewandelt wird.
+
+## Die Belege lesen: Drei Signaturen
+
+**Freisetzungsenergie.** Im abstoßenden Regime stimmen die 1D- und 3D-Freisetzungsenergien überein — es gibt keine gebundenen Zustände, die aufbrechen könnten. Im anziehenden Regime spalten sie sich deutlich auf: Der 1D-Wert erreicht ein Plateau, während der 3D-Wert ansteigt, weil die Bindungsenergie erst freigesetzt wird, wenn die Strings auseinandergerissen werden. Aus der Größe dieser Lücke können Experimentatoren eine untere Schranke für die größten vorhandenen Strings ableiten; in veröffentlichten Daten wird sie auf n ≥ 6 geschätzt.
+
+**Impulsverteilung.** Wenn sich die Wechselwirkung von der abstoßenden Seite her null nähert, verengt sich das Impulsprofil. Nach Überschreiten von null verbreitert es sich wieder und verdoppelt sich nahezu in der Breite, bis c̃ −2 μm⁻¹ erreicht. Ein String mit Bindungslänge Δz setzt Impuls über ein Fenster der Größenordnung 1/(2Δz) frei; daher erzeugen engere, größere Strings breitere Profile.
+
+**Tan-Kontakt.** Bethe-Strings verändern kurzreichweitige Paarkorrelationen stark, und der Tan-Kontakt — proportional zu c̃² mal der fallenintegrierten Paarkorrelationsfunktion — folgt dieser Änderung. Eine Virialtheorem-Relation verbindet den Kontakt mit innerer und potenzieller Energie, und diese Relation bleibt in Nichtgleichgewichtszuständen erhalten, die durch verallgemeinerte Hydrodynamik beschrieben werden.
+
+| Beobachtbare Größe | Abstoßendes Regime | Anziehendes Regime | Interpretation |
+|---|---|---|---|
+| 1D- vs. 3D-Freisetzungsenergie | Gleich | 1D ≈ 35 Hz vs. 3D ≈ 110 Hz (in Einheiten von h) | Bindungsenergie, die beim 3D-Aufbrechen freigesetzt wird |
+| Impuls-Halbwertsbreite (FWHM) | Verengt sich zu c̃ = 0 hin | Verbreitert sich um ~2× bis c̃ = −2 μm⁻¹ | Unschärfeprinzip-Verbreiterung durch die Bindungslänge |
+| Tan-Kontakt | Folgt der Gleichgewichts-Virialrelation | Durch verstärkte Paarkorrelationen modifiziert | Signatur kurzreichweitiger Korrelationen |
+| Atomverlust | Vernachlässigbar | Wächst mit der Anziehung | Dreikörperverlust; Brechung der Integrabilität |
+
+Die Temperatur ist der wichtigste Regler für die Stringgröße. Eine höhere Temperatur bedeutet, dass die kinetische Energie die Wechselwirkungsenergie dominiert, sodass große Cluster weniger wahrscheinlich werden und die mittlere Bindungsenergie pro Teilchen sinkt. Die Dichte wirkt in die entgegengesetzte Richtung: dichtere Röhren begünstigen größere Strings.
+
+## Bethe-Strings im Vergleich zu anderen 1D-Quantenzuständen
+
+Es hilft, den Bethe-Strings-Quantenzustand auf der Landkarte der eindimensionalen Phasen zu verorten, weil mehrere benachbarte Regime leicht mit ihm zu verwechseln sind.
+
+| Zustand | Wechselwirkung | Rapiditätsstruktur | Physikalisches Bild |
+|---|---|---|---|
+| Quasikondensat | Schwach abstoßend | Reell, dicht gepackt | Kohärentes, schwach wechselwirkendes Gas |
+| Tonks-Girardeau (TG) | Stark abstoßend | Reell | Bosonen fermionisieren; hartkernartiges Verhalten |
+| Super Tonks-Girardeau (sTG) | Quench zu starker Anziehung | Komplex | Angeregt, gasartig — kollabiert nicht |
+| Riesen-Bethe-Zustand | Adiabatischer Sweep von + nach − | Ein Cluster aus N | Grundzustand des anziehenden Gases |
+| Bethe-Strings (Nichtgleichgewicht) | Sweep mit endlicher Rate durch null | Mehrere Cluster unterschiedlicher n | Nichtgleichgewichts-Mischung |
+
+Der entscheidende Unterschied: Ein **adiabatischer** Sweep liefert einen einzigen riesigen Cluster, während ein **Sweep mit endlicher Rate** eine Verteilung kleinerer Strings ergibt. Wenn Sie eine dichte Durchmischung von Größen wünschen, ist die Sweep-Rate kein Detail — sie ist der Mechanismus.
+
+## Praktische Tipps für die Arbeit mit dieser Physik
+
+- **Trennen Sie Rapidität und Impuls.** Im abstoßenden Regime lässt sich die Impulsverteilung nach der Expansion in der Röhre sauber auf die Rapiditätsverteilung abbilden. Im anziehenden Regime bricht diese Abbildung zusammen, und wenn Sie beide als austauschbar behandeln, werden Sie in die Irre geführt.
+- **Nutzen Sie die verallgemeinerte Hydrodynamik (GHD) für die Dynamik.** Sobald das Gas weit vom Gleichgewicht entfernt ist, ist die GHD das praktische theoretische Arbeitspferd; sie reproduziert Freisetzungsenergien, Impulsprofile und Kontaktmessungen über den gesamten Wechselwirkungsbereich.
+- **Achten Sie auf Dreikörperverlust.** Er ist der dominierende Prozess, der die Integrabilität bricht. Auf der abstoßenden Seite ist er vernachlässigbar, wird aber mit enger werdenden Strings signifikant, und er entfernt bevorzugt die größten Strings — was eine kleinere als die tatsächliche Stringverteilung vortäuschen kann.
+- **Prüfen Sie den transversalen Einschluss.** Strings sind nur wohldefiniert, wenn die Bindungslänge die transversale Oszillatorlänge deutlich übersteigt.
+- **Behandeln Sie die Temperatur als Parameter erster Klasse.** Eine Änderung der angenommenen Anfangstemperatur um ±10 % verschiebt die vorhergesagten Profile in der Nähe des nichtwechselwirkenden Punkts merklich.
+
+| Fallstrick | Symptom | Lösung |
+|---|---|---|
+| Annahme Rapidität = Impuls | Inkonsistente Breiten auf der anziehenden Seite | Abbildung auf c̃ > 0 beschränken |
+| Dreikörperverlust ignorieren | Daten fallen bei starker Anziehung unter die Theorie | Verlust in die Modellanpassung einbeziehen |
+| Verwendung eines Anfangszustandsmodells mit zwei Parametern | Schlechte Anpassung bei höherer Temperatur | Dichte- und Temperaturschätzung verfeinern |
+| Röhre-zu-Röhre-Variation übersehen | Stringgrößen wirken inkonsistent | Über die Verteilung der Röhrenpopulation mitteln |
+
+Die ursprüngliche experimentelle und theoretische Abhandlung, veröffentlicht in [Nature Communications zur Untersuchung von Bethe-Strings in einem attraktiven eindimensionalen Bose-Gas](https://www.nature.com/articles/s41467-026-76018-0), bleibt die vollständigste Darstellung des Messprotokolls, des GHD-Vergleichs und der Verlustanalyse.
+
+## FAQ
+
+**Was genau ist der Bethe-Strings-Quantenzustand?**
+Er ist ein Zustand eines eindimensionalen Quantengases, in dem Teilchen zu stabilen Mehrteilchen-Clustern binden. Jeder Cluster entspricht einer Gruppe komplexer Rapiditäten mit gemeinsamem Realteil, und der Cluster verhält sich wie ein zusammengesetztes Quasiteilchen mit eigenem Impuls und eigener Bindungsenergie.
+
+**Sind Bethe-Strings echte Teilchen?**
+Nein. Sie sind emergente gebundene Zustände, die aus den zugrunde liegenden Teilchen aufgebaut sind. Real ist die messbare Konsequenz: Die Lücke in der Freisetzungsenergie, die verbreiterte Impulsverteilung und die modifizierten Paarkorrelationen spiegeln alle die Anwesenheit dieser Cluster wider.
+
+**Warum bilden sich Bethe-Strings nur in einer Dimension?**
+In drei Dimensionen treiben anziehende Wechselwirkungen ein Gas typischerweise zum Kollaps. In einer Dimension unterdrückt die Integrabilität die diffraktiven Stöße, die einen Cluster zerfallen lassen würden, sodass anziehende Wechselwirkungen stabile gebundene Zustände statt eines Kollapses erzeugen.
+
+**Wie groß kann ein Bethe-String werden?**
+Im Prinzip ist der Grundzustand eines anziehenden Gases aus N Teilchen ein einzelner Cluster mit allen N Bestandteilen. In Nichtgleichgewichtsexperimenten sind die größten beobachteten Strings durch Temperatur, Dichte und Dreikörperverlust begrenzt; veröffentlichte Daten legen Cluster mit mindestens sechs Teilchen nahe, und die Theorie sagt einen Ausläufer größerer Cluster voraus.

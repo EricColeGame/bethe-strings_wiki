@@ -1,0 +1,105 @@
+export const metadata = {
+  title: "Cuerdas de Bethe explicadas: estados ligados en materia cuántica unidimensional",
+  description: "Las cuerdas de Bethe explicadas para lectores curiosos: cómo se forman los estados ligados de múltiples partículas en sistemas cuánticos unidimensionales y cómo los físicos los detectan en el laboratorio.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+## ¿Qué son las cuerdas de Bethe?
+
+Algunos de los objetos más llamativos de la física cuántica no son partículas en absoluto: son disposiciones de partículas que se niegan a separarse. **Cuerdas de Bethe explicadas** en una frase: son grupos de partículas unidas entre sí en un sistema cuántico unidimensional por interacciones atractivas, mantenidas estables por la matemática especial de la integrabilidad. Si alguna vez te has preguntado cómo un gas de átomos puede comportarse como un conjunto de moléculas anidadas sin formar jamás una molécula real, esta es la respuesta.
+
+El concepto no es nuevo. Hans Bethe introdujo el marco subyacente en 1931 mientras estudiaba metales, y el "ansatz de Bethe" que desarrolló sigue siendo hoy el ancla del campo. Lo que *sí* es nuevo es que los físicos ahora pueden crear y controlar las condiciones en las que se forman las cuerdas de Bethe, y después medir sus firmas en el laboratorio. Ese cambio —de curiosidad matemática a objeto medible— es la razón por la que **cuerdas de Bethe explicadas** adecuadamente se ha convertido en un tema de investigación experimental activa en lugar de una nota histórica al pie de página.
+
+## La anatomía de una cuerda de Bethe
+
+Para entender cómo funcionan las cuerdas de Bethe, necesitas una idea: la **rapidez**. En un sistema unidimensional integrable, las partículas se describen mejor no por el momento ordinario sino por rapideces: momentos generalizados asignados a cuasipartículas emergentes que se dispersan sin perder nunca su identidad.
+
+En un gas repulsivo, las rapideces son números reales. Lleva la interacción al lado atractivo y se vuelven complejas, adquiriendo partes imaginarias. Las rapideces se organizan entonces en grupos verticales que comparten la misma parte real, espaciados uniformemente a lo largo del eje imaginario por una cantidad determinada por la fuerza de la interacción. Cada grupo es una cuerda de Bethe.
+
+| Régimen de interacción | Signo del acoplamiento | Estructura de rapideces | Resultado físico |
+|---|---|---|---|
+| No interactuante | Cero | Reales, distribuidas uniformemente | Cuasi-condensado |
+| De débilmente a fuertemente repulsivo | Positivo | Reales | Fermionización gradual hacia el límite de Tonks-Girardeau |
+| Quench a atracción fuerte | Negativo | Complejas, tipo gas | Estado excitado de super Tonks-Girardeau |
+| Atractivo, barrido a tasa finita | Negativo | Complejas, agrupadas | Una mezcla de cuerdas de Bethe de muchos tamaños |
+| Atractivo, estado fundamental adiabático | Negativo | Un grupo gigante | Un único estado ligado que contiene todas las partículas |
+
+Dos números describen cualquier cuerda de tamaño *n*. Su extensión espacial se reduce como 2/(|c|(n−1)), por lo que las cuerdas más grandes son más compactas. Su energía de ligadura crece aproximadamente con n², lo que significa que una cuerda larga está mucho más profundamente ligada que la suma de sus primas cortas. El movimiento del centro de masa añade un término cinético separado, que es la razón por la que los experimentalistas pueden distinguir el desplazamiento de una cuerda de su pegamento interno.
+
+| Tamaño de cuerda *n* | Longitud de enlace en |c| = 1 μm⁻¹ | Ligadura relativa por partícula (n²−1) |
+|---|---|---|
+| 2 | 2.00 μm | 3 |
+| 4 | 0.67 μm | 15 |
+| 6 | 0.40 μm | 35 |
+| 10 | 0.22 μm | 99 |
+
+## Dónde aparecen las cuerdas de Bethe
+
+Las cuerdas de Bethe no se limitan a los átomos fríos. Aparecen siempre que un sistema es unidimensional e integrable, es decir, que sus partículas se atraviesan entre sí de una manera que preserva sus etiquetas cuánticas. Esta ausencia de colisiones difractivas es precisamente lo que impide que un estado ligado decaiga en configuraciones de menor energía.
+
+| Plataforma | Ejemplo | Por qué importa |
+|---|---|---|
+| Gas de Bose 1D ultrafrío | Átomos de cesio en tubos de red óptica | Se pueden realizar mezclas densas y sondearlas mediante observables globales |
+| Cadenas de espín cuánticas | Imanes de tipo Heisenberg | Las cuerdas grandes impulsan el transporte anómalo de espín |
+| Imanes cuánticos | SrCo₂V₂O₈, estudiado con espectroscopía de terahercios y dispersión de neutrones | Estados de dos y tres cuerdas identificados espectroscópicamente; dispersiones resueltas en estudios posteriores con neutrones |
+| Teoría de alta energía | Estructuras integrables en la dualidad gauge/cuerda | Los métodos del ansatz de Bethe resuelven modelos por lo demás intratables |
+| Límite semiclásico | Solitones brillantes de la ecuación de Schrödinger no lineal | Las cuerdas convergen en solitones y trenes de solitones |
+
+Esa última fila es el puente intuitivo para la mayoría de la gente. En el régimen semiclásico, una cuerda de Bethe se parece a un solitón brillante: un paquete de ondas de materia autoatrapado. Los trenes de solitones se han producido en gases de Bose atractivos durante años, pero solo sobreviven con interacciones débiles. Las cuerdas de Bethe son la versión totalmente cuántica, y persisten donde los solitones colapsarían.
+
+## Cómo detectan los físicos las cuerdas de Bethe
+
+La demostración reciente más clara utilizó átomos de cesio con interacción atractiva confinados en una matriz de tubos unidimensionales, con aproximadamente de 7 a 30 átomos por tubo en miles de tubos. Partiendo de un gas repulsivo, el equipo barrió la fuerza de la interacción a través de cero y hacia el régimen atractivo a una tasa finita: lo bastante rápida para aterrizar en un estado lejos del equilibrio, lo bastante lenta para evitar un colapso violento.
+
+Ese barrido produce una mezcla densa de cuerdas en lugar de un único estado ligado gigante. La distribución de tamaños está determinada por la temperatura y la densidad iniciales, no por ningún ajuste deliberado de cuerdas individuales.
+
+| Medición | Qué se registra | Firma de las cuerdas de Bethe |
+|---|---|---|
+| Energía liberada durante la expansión en el tubo | Crecimiento del segundo momento de la nube | Se mantiene baja: las cuerdas se dispersan pero permanecen intactas |
+| Energía liberada tras la liberación 3D | Lo mismo, sin confinamiento | Salta bruscamente: la ligadura se convierte en energía cinética |
+| Diferencia de energía | Energía de ligadura promedio por partícula | Establece un límite inferior para la cuerda más grande presente |
+| Distribución de momento | Perfil tras un tiempo de vuelo en dos pasos | Se ensancha a medida que las cuerdas se forman y se compactan |
+| Contacto de Tan | Derivado de la energía interna y potencial | Revela correlaciones de pares de corto alcance modificadas |
+
+El truco de la energía de liberación es elegante. Expande el gas dentro de los tubos y las cuerdas permanecen ligadas, de modo que la energía medida refleja solo su movimiento de centro de masa. Elimina el confinamiento por completo y las cuerdas se rompen, volcando su energía de ligadura en la expansión. En el régimen repulsivo las dos cifras coinciden; en el régimen atractivo divergen exactamente en la energía de ligadura. En un conjunto de datos reportado, esa brecha implicaba cuerdas de al menos seis partículas, y el modelado sugería otras aún mayores.
+
+Las distribuciones de momento cuentan una historia complementaria. A medida que el gas se acerca al punto no interactuante, la distribución se estrecha. Cruza hacia la atracción y se ensancha, casi duplicando su anchura al final del barrido: una consecuencia directa del principio de incertidumbre aplicado a grupos fuertemente ligados.
+
+## Tamaño, temperatura y supervivencia
+
+No todos los barridos producen la misma mezcla. La temperatura es el control dominante: los gases más calientes tienen energía cinética que supera la ligadura atractiva, por lo que las cuerdas grandes se vuelven raras.
+
+| Temperatura inicial | Población típica de cuerdas | Efecto sobre el ensanchamiento del momento |
+|---|---|---|
+| Muy baja (unos pocos nK) | Muchas cuerdas grandes | Fuerte ensanchamiento en el régimen atractivo |
+| Intermedia | Tamaños mixtos, dominados por cuerdas cortas | Ensanchamiento moderado |
+| Alta (decenas de nK) | Principalmente pares y grupos pequeños | El ensanchamiento casi desaparece |
+
+También existe un límite duro sobre cuánto se puede empujar la atracción. A medida que las cuerdas se compactan, la recombinación de tres cuerpos se vuelve probable, y las cuerdas más compactas y grandes se pierden primero. Por lo tanto, cualquier experimento real muestrea una distribución truncada, un detalle que la teoría debe tener en cuenta al comparar predicciones con datos.
+
+## Por qué importan las cuerdas de Bethe
+
+El interés aquí no es puramente taxonómico. Las cuerdas de Bethe grandes resultan gobernar cómo se mueven la energía y el espín a través de sistemas integrables. En las cadenas de espín, están implicadas en el transporte anómalo y en la aparición de la universalidad de Kardar-Parisi-Zhang, la misma clase de escala matemática que describe interfaces en crecimiento y frentes de combustión. Un imán unidimensional y un frente de llama, resulta, pueden compartir un lenguaje universal.
+
+Las cuerdas de Bethe explicadas a este nivel se convierten en una herramienta tanto como en una curiosidad. Ofrecen un banco de pruebas controlable para la dinámica cuántica lejos del equilibrio, donde la termodinámica de manual no se aplica y donde los nuevos marcos teóricos —en particular la hidrodinámica generalizada— pueden contrastarse con mediciones reales en lugar de solo con simulaciones.
+
+Para los lectores que quieran la literatura primaria, el [estudio de Nature Communications sobre el sondeo de cuerdas de Bethe en un gas de Bose 1D atractivo](https://www.nature.com/articles/s41467-026-76018-0) es el relato público más completo del protocolo experimental y sus resultados.
+
+## Preguntas frecuentes
+
+**¿Son las cuerdas de Bethe partículas reales?**
+
+No. Son estados ligados colectivos: grupos de partículas que se comportan como una única excitación compuesta. Cada cuerda tiene su propio momento de centro de masa y energía de ligadura interna, pero no es una nueva partícula fundamental.
+
+**¿Por qué las cuerdas de Bethe solo se forman en una dimensión?**
+
+En una dimensión, los sistemas integrables carecen de las colisiones difractivas que, de otro modo, permitirían que un estado ligado se descomponga. Esa protección es lo que mantiene las cuerdas estables el tiempo suficiente para observarlas. En tres dimensiones, los gases atractivos suelen colapsar en su lugar.
+
+**¿Qué le hace la temperatura a las cuerdas de Bethe?**
+
+Una temperatura más alta suprime las cuerdas grandes. Cuando la energía cinética domina la energía de interacción, la probabilidad de ligar muchas partículas juntas cae bruscamente, y la mezcla se desplaza hacia pares y grupos pequeños.
+
+**¿Dónde puedo leer un tratamiento completo de las cuerdas de Bethe explicadas?**
+
+Comienza con el artículo experimental enlazado arriba, luego sigue sus referencias hacia el modelo de Lieb-Liniger y la hidrodinámica generalizada. Juntos cubren la teoría, el protocolo de medición y las preguntas abiertas.

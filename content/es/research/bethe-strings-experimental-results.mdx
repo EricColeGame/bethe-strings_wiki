@@ -1,0 +1,110 @@
+export const metadata = {
+  title: "Resultados experimentales de las cuerdas de Bethe: dentro del avance del gas cuántico 1D",
+  description: "Los nuevos resultados experimentales de las cuerdas de Bethe aportan pruebas de estados ligados de múltiples partículas en un gas de Bose 1D, respaldadas por datos de energía de liberación, momento y contacto de Tan.",
+  category: "research",
+  date: "2026-10-20",
+}
+
+Las cuerdas de Bethe son una de las predicciones más contraintuitivas de la física cuántica de muchos cuerpos: grupos de partículas que permanecen ligados en un gas unidimensional donde la intuición ordinaria dice que la atracción debería provocar un colapso. Los más recientes **resultados experimentales de las cuerdas de Bethe**, publicados en *Nature Communications* por una colaboración liderada por Innsbruck que trabaja con cesio ultrafrío, convierten esa predicción en un fenómeno de laboratorio controlado. Estos **resultados experimentales de las cuerdas de Bethe** aportan pruebas indirectas sólidas: el equipo creó mezclas densas de estados ligados de diferentes tamaños y encontró señales consistentes en tres observables independientes.
+
+¿Por qué importa? Porque las cuerdas de Bethe se encuentran en la encrucijada de los sistemas cuánticos integrables, el transporte anómalo, el magnetismo cuántico e incluso la teoría de cuerdas. Poder realizar y sondear intermezclas densas fuera del equilibrio es un requisito previo para poner a prueba cualquiera de esas ideas en el laboratorio.
+
+## ¿Qué son exactamente las cuerdas de Bethe?
+
+El concepto se remonta a la solución de Hans Bethe de 1931 para una cadena de espín unidimensional y al modelo de Lieb-Liniger, exactamente soluble, de bosones que interactúan mediante un potencial de contacto. En ese modelo, los autoestados no se etiquetan por momentos ordinarios, sino por *rapideces*: momentos generalizados de cuasipartículas estables.
+
+En el régimen repulsivo, las rapideces son números reales. Lleva la interacción a una atracción fuerte y ocurre algo inusual: las rapideces adquieren partes imaginarias y se organizan en grupos verticales que comparten la misma parte real, espaciados uniformemente a lo largo del eje imaginario. Cada grupo es una cuerda de Bethe: un auténtico estado ligado de múltiples partículas con un tamaño bien definido *n*.
+
+| Régimen | Interacción | Estructura de rapideces | Comportamiento del gas |
+|---|---|---|---|
+| Cuasicondensado | repulsiva débil | reales, densamente empaquetadas | gas débilmente interactuante |
+| Tonks-Girardeau | repulsiva fuerte | reales, dispersas | los bosones se fermionizan |
+| Super Tonks-Girardeau | quench a atracción fuerte | reales, metaestables | gas excitado sin estados ligados |
+| Régimen de cuerdas | atractiva, tasa finita | complejas, agrupadas | cuerdas de Bethe de diversos tamaños |
+
+Dos números definen una cuerda de tamaño *n*: su extensión espacial y su energía de enlace. La longitud del enlace se reduce aproximadamente como 1/[*c*|(*n*−1)], mientras que la energía de enlace crece abruptamente con el tamaño, escalando como *n*(*n*²−1). Las cuerdas más grandes son más compactas y difíciles de romper, un hecho que condiciona todas las mediciones siguientes.
+
+## Cómo el experimento realiza una intermezcla de cuerdas
+
+La plataforma es un condensado de Bose-Einstein de átomos de cesio cargado en dos haces de red óptica cruzados. Los haces dividen la nube en miles de tubos unidimensionales independientes, cada uno con unas pocas a unas decenas de átomos. Una resonancia de Feshbach amplia permite al equipo ajustar la fuerza de interacción con un campo magnético.
+
+El movimiento clave es un barrido de la interacción a tasa finita desde el régimen repulsivo, pasando por el punto no interactuante, hasta el régimen atractivo. Un barrido adiabático colapsaría el gas en un único grupo gigante; uno rápido dejaría un desorden muy alejado del equilibrio. La tasa intermedia utilizada aquí produce una distribución de cuerdas de muchos tamaños.
+
+| Parámetro | Valor |
+|---|---|
+| Átomos por tubo | 7–30 |
+| Tubos poblados | 3000–5000 |
+| Temperatura 1D | 3–35 nK |
+| Profundidad de la red | 25 *E*ᵣ (20 *E*ᵣ para un conjunto de datos) |
+| Frecuencia de trampa transversal | 10,5 kHz |
+| Frecuencia de trampa longitudinal | 29,3 Hz |
+| Interacción inicial | 3,4 μm⁻¹ |
+| Tasa de rampa | ≈ −0,038 μm⁻¹ ms⁻¹ |
+
+Para una cuerda de tamaño *n* = 4 con una interacción de −1 μm⁻¹, la longitud del enlace es de aproximadamente 0,67 μm y la energía de enlace es de aproximadamente *k*_B × 9 nK. Es pequeña pero medible, siempre que se sepa dónde mirar.
+
+## Resultados experimentales de las cuerdas de Bethe: la evidencia de la energía de liberación
+
+El protocolo de detección es una secuencia de tiempo de vuelo en dos pasos. Primero, la nube se expande dentro de los tubos durante un tiempo determinado; después, se apaga el confinamiento transversal y el gas se expande libremente en 3D. La comparación de las dos etapas aísla lo que ocurre con los estados ligados.
+
+El razonamiento es claro. Durante la expansión 1D, las cuerdas se dispersan pero permanecen intactas, por lo que la energía de liberación medida refleja solo su movimiento del centro de masa. Cuando se abren los tubos, el confinamiento desaparece, las cuerdas se deshacen y su energía de enlace se convierte en energía cinética. Por lo tanto, la energía de liberación 3D debería ser mayor, pero solo si existen estados ligados.
+
+| Régimen de interacción | Energía de liberación 1D | Energía de liberación 3D | Interpretación |
+|---|---|---|---|
+| Fuertemente repulsiva | ≈ *h* × 100 Hz | ≈ *h* × 100 Hz | Sin estados ligados; ambas igualan la energía interna |
+| Cerca de no interactuante | ≈ *h* × 60 Hz | ≈ *h* × 60 Hz | La concordancia persiste |
+| *c* = −1,0 μm⁻¹ | se estabiliza cerca de *h* × 35 Hz | aumenta hasta ≈ *h* × 110 Hz | Energía de enlace liberada solo en 3D |
+
+Esa diferencia es el titular de los resultados experimentales de las cuerdas de Bethe. La diferencia entre ambas energías da una energía de enlace media por partícula y, a partir de ella, el equipo extrajo una cota inferior conservadora: el gas debe contener cuerdas de al menos seis partículas. Un modelado refinado predice otras aún más grandes.
+
+## Distribución de momento y el papel de la temperatura
+
+Una segunda línea de evidencia proviene de la distribución de momento después de la expansión 1D. Partiendo de un perfil amplio y en forma de campana en el régimen repulsivo, la distribución se estrecha a medida que la interacción se aproxima a cero y luego se ensancha bruscamente cuando el gas entra en el régimen atractivo.
+
+| Interacción *c* (μm⁻¹) | Ancho de momento (FWHM) | Tendencia |
+|---|---|---|
+| Inicio repulsivo | 6,0(1) ℏ μm⁻¹ | ancho |
+| 0,1 | 3,0(1) ℏ μm⁻¹ | punto más estrecho |
+| −2,0 | casi el doble del mínimo | ensanchamiento claro |
+
+El ensanchamiento tiene una lectura intuitiva. Una cuerda con longitud de enlace Δ*z* libera momento en una ventana determinada por el principio de incertidumbre, aproximadamente inversamente proporcional a esa longitud. Las cuerdas más grandes y una atracción más fuerte producen dispersiones de momento más amplias.
+
+La temperatura importa igual de mucho. A temperaturas 1D más altas, la energía cinética domina sobre la energía de interacción, por lo que los estados ligados grandes se vuelven estadísticamente improbables. Los anchos medidos lo confirman: el efecto de ensanchamiento se debilita a medida que aumenta la temperatura, exactamente como predice la hidrodinámica generalizada.
+
+## El contacto de Tan y las correlaciones de corto alcance
+
+La tercera sonda apunta directamente a las correlaciones de corto alcance. Las cuerdas de Bethe cambian la probabilidad de encontrar dos partículas en el mismo punto, una cantidad capturada por el contacto de Tan, un parámetro universal que vincula el detalle microscópico con la termodinámica.
+
+Mediante el teorema del virial, el contacto puede extraerse de la energía interna y de la energía potencial de la trampa. El equipo descubrió que esta relación, normalmente enunciada para el equilibrio térmico, también se cumple para los estados fuera del equilibrio descritos por la hidrodinámica generalizada. Por lo tanto, los resultados experimentales de las cuerdas de Bethe extienden una relación de libro de texto a un entorno genuinamente dinámico.
+
+## Pérdidas, límites y lo que viene después
+
+Ningún experimento es perfectamente integrable. El proceso dominante que rompe la simetría aquí es la pérdida de tres cuerpos, que crece rápidamente a medida que las cuerdas se aprietan con una atracción más fuerte.
+
+| Cantidad | Valor | Cómo se obtuvo |
+|---|---|---|
+| Coeficiente de pérdida 1D *k*₃ | 1,10(3) × 10⁻⁸ cm² s⁻¹ | ajuste a las curvas de pérdida de átomos |
+| Coeficiente 3D implícito | 1,50(4) × 10⁻²⁷ cm⁶ s⁻¹ | integración de la función de onda transversal |
+| Medición 3D directa cercana | ≈ 3 × 10⁻²⁷ cm⁶ s⁻¹ | literatura previa |
+
+La concordancia es lo suficientemente cercana como para confirmar que la pérdida de tres cuerpos, y no algún mecanismo nuevo exótico, explica las pequeñas desviaciones entre los datos y la simulación con atracción fuerte. Las cuerdas más grandes desaparecen primero porque están más fuertemente ligadas.
+
+Entonces, ¿qué viene después? Se destacan tres direcciones. Primero, mezclas más densas y más controlables de tamaños de cuerdas permitirían a los investigadores probar cómo interactúan las cuerdas entre sí. Segundo, la misma física aparece en imanes cuánticos y cadenas de espín, donde se cree que las cuerdas grandes impulsan la superdifusión anómala y el escalado de Kardar-Parisi-Zhang. Tercero, las técnicas demostradas aquí —rampas de interacción más imágenes resueltas en rapidez— son reutilizables para otros sistemas integrables.
+
+El artículo indica que los datos experimentales y de simulación están disponibles en Zenodo, lo que debería acelerar trabajos posteriores. Para un campo que esperó casi un siglo pruebas, esa apertura importa casi tanto como el propio resultado.
+
+## Preguntas frecuentes
+
+**¿Qué son las cuerdas de Bethe en términos sencillos?**
+Son grupos ligados de partículas en un gas cuántico unidimensional con interacciones atractivas. En lugar de colapsar, las partículas forman grupos estables de dos, tres o muchos miembros, cada uno descrito por un conjunto de rapideces complejas en la solución del ansatz de Bethe.
+
+**¿Por qué se consideran un hito los últimos resultados experimentales de las cuerdas de Bethe?**
+Trabajos anteriores infirieron las cuerdas de forma indirecta, principalmente en materiales magnéticos. Este experimento creó una mezcla densa de diferentes tamaños de cuerdas en un gas de átomos fríos y encontró pruebas consistentes en tres mediciones independientes: energía de liberación, distribución de momento y contacto de Tan.
+
+**¿Qué tan grande puede llegar a ser una cuerda de Bethe?**
+En principio, el estado fundamental de *N* partículas con interacción atractiva es una única cuerda con *N* constituyentes. El experimento midió una cota inferior de seis partículas por cuerda y la teoría predice una distribución amplia que se extiende a tamaños mayores, determinada principalmente por la temperatura y la densidad.
+
+**¿Tienen estos resultados aplicaciones prácticas?**
+No directamente a corto plazo. Su valor es fundamental: validan la hidrodinámica generalizada en un sistema cuántico fuertemente correlacionado y proporcionan un banco de pruebas controlable para ideas sobre transporte anómalo, magnetismo cuántico y dinámica integrable.
+
+Para los lectores que quieran la fuente primaria, el estudio completo — [sondear las cuerdas de Bethe en un gas de Bose unidimensional atractivo](https://www.nature.com/articles/s41467-026-76018-0) — incluye el protocolo experimental completo y los detalles del modelado.

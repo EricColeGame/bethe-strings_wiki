@@ -1,0 +1,101 @@
+export const metadata = {
+  title: "Bethe-Strings-Experiment: Leitfaden – Wie Physiker quantengebundene Zustände untersuchen",
+  description: "Ein praktischer Leitfaden zum Bethe-Strings-Experiment: wie eindimensionale ultrakalte Gase Mehrteilchen-Bindungszustände bilden und wie Labore sie nachweisen.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+## Warum Anziehung nicht immer Kollaps bedeutet
+
+Nur wenige Ergebnisse der Quantenphysik sind so kontraintuitiv wie dieses: In einer Dimension muss Anziehung nicht im Kollaps enden. Ein gut konzipiertes Bethe-Strings-Experiment zeigt, dass anziehend wechselwirkende Teilchen sich stattdessen zu stabilen Mehrteilchen-Clustern zusammenschließen können – und diese Cluster überleben gerade deshalb, weil das zugrunde liegende System integrabel ist. Darum ist das Bethe-Strings-Experiment zu einem Maßstab für die Prüfung der Quantenintegrabilität im Labor geworden und verwandelt eine Vorhersage aus Hans Bethes Arbeit von 1931 in etwas, das eine Kamera festhalten kann.
+
+Dieser Leitfaden erklärt, wie solche Experimente aufgebaut werden, was die Detektoren tatsächlich aufzeichnen und wie man die Ergebnisse liest, ohne sie überzuinterpretieren. Wenn Sie sich jemals gefragt haben, wie aus einem theoretischen „String" aus komplexen Rapiditäten eine messbare Freisetzungsenergie wird, dann ist dies die Durchführung, die Sie suchen.
+
+## Was ein Bethe-String eigentlich ist
+
+Beginnen wir mit dem Modell. Der Lieb-Liniger-Hamiltonoperator beschreibt Bosonen in einer Dimension mit einer Kontaktwechselwirkung der Stärke *c̃*. Sein kinetischer Term ist gewöhnlich; der Wechselwirkungsterm ist eine Deltafunktion, die nur dann greift, wenn zwei Teilchen denselben Punkt besetzen. Lösungen des Bethe-Ansatzes kennzeichnen jeden Eigenzustand mit einem Satz von **Rapiditäten** – verallgemeinerten Impulsen für emergente Quasiteilchen.
+
+Im repulsiven Regime (*c̃* > 0) sind diese Rapiditäten reell. Treibt man die Abstoßung stark genug, fermionisiert das Gas in den Tonks-Girardeau-Zustand. Dreht man das Vorzeichen um, ändert sich etwas Strukturelles: Die Rapiditäten werden komplex, gruppieren sich um einen gemeinsamen Realteil und stapeln sich symmetrisch entlang der imaginären Achse mit einem Abstand, der durch |*c̃*| bestimmt wird. Diese Cluster sind die Strings.
+
+| Regime | Wechselwirkung | Rapiditätenstruktur | Was man beobachtet |
+|---|---|---|---|
+| Quasi-Kondensat | *c̃* → 0 | Rapiditäten ballen sich nahe null | Schmale Impulsverteilung |
+| Repulsiv (Lieb-Liniger) | *c̃* > 0 | Reelle Rapiditäten | Fermionisierung in Richtung Tonks-Girardeau |
+| Super-Tonks-Girardeau | Quench zu starkem *c̃* < 0 | Stark korreliertes angeregtes Gas | Gasförmig, nicht gebunden |
+| Attraktiv, Sweep mit endlicher Rate | *c̃* < 0 | Komplexe Rapiditäten in vertikalen Clustern | Ein Gemisch aus Strings vieler Größen |
+| Adiabatisches Durchfahren | *c̃* < 0 | Ein riesiger Cluster | Riesen-Bethe-Zustand im Grundzustand |
+
+Zwei Skalierungsgesetze leisten in jedem Bethe-Strings-Experiment den größten Teil der Erklärung. Die räumliche Ausdehnung eines Strings der Größe *n* schrumpft wie 2/(|*c̃*|(*n* − 1)), sodass größere Strings kompakter sind. Seine Bindungsenergie wächst grob wie *n*(*n*² − 1), sodass größere Strings zugleich weitaus anfälliger für Verluste sind. Ein String mit vier Bestandteilen bei *c̃* = −1 µm⁻¹ hat eine Bindungslänge nahe 0,67 µm und eine Bindungsenergie um *k*_B* × 9 nK – kleine Zahlen, die sehr kalte, sehr saubere Proben erfordern.
+
+## Warum Physiker sich über kalte Atome hinaus dafür interessieren
+
+Strings sind keine Kuriosität der kalten Atome. Sie treten als stabile Anregungen in Quantenspinketten und Quantenmagneten auf, wo ihre Stabilität auf das Fehlen diffraktiver Stöße in integrablen Systemen zurückgeht – gebundene Zustände können schlicht nicht in tiefer liegende Konfigurationen zerfallen. Große Strings formen heute nachweislich den anomalen Transport in integrablen Spinketten und treiben die Entstehung der Kardar-Parisi-Zhang-Universalität, derselben Skalierungsklasse, die wachsende Grenzflächen bestimmt.
+
+Die Reichweite geht weiter. Integrable Strukturen dieser Art erscheinen in der Hochenergietheorie und der Stringtheorie über die AdS/CFT-Integrabilität. Eine kontrollierbare Plattform, die dichte Durchmischungen von Strings unterschiedlicher Größe erzeugen kann, ist daher weit über die kondensierte Materie hinaus wertvoll.
+
+## Im Inneren des Aufbaus: Wie das Experiment gebaut wird
+
+Die meistzitierte jüngere Demonstration verwendete ultrakaltes Cäsium. Ein dreidimensionales Bose-Einstein-Kondensat wird in einer optischen Dipolfalle aus gekreuzten Strahlen präpariert und durch eine Magnetkraft gegen die Gravitation levitiert, dann in zwei Gitterstrahlen geladen, die sich in der horizontalen Ebene unter 90° kreuzen. Das Ergebnis sind Tausende unabhängiger eindimensionaler Röhren, von denen jede eine Handvoll Atome enthält.
+
+| Parameter | Typischer Wert | Warum er wichtig ist |
+|---|---|---|
+| Atomsorte | Cäsium (Cs) | Breite Feshbach-Resonanz zum Abstimmen |
+| Falle | Gekreuzigte Dipolstrahlen, magnetische Levitation | Stabiles 3D-Kondensat als Ausgangspunkt |
+| Gitter | 532,2 nm Abstand, Tiefe ~25 *E*_r | Erzeugt etwa 3.000–5.000 isolierte Röhren |
+| Transversaler Einschluss | *ω*⊥/2*π* ≈ 10,5 kHz | Legt *a*⊥ ≈ 83 nm fest und erzwingt 1D-Physik |
+| Longitudinaler Einschluss | *ω*_z*/2*π* ≈ 29,3 Hz | Legt *a*_ho ≈ 1,6 µm fest |
+| Atome pro Röhre | 7–30 | Steuert die Dichte, die die String-Größe bestimmt |
+| 1D-Temperatur | 3–35 nK | Balanciert kinetische gegen Wechselwirkungsenergie |
+| Wechselwirkungs-Rampe | ≈ −0,038 µm⁻¹ ms⁻¹ | Endliche Rate erzeugt einen Zustand fern vom Gleichgewicht |
+
+Der entscheidende Schritt ist der Sweep. Statt direkt in die Anziehung zu springen, rampt das Experiment *c̃* von einem mäßig repulsiven Wert mit kontrollierter Rate durch null hinunter auf die attraktive Seite. Das Durchlaufen des nichtwechselwirkenden Punkts mit endlicher Rate – statt adiabatisch – verhindert, dass das System in einen einzigen riesigen Cluster kollabiert, und besetzt stattdessen eine breite Verteilung von String-Größen. Die Verteilung wird hauptsächlich durch die Anfangstemperatur und die Atomdichte in jeder Röhre bestimmt.
+
+## Drei Wege, einen String nachzuweisen
+
+Weil Strings gebundene Zustände sind, hinterlassen sie Fingerabdrücke darin, wie sich die Wolke ausdehnt, sobald der Einschluss entfernt wird. Das Standardprotokoll ist eine Freisetzung in zwei Schritten: Zuerst lässt man das Gas für eine Zeit *t*₁D in den Röhren expandieren, dann schaltet man den transversalen Einschluss ab und lässt es für *t*₃D in 3D fliegen. Während der 1D-Phase streuen die Strings, bleiben aber gebunden; während der 3D-Freisetzung brechen sie auseinander.
+
+| Observable | Wie sie gemessen wird | Signatur von Strings |
+|---|---|---|
+| Freisetzungsenergie | Zweites Moment der Wolke gegenüber *t*₁D und *t*₃D | Die 3D-Freisetzungsenergie übersteigt die 1D-Freisetzungsenergie um die Bindungsenergie |
+| Impulsverteilung | Longitudinales Profil nach der Expansion, in Impuls umgerechnet | Verbreiterung, die mit stärkerer Anziehung wächst |
+| Tan-Kontakt | Aus innerer und potentieller Energie über die Virialrelation gewonnen | Der Kontakt skaliert mit Paarkorrelationen und folgt der String-Bildung |
+
+Der Vergleich der Freisetzungsenergien ist der sauberste Beleg. Im repulsiven Regime stimmen die 1D- und 3D-Freisetzungsenergien überein, weil es keine gebundenen Zustände gibt, die aufbrechen könnten. Auf der attraktiven Seite divergieren sie deutlich – der 1D-Wert plateaut bei etwa *h* × 35 Hz, während der 3D-Wert bei *c̃* = −1,0 µm⁻¹ gegen *h* × 110 Hz klettert. Die Differenz ist die mittlere Bindungsenergie, und sie liefert eine modellunabhängige untere Schranke für den größten vorhandenen String.
+
+Impulsverteilungen erzählen eine komplementäre Geschichte. In einem repräsentativen Lauf verengt sich die Halbwertsbreite von etwa ℏ × 6,0 µm⁻¹ zu Beginn der Rampe auf ℏ × 3,0 µm⁻¹ nahe der Wechselwirkungsfreiheit und verdoppelt sich dann nahezu bis *c̃* = −2,0 µm⁻¹. Die Heisenbergsche Unschärferelation erklärt den Rückschwung: Ein kompakterer String setzt Impuls über ein breiteres Fenster frei.
+
+## Temperatur, Größe und Verlust
+
+Die Temperatur ist die entscheidende Variable. Höhere Temperatur bedeutet, dass die kinetische Energie die Wechselwirkungsenergie dominiert, sodass die Wahrscheinlichkeit sinkt, einen großen String aufzubauen. Das zeigt sich als schwächere Verbreiterung der Impulsverteilung bei höherem *T*.
+
+| 1D-Temperatur | Wahrscheinlichkeit großer Strings | Impulsverbreiterung | Praktischer Hinweis |
+|---|---|---|---|
+| ≈ 3 nK | Hoch | Stark | Bestes Regime für Strings mit großem *n* |
+| ≈ 15 nK | Mittel | Mittel | Häufige Wahl für hydrodynamische Vergleiche |
+| ≈ 35 nK | Niedrig | Schwach | Kinetische Energie verwischt den Effekt |
+
+Auch Verluste zählen. Drei-Körper-Rekombination skaliert steil mit der String-Größe, sodass dicht gebundene große Strings zuerst verschwinden, wenn die Anziehung stärker wird. Fittet man Verlustkurven mit einer einzigen globalen Drei-Körper-Rate, ergibt sich ein Koeffizient nahe 1,1 × 10⁻⁸ cm² s⁻¹, was in drei Dimensionen grob 1,5 × 10⁻²⁷ cm⁶ s⁻¹ entspricht – konsistent mit unabhängigen Messungen.
+
+## Praktische Tipps zum Lesen der Ergebnisse
+
+- **Prüfen Sie die Sweep-Rate, bevor Sie die Zahlen prüfen.** Eine langsame Rampe erzeugt einen einzigen riesigen Cluster; eine schnelle Rampe erzeugt eine Verteilung. Nahezu jede berichtete String-Größe ist an die Rampe gebunden.
+- **Vertrauen Sie der Differenz, nicht dem Absolutwert.** Die Lücke der Freisetzungsenergie zwischen 1D und 3D isoliert die Bindungsenergie; absolute Freisetzungsenergien mischen Schwerpunktbewegung hinein.
+- **Behandeln Sie Größenabschätzungen als untere Schranken**, solange kein vollständiges hydrodynamisches Modell sie stützt.
+- **Achten Sie auf den Verlustkanal.** Abweichungen zwischen Daten und Simulation konzentrieren sich meist dort, wo der Drei-Körper-Verlust zuschlägt.
+- **Bestätigen Sie, dass Sie noch in 1D sind.** Das Fehlen transversaler Anregung in Flugzeitbildern ist der übliche Plausibilitätstest.
+
+Für die vollständigen experimentellen Details ist der begutachtete Bericht über [die Untersuchung von Bethe-Strings in einem attraktiven eindimensionalen Bose-Gas](https://www.nature.com/articles/s41467-026-76018-0) in *Nature Communications* der beste Ausgangspunkt.
+
+## FAQ
+
+**Was ist ein Bethe-String in einfachen Worten?**
+Es ist ein gebundener Teilchencluster in einem eindimensionalen Quantensystem, zusammengehalten durch anziehende Wechselwirkungen und beschrieben durch einen Stapel komplexer Rapiditäten. Im semiklassischen Grenzfall konvergieren Strings zu den hellen Solitonen der nichtlinearen Schrödinger-Gleichung.
+
+**Warum brauchen Strings eine Dimension?**
+Integrabilität ist die entscheidende Zutat. In 1D sind Stöße nicht diffraktiv, sodass ein gebundener Zustand keinen Zerfallskanal in tiefer liegende Zustände hat. Nimmt man diesen Schutz weg, löst sich der Cluster auf.
+
+**Wie beweist ein Bethe-Strings-Experiment, dass Strings existieren?**
+Keine einzelne Messung leistet das allein. Die Evidenz stammt aus drei konvergierenden Signalen: einer Diskrepanz der Freisetzungsenergie zwischen 1D und 3D, die der Bindungsenergie entspricht, einer wechselwirkungsabhängigen Verbreiterung der Impulsverteilung und einem Tan-Kontakt, der kurzreichweitige Paarkorrelationen nachvollzieht. Die Übereinstimmung mit der verallgemeinerten Hydrodynamik über alle drei hinweg macht den Fall stichhaltig.
+
+**Was begrenzt den größten String, den man beobachten kann?**
+Temperatur und Verlust. Wärmere Wolken bauen selten große Cluster auf, und kompaktere Strings erleiden schneller Drei-Körper-Rekombination. Berichtete Größen sind daher konservative Schätzungen dessen, was das System tatsächlich erzeugt hat.

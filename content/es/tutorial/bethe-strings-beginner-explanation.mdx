@@ -1,0 +1,136 @@
+export const metadata = {
+  title: "Explicación para principiantes de las cuerdas de Bethe: una guía sencilla de los estados ligados cuánticos",
+  description: "Una explicación clara para principiantes de las cuerdas de Bethe: qué son estos estados ligados cuánticos unidimensionales, cómo se forman y cómo los físicos los detectan en átomos fríos.",
+  category: "tutorial",
+  date: "2026-10-20",
+}
+
+## ¿Qué son las cuerdas de Bethe? La versión sencilla
+
+Imagina una fila de partículas que solo pueden moverse a lo largo de una única línea: no pueden desviarse hacia un lado ni adelantar. En las condiciones adecuadas, algunas se agrupan en conglomerados estables que viajan como uno solo. Esos conglomerados son las **cuerdas de Bethe**, una de las predicciones más llamativas de la física cuántica unidimensional.
+
+Esta explicación para principiantes de las cuerdas de Bethe evita las matemáticas pesadas y se centra en la intuición: qué son las cuerdas, por qué se mantienen unidas y cómo demuestran realmente los laboratorios que existen. El concepto importa porque las cuerdas de Bethe determinan cómo se mueven la energía, el espín y las partículas por los sistemas cuánticos, desde cristales magnéticos hasta gases atómicos ultrafríos.
+
+En términos técnicos, una cuerda de Bethe es un estado ligado de varias partículas que aparece en ciertos modelos cuánticos unidimensionales "integrables". Hans Bethe descubrió por primera vez la matemática subyacente en 1931 mientras resolvía un modelo de cadenas de espín magnético; de ahí el nombre. Casi un siglo después, los físicos pueden crear y manipular estos estados en el laboratorio.
+
+**Tabla 1: Las cuerdas de Bethe de un vistazo**
+
+| Pregunta | Respuesta breve |
+|---|---|
+| ¿Qué es? | Un grupo de partículas ligadas entre sí en una dimensión |
+| ¿Dónde aparece? | Cadenas de espín, imanes cuánticos, gases 1D ultrafríos |
+| ¿Qué lo mantiene unido? | Interacciones atractivas en un sistema integrable |
+| ¿Quién lo predijo? | Hans Bethe, 1931 (ansatz de Bethe) |
+| ¿Por qué no se desintegra? | Los sistemas integrables carecen de colisiones difractivas |
+| ¿Cómo se detecta? | Mediciones de expansión, distribuciones de momento, contacto de Tan |
+
+## Por qué las cuerdas de Bethe importan en física
+
+Es razonable preguntarse por qué a alguien le importan los grupos en un modelo unidimensional. La respuesta es que estos estados ligados no son una curiosidad: controlan un comportamiento real y medible.
+
+Su estabilidad es la clave. En un sistema cuántico integrable, las partículas colisionan sin difracción, así que un grupo ligado no puede dispersarse hacia una configuración de menor energía. Simplemente sigue desplazándose. Eso hace que las cuerdas de Bethe sean excitaciones inusualmente longevas y les permite transportar energía y espín a largas distancias.
+
+Trabajos recientes relacionan las cuerdas de Bethe grandes con el transporte anómalo en cadenas de espín integrables, incluida la aparición de la superdifusión de Kardar–Parisi–Zhang (KPZ). Las mismas estructuras matemáticas reaparecen en la física de altas energías y en la teoría de cuerdas a través de modelos integrables, por lo que el tema abarca tantos campos.
+
+**Tabla 2: Dónde aparecen las cuerdas de Bethe**
+
+| Contexto | Qué hacen las cuerdas |
+|---|---|
+| Cadenas de espín cuánticas | Transportan espín y energía; impulsan el transporte anómalo |
+| Imanes cuánticos | Aparecen como excitaciones estables en experimentos de dispersión |
+| Gases de Bose 1D ultrafríos | Forman grupos ligados cuando las interacciones se vuelven atractivas |
+| Teoría de altas energías | Emergen en modelos integrables conectados con la teoría de cuerdas |
+
+## Cómo se forman las cuerdas de Bethe: intensidad de interacción y rapidez
+
+El escenario estándar para estudiar estos estados es el modelo de Lieb–Liniger: bosones confinados a una línea, que interactúan solo cuando se tocan, con una intensidad que suele escribirse como *c*. Si se cambia el signo de *c*, la física cambia drásticamente.
+
+**Tabla 3: Regímenes de interacción en un gas de Bose 1D**
+
+| Régimen | Signo de interacción | Cómo son las rapideces | Qué hace el gas |
+|---|---|---|---|
+| Débilmente repulsivo | *c* > 0, pequeño | Reales, dispersas | Se comporta como un cuasi-condensado |
+| Fuertemente repulsivo | *c* > 0, grande | Reales, muy separadas | Se fermioniza (Tonks–Girardeau) |
+| Sin interacción | *c* = 0 | Momentos de partículas libres | Las partículas se atraviesan entre sí |
+| Atractivo | *c* < 0 | Complejas, apiladas en grupos verticales | Forma cuerdas de Bethe |
+
+### Rapidez: el momento oculto
+
+Una rapidez es el momento generalizado de una cuasipartícula emergente. En el régimen repulsivo, las rapideces son números reales ordinarios. En el régimen atractivo se vuelven complejas y se alinean en grupos verticales que comparten la misma parte real, separados entre sí por la intensidad de interacción. Una cuerda de tamaño *n* tiene *n* rapideces apiladas a lo largo del eje imaginario.
+
+Dos números describen cualquier cuerda: su tamaño y lo fuertemente ligada que está.
+
+- **Tamaño *n*** — el número de partículas del grupo.
+- **Extensión** — la anchura espacial se reduce aproximadamente como 1/[*c*·(*n* − 1)], así que las cuerdas más grandes y una atracción más fuerte implican una ligadura más estrecha.
+- **Energía de ligadura** — crece abruptamente con el tamaño y escala aproximadamente como *c*²·*n*(*n*² − 1).
+
+La conclusión práctica: las cuerdas de Bethe más grandes están muchísimo más fuertemente ligadas que las pequeñas.
+
+### Por qué se necesita un barrido, no solo atracción
+
+Aquí está la parte sutil. El verdadero estado fundamental de *N* partículas con interacción atractiva es una única cuerda gigante que contiene las *N* partículas. Para obtener una mezcla de cuerdas más pequeñas, hay que preparar el sistema fuera del equilibrio.
+
+El truco que se usa en experimentos modernos consiste en partir de un gas repulsivo y barrer la intensidad de interacción a través de cero hacia el régimen atractivo a una velocidad finita. El resultado es un gas alejado del equilibrio que contiene cuerdas de muchos tamaños diferentes. La temperatura también importa: cuando domina la energía cinética térmica, las cuerdas grandes tienen menos probabilidades de sobrevivir.
+
+## Cómo detectan los físicos las cuerdas de Bethe
+
+No se puede fotografiar una cuerda de Bethe. En su lugar, los experimentadores infieren su presencia a partir de cómo se expande una nube de átomos después de apagar la trampa.
+
+El protocolo central es una liberación en dos pasos. Primero, el gas se expande dentro de su tubo unidimensional: las cuerdas se dispersan durante esta fase pero permanecen ligadas. Después se abre el tubo y el gas se expande libremente en tres dimensiones. La pérdida repentina de confinamiento rompe las cuerdas y convierte la energía de ligadura en energía cinética.
+
+**Tabla 4: Tres firmas de las cuerdas de Bethe**
+
+| Medición | Qué muestra | Por qué apunta a las cuerdas |
+|---|---|---|
+| Energía de liberación 1D frente a 3D | La energía es menor en 1D que en 3D | La energía de ligadura solo se libera cuando desaparece el confinamiento |
+| Distribución de momento | La distribución se ensancha en el régimen atractivo | Las cuerdas más ligadas liberan una dispersión de momento más amplia |
+| Contacto de Tan | Las correlaciones de pares a corto alcance cambian | Las cuerdas aumentan la probabilidad de encontrar dos átomos juntos |
+
+En el régimen repulsivo, las dos energías de liberación coinciden, porque no hay estados ligados que romper. En el régimen atractivo divergen, y la diferencia permite estimar la energía de ligadura media y, por tanto, una cota inferior para la cuerda más grande presente. Un estudio de Nature Communications de 2026 sobre el sondeo de cuerdas de Bethe en un gas de Bose 1D atractivo utilizó exactamente esta combinación de mediciones de energía de liberación, momento y contacto de Tan: [Nature Communications study on probing Bethe strings in an attractive 1D Bose gas](https://www.nature.com/articles/s41467-026-76018-0).
+
+La medición del momento sigue el principio de incertidumbre de Heisenberg: una cuerda compacta en el espacio real produce una distribución amplia en el espacio de momentos. Después, todos los resultados se comparan con la hidrodinámica generalizada (GHD), una teoría creada para sistemas integrables lejos del equilibrio. La concordancia entre el experimento y la GHD es uno de los argumentos más sólidos de que la interpretación es correcta.
+
+## Las cuerdas de Bethe frente a estados cuánticos relacionados
+
+Los principiantes suelen confundir las cuerdas de Bethe con solitones o con el gas de Tonks–Girardeau. Están relacionados, pero no son lo mismo.
+
+**Tabla 5: Las cuerdas de Bethe comparadas con conceptos afines**
+
+| Concepto | Qué es | En qué se diferencia de una cuerda de Bethe |
+|---|---|---|
+| Solitón brillante | Un paquete de ondas que se autorrefuerza en un medio no lineal | El límite semiclásico de una cuerda; los trenes de solitones solo son estables con interacciones débiles |
+| Gas de Tonks–Girardeau | Gas de Bose 1D fuertemente repulsivo que imita a los fermiones | Régimen repulsivo con rapideces reales y sin grupos ligados |
+| Estado Super Tonks–Girardeau | Gas excitado producido por un quench hacia una atracción fuerte | Un estado en fase gaseosa en lugar de un único grupo ligado |
+| Par de Cooper | Dos fermiones ligados por atracción | Apareamiento en sistemas de Fermi 3D, no una cuerda 1D de muchos cuerpos |
+| Cuerda de Bethe gigante | Estado fundamental que contiene las *N* partículas | El límite de equilibrio; las cuerdas pequeñas requieren una preparación fuera del equilibrio |
+
+La forma más clara de distinguirlos: una cuerda de Bethe es un *grupo ligado dentro de un gas integrable unidimensional*, mientras que un solitón es la imagen ondulatoria clásica del mismo objeto en el límite de interacción débil.
+
+### Una ruta de aprendizaje para principiantes
+
+Si quieres pasar de esta introducción general a leer artículos reales, sigue estos pasos en orden:
+
+1. **Aprende qué es una cuasipartícula.** Las cuerdas de Bethe se describen en términos de cuasipartículas emergentes, no de átomos desnudos.
+2. **Entiende por qué una dimensión es especial.** El confinamiento elimina las rutas de desvío y hace posible la integrabilidad.
+3. **Hojea la [descripción general del ansatz de Bethe en Wikipedia](https://en.wikipedia.org/wiki/Bethe_ansatz).** Necesitas la forma de la idea, no el álgebra.
+4. **Estudia el modelo de Lieb–Liniger.** Es el contexto más sencillo donde aparecen las cuerdas.
+5. **Lee artículos experimentales sobre distribuciones de rapidez.** Traducen la teoría en perfiles de expansión medibles.
+6. **Sigue la literatura sobre GHD.** Es la herramienta que predice las distribuciones de cuerdas en experimentos reales.
+
+## Preguntas frecuentes sobre las cuerdas de Bethe
+
+**¿Las cuerdas de Bethe son partículas reales?**
+
+No. Son estados colectivos emergentes: grupos de partículas que se comportan como una única cuasipartícula. No se añade nada nuevo al sistema; la propia ligadura es el objeto de interés.
+
+**¿Por qué las cuerdas de Bethe aparecen principalmente en una dimensión?**
+
+Porque los sistemas integrables unidimensionales carecen de las colisiones difractivas que permitirían que un grupo se desintegrara. En tres dimensiones, un gas con interacción atractiva normalmente colapsa en lugar de formar cuerdas longevas.
+
+**¿Qué tan grande puede ser una cuerda de Bethe?**
+
+En principio, hasta *N* partículas: el estado fundamental de un gas atractivo es una única cuerda gigante. En experimentos reales, la distribución de tamaños depende de la temperatura, la densidad y la rapidez con que se barrió la interacción. Mediciones cuidadosas han inferido cuerdas de al menos seis partículas, y se esperan otras más grandes.
+
+**¿Basta esta explicación para principiantes sobre las cuerdas de Bethe para seguir la investigación?**
+
+Te da el mapa conceptual: signo de interacción, rapidez, ligadura y detección. A partir de aquí, el siguiente paso natural es leer las secciones experimentales de artículos recientes sobre distribuciones de rapidez, donde estas ideas se convierten en protocolos de medición concretos.

@@ -1,0 +1,99 @@
+export const metadata = {
+  title: "Bethe-Strings-Tutorial: Eindimensionale Quanten-Bindungszustände Schritt für Schritt meistern",
+  description: "Ein praxisnahes Bethe-Strings-Tutorial zu Rapiditäten, Bindungsenergie, experimentellem Nachweis und den Fallstricken eindimensionaler attraktiver Quantengase.",
+  category: "tutorial",
+  date: "2026-10-20",
+}
+
+## Was sind Bethe-Strings?
+
+Bethe-Strings sind Mehrteilchen-Bindungszustände, die in eindimensionalen integrablen Quantensystemen entstehen, wenn Teilchen einander anziehen. Statt zu kollabieren, organisiert sich das Gas in Clustern aus zwei, drei oder vielen Teilchen, die gemeinsam wandern und sich wie ein einzelnes emergentes Quasiteilchen verhalten. Die Idee geht auf Hans Bethes Lösung der eindimensionalen Spinkette von 1931 zurück, weshalb ein ernsthaftes Bethe-Strings-Tutorial mit dem Ansatz beginnen muss und nicht mit der Laborhardware.
+
+Warum ist das wichtig? Weil diese Bindungszustände keine fragilen Kuriositäten sind. Integrable Systeme haben keine diffraktiven Stöße, sodass ein String nicht in einen niedriger liegenden Zustand streuen und auseinanderfallen kann. Diese Stabilität macht Strings zu Trägern des anomalen Transports – einschließlich des superdiffusiven Kardar–Parisi–Zhang-Verhaltens, das in Spinketten beobachtet wird – und führt sie in kalte Atomgase, Quantenmagnete und sogar in die Hochenergietheorie. Ein gutes Bethe-Strings-Tutorial sollte daher drei Ebenen verbinden: die Mathematik der Rapiditäten, die experimentelle Signatur und die physikalischen Konsequenzen.
+
+Der klarste Rahmen ist das Lieb–Liniger-Modell: Bosonen auf einer Linie mit einer Kontaktwechselwirkung der Stärke c̃. Positives c̃ bedeutet Abstoßung; negatives c̃ bedeutet Anziehung. Das Vorzeichen von c̃ bestimmt alles am Rapiditätenmuster.
+
+| Regime | Wechselwirkung | Rapiditätenstruktur | Physikalisches Bild |
+|---|---|---|---|
+| Repulsiv | c̃ > 0 | Reelle Rapiditäten | Quasikondensat, das sich mit wachsendem c̃ in Richtung Tonks–Girardeau-Gas entwickelt |
+| Nicht wechselwirkend | c̃ = 0 | Impulse freier Teilchen | Kreuzungspunkt des idealen Gases |
+| Attraktiv, gequencht | c̃ < 0 | Komplexe Rapiditäten in Clustern | Super-Tonks–Girardeau-Zustand |
+| Attraktiv, adiabatisch | c̃ < 0 | Ein einzelner riesiger Cluster | Grundzustand („Riesen-Bethe-Zustand“) |
+
+## Das Rapiditätenmuster lesen
+
+Jeder Eigenzustand des Lieb–Liniger-Hamiltonoperators ist durch eine Menge von Rapiditäten θ gekennzeichnet, die als verallgemeinerte Impulse stabiler Quasiteilchen wirken. Im repulsiven Regime sind die Rapiditäten reelle Zahlen. Treibt man die Wechselwirkung stark genug, fermionisieren die Bosonen in den Tonks–Girardeau-Zustand, doch die Rapiditäten bleiben auf der reellen Achse.
+
+Wechselt man in den attraktiven Bereich, ändert sich das Bild qualitativ. Rapiditäten werden komplex und ordnen sich zu Clustern an, die denselben Realteil λ = Re(θ) teilen und entlang der imaginären Achse symmetrisch mit Abstand |c̃| angeordnet sind. Jeder Cluster *ist* ein Bethe-String. Ein isolierter String der Größe n hat eine Wellenfunktion proportional zu exp(i Σ θⱼzⱼ) mit Rapiditäten θⱼ = λ + i|c̃|(n + 1 − 2j)/2.
+
+Diese einzelne Formel ist die Belohnung jedes Bethe-Strings-Tutorials: Sie sagt Ihnen, dass ein String ein gebundenes Objekt mit einer internen Leiter imaginärer Impulse ist und nicht bloß ein lockeres Paar.
+
+| Eigenschaft | Ausdruck | Was er Ihnen sagt |
+|---|---|---|
+| Anzahl der Bestandteile | n | Wie viele Teilchen sich einen String teilen |
+| Rapiditätenabstand | \|c̃\| entlang der imaginären Achse | Interne Struktur des Bindungszustands |
+| Räumliche Ausdehnung | Δz_n = 2 / [\|c̃\|(n − 1)] | Bindungslänge; schrumpft mit wachsendem n oder \|c̃\| |
+| Bindungsenergie | E_b,n = ℏ²c̃²n(n² − 1) / (24m) | Steigt stark mit der Stringgröße |
+| Schwerpunktenergie | E_com,n = nℏ²λ² / (2m) | Kinetische Energie, die vom gesamten String getragen wird |
+
+Daraus folgen zwei praktische Konsequenzen. Erstens sind größere Strings kompakter: Eine Verdopplung von n verkürzt die Bindungslänge und erhöht die Bindungsenergie pro Teilchen, sodass große Strings die am stärksten gebundenen Objekte im Gas sind. Zweitens sind Strings nur wohldefiniert, solange ihre Bindungslänge viel größer als die transversale Einschlusslänge bleibt; bei kürzeren Abständen setzt der kurzreichweitige Molekülverlust ein, und die Lieb–Liniger-Beschreibung bricht zusammen.
+
+## Wie Experimente sie tatsächlich nachweisen
+
+Ein modernes Bethe-Strings-Tutorial darf nicht bei der Theorie stehen bleiben, denn die interessante Frage ist, wie Forschende überhaupt Belege dafür aufbauen, dass ein String existiert. Die Antwort ist ein zweistufiges Expansionsprotokoll.
+
+1. **Bereiten Sie ein eindimensionales Gas vor.** Laden Sie ein Bose–Einstein-Kondensat in ein Paar gekreuzter Gitterstrahlen, wodurch Tausende unabhängiger Röhren entstehen. Die Wechselwirkungsstärke wird durch c̃ ≈ 4a₃D/a⊥² festgelegt, wobei a₃D über eine Feshbach-Resonanz eingestellt wird.
+2. **Fahren Sie die Wechselwirkung durch null.** Fahren Sie c̃ mit endlicher Rate von repulsiv nach attraktiv. Beim Durchlaufen des nicht wechselwirkenden Punkts wird der Ausgangszustand in eine Verteilung von Strings umgewandelt statt in einen einzelnen riesigen Cluster.
+3. **Expandieren Sie zuerst in 1D, dann in 3D.** Während der Expansion in der Röhre streuen die Strings, bleiben aber gebunden. Das Aufheben des transversalen Einschlusses bricht sie auseinander und wandelt Bindungsenergie in kinetische Energie um.
+4. **Vergleichen Sie die beiden Freisetzungsenergien.** Im repulsiven Regime stimmen die 1D- und 3D-Werte überein. Im attraktiven Regime übersteigt der 3D-Wert den 1D-Wert um ungefähr die mittlere Bindungsenergie pro Teilchen.
+5. **Prüfen Sie die Impulsverteilung.** Nach dem Nulldurchgang verbreitert sich das Impulsprofil – in veröffentlichten Daten nahezu eine Verdopplung der Breite –, weil ein String der Bindungslänge Δz Impuls über ein Fenster Δp ≈ ℏ/(2Δz) freisetzt.
+6. **Messen Sie Tans Kontakt.** Der Kontakt C = c̃²G₂ verknüpft kurzreichweitige Paarkorrelationen über C = (2mc̃/ℏ²)(U − E_V) mit der Thermodynamik.
+
+| Messung | Was Sie vergleichen | Signatur von Strings |
+|---|---|---|
+| Freisetzungsenergie | 1D- vs. 3D-Expansion | 3D-Energie übersteigt 1D-Energie, wenn c̃ < 0 |
+| Impulsbreite | f(p/ℏ) über den Ramp | Verbreiterung nach dem Durchqueren von c̃ = 0 |
+| Tans Kontakt | Kontakt vs. Wechselwirkungsstärke | Folgt Paarkorrelationen, stimmt mit der Theorie überein |
+| Temperaturscan | Breite vs. T bei festem c̃ | Verbreiterung nimmt mit steigender Temperatur ab |
+
+Die Temperaturabhängigkeit ist der subtile Teil. Eine höhere Temperatur bedeutet, dass die kinetische Energie die Wechselwirkungsenergie dominiert, was die Wahrscheinlichkeit zur Bildung großer Strings unterdrückt und die mittlere Bindungsenergie pro Teilchen senkt. Ein sorgfältiges Bethe-Strings-Tutorial nennt stets die 1D-Temperatur zusammen mit der Wechselwirkungsstärke, weil beide gemeinsam die Verteilung der Stringgrößen festlegen.
+
+## Wo Bethe-Strings auftreten
+
+Strings sind nicht auf kalte Atome beschränkt. Dieselbe Mathematik erscheint auf mehreren Plattformen, und die verallgemeinerte Hydrodynamik (GHD) ist derzeit die wichtigste Theorie zur Beschreibung, wie sich ein String-Gas außerhalb des Gleichgewichts entwickelt. Die [Nature-Communications-Studie zum Nachweis von Bethe-Strings in einem attraktiven 1D-Bose-Gas](https://www.nature.com/articles/s41467-026-76018-0) ist ein guter Einstieg, um Theorie und Experiment Seite an Seite zu sehen.
+
+| Plattform | Typisches System | Was gemessen wird |
+|---|---|---|
+| Ultrakaltes 1D-Bose-Gas | Attraktiv wechselwirkende Cäsiumatome in Gitterröhren | Freisetzungsenergie, Impulsverteilung, Tans Kontakt |
+| Quantenspinketten | Anisotrope Heisenberg-Materialien | Spin-Transport, Anregungsdispersion |
+| Quantenmagnete | Niedrigdimensionale magnetische Isolatoren | Streuspektren, die String-Moden zeigen |
+| Hochenergietheorie | Integrable Eich- und Stringmodelle | Spektrum zusammengesetzter Anregungen |
+
+Im semiklassischen Grenzfall konvergieren Strings zu hellen Solitonen der nichtlinearen Schrödinger-Gleichung, und in schwach attraktiven Kondensaten treten Solitonenzüge auf. Diese Entsprechung ist eine nützliche Intuition, aber eine gefährliche Abkürzung: Die Solitonensprache versagt, sobald man in das Quantenregime eintritt, in dem nur der Bethe-Ansatz und die GHD quantitative Antworten liefern.
+
+## Häufige Fallstricke und wie man sie vermeidet
+
+| Fallstrick | Warum er schadet | Lösung |
+|---|---|---|
+| Strings als Solitonen behandeln | Solitonen setzen semiklassische, schwache Kopplung voraus | Im Quantenregime mit GHD arbeiten |
+| Temperatur ignorieren | Thermische Bewegung unterdrückt große Strings | T zusammen mit c̃ für jeden Datensatz angeben |
+| Dreikörperverlust vergessen | Stark gebundene große Strings zerfallen am schnellsten | Verlustmodell einbeziehen oder bei schwacher Attraktion bleiben |
+| Eine adiabatische Rampe annehmen | Endliche Sweep-Raten hinterlassen einen Zustand weit entfernt vom Gleichgewicht | Die Ramp-Rate an die Simulation anpassen |
+| Gross–Pitaevskii-Theorie verwenden | Sie versagt bei stark korrelierten 1D-Gasen | Stattdessen Bethe-Ansatz oder GHD verwenden |
+| Nur die mittlere Stringgröße nennen | Verteilungen sind breit und schief | Die vollständige Wahrscheinlichkeitsverteilung angeben |
+
+Eine nützliche Plausibilitätsprüfung: Berechnen Sie aus der gemessenen Bindungsenergie pro Teilchen eine untere Schranke für den größten vorhandenen String. Wenn die mittlere Bindungsenergie für ein bestimmtes n den Wert E_b,n/n übersteigt, muss das System Strings mindestens dieser Größe enthalten – eine schnelle Abschätzung, die ohne detaillierte Modellierung typischerweise bei sechs oder mehr Bestandteilen landet.
+
+## FAQ
+
+**Was ist ein Bethe-String in einfachen Worten?**
+Es ist ein Cluster von Teilchen in einem eindimensionalen attraktiven Quantengas, das sich als ein Objekt bewegt. Mathematisch werden die Rapiditäten der Teilchen komplex und reihen sich mit festem Abstand entlang der imaginären Achse auf. Jedes lesenswerte Bethe-Strings-Tutorial sollte Ihnen sowohl das Bild als auch das Rapiditätenmuster zeigen.
+
+**Gibt es Bethe-Strings außerhalb einer Dimension?**
+Die exakte String-Lösung ist ein eindimensionales Phänomen, das an die Integrabilität gebunden ist. Stringartige Bindungszustände und ihre Signaturen treten jedoch in quasi-1D-Gasen, Spinketten und Quantenmagneten auf, weshalb das Konzept so weit verbreitet ist.
+
+**Warum kollabieren attraktive Bethe-Strings nicht?**
+Weil integrablen Systemen diffraktive Stöße fehlen. Ohne diese Stöße hat ein Mehrteilchen-Bindungszustand keinen Zerfallskanal in niedriger liegende Zustände und überlebt daher, obwohl die Wechselwirkung attraktiv ist. Dreikörperverlust ist der Hauptprozess, der die größten Strings schließlich entfernt.
+
+**Wohin sollte ich nach diesem Bethe-Strings-Tutorial gehen?**
+Lesen Sie Bethes Arbeit von 1931 für den Ursprung, die Lieb–Liniger-Lösung für das Modell und McGuires Arbeiten für den attraktiven Fall. Folgen Sie dann einer modernen GHD-Behandlung, um zu sehen, wie sich String-Verteilungen zeitlich entwickeln – dort liegt der Großteil der aktuellen Forschung.

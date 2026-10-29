@@ -1,0 +1,105 @@
+export const metadata = {
+  title: "Cuerdas de Bethe y el ansatz de Bethe: estados ligados en gases cuánticos unidimensionales",
+  description: "Explicación de las cuerdas de Bethe: cómo el ansatz de Bethe convierte rapideces complejas en estados ligados estables de múltiples partículas en gases cuánticos 1D, imanes y cadenas de espín.",
+  category: "mechanics",
+  date: "2026-10-20",
+}
+
+## Por qué las cuerdas de Bethe importan en la física cuántica unidimensional
+
+Un gas de átomos ultrafríos con interacciones atractivas debería colapsar en una masa densa. Si confinas ese gas a una sola dimensión, ocurre algo mucho más extraño: las partículas se organizan en agrupamientos estables llamados **cuerdas de Bethe**. Estos estados ligados fueron predichos hace casi un siglo mediante la solución exacta de Hans Bethe para una cadena de espín cuántica, y hoy ocupan el centro de algunas de las investigaciones más activas en física cuántica de muchos cuerpos.
+
+¿Por qué debería importarte? Porque las **cuerdas de Bethe** no son una curiosidad matemática. Gobiernan el transporte anómalo de calor y espín, aparecen en imanes cuánticos y gases atómicos fríos, y conectan experimentos de laboratorio con la teoría de cuerdas. Un experimento de 2026 publicado en [Nature Communications sobre la exploración de cuerdas de Bethe en un gas de Bose unidimensional atractivo](https://www.nature.com/articles/s41467-026-76018-0) finalmente ofreció una imagen detallada y cuantitativa de cómo se forman y comportan estos objetos.
+
+## ¿Qué son las cuerdas de Bethe?
+
+En un sistema cuántico unidimensional, las partículas no pueden cruzarse sin interactuar. Cuando la interacción es repulsiva, los autoestados se etiquetan con números reales llamados *rapideces* —esencialmente, los momentos de cuasipartículas emergentes que no decaen. Cuando la interacción se vuelve atractiva, esas rapideces se vuelven complejas. Se organizan en agrupamientos verticales que comparten la misma parte real, espaciados simétricamente a lo largo del eje imaginario por una distancia determinada por la fuerza de la interacción.
+
+Cada agrupamiento es una **cuerda de Bethe**. Una cuerda de tamaño *n* contiene *n* partículas ligadas entre sí, con una función de onda que decae en una escala de longitud característica. Lo notable es la estabilidad: en un sistema integrable, las colisiones no son difractivas. Las partículas intercambian momento pero nunca se ramifican hacia nuevos canales de momento, así que un estado ligado no tiene nada hacia lo que decaer. Las cuerdas de Bethe persisten porque la matemática de la integrabilidad les prohíbe desintegrarse.
+
+| Régimen de interacción | Signo del acoplamiento | Estructura de rapideces | Imagen física |
+|---|---|---|---|
+| Gas de Bose débilmente interactuante | Positivo, pequeño | Reales, densamente empaquetadas | Cuasicondensado |
+| Gas de Tonks-Girardeau | Positivo, grande | Reales, extendidas | Bosones fermionizados |
+| Super Tonks-Girardeau | Negativo, con quench | Complejas, poco profundas | Estado gaseoso excitado |
+| Estado fundamental atractivo | Negativo, adiabático | Un agrupamiento gigante | Cuerda colapsada de todas las *N* partículas |
+| Atractivo, rampa finita | Negativo, con barrido | Múltiples agrupamientos | Mezcla de cuerdas de Bethe |
+
+## El ansatz de Bethe en lenguaje sencillo
+
+El ansatz de Bethe es una forma de escribir una función de onda exacta de muchos cuerpos como una superposición de ondas planas, con un término por cada ordenamiento posible de las partículas. Dondequiera que dos partículas se encuentren, la función de onda adquiere un desplazamiento de fase —una fase de dispersión— y ese es todo el contenido de la interacción. Para modelos integrables como el gas de Lieb-Liniger de bosones 1D, esta construcción resuelve el problema de forma exacta, sin aproximación.
+
+El precio de la exactitud es el trabajo de llevar la cuenta. Las rapideces deben satisfacer un conjunto de ecuaciones trascendentes acopladas y, en el caso atractivo, esas rapideces se vuelven complejas. Esa complejidad es una característica, no un defecto: es precisamente la parte imaginaria la que codifica la ligadura. Por lo tanto, resolver las ecuaciones del ansatz de Bethe para un sistema finito te entrega el espectro completo, incluida toda configuración posible de cuerdas de Bethe.
+
+| Concepto | Qué significa |
+|---|---|
+| Ansatz de Bethe | Función de onda exacta construida a partir de ondas planas más desplazamientos de fase de dos cuerpos |
+| Rapidez | Momento generalizado que etiqueta un autoestado; real cuando la interacción es repulsiva, compleja cuando es atractiva |
+| Cuerda | Agrupamiento de rapideces con la misma parte real, espaciadas por la fuerza de acoplamiento |
+| Integrabilidad | Propiedad que elimina las colisiones difractivas y estabiliza los estados ligados |
+| Hidrodinámica generalizada | Teoría de gran escala que sigue las distribuciones de rapideces fuera del equilibrio |
+
+## Anatomía de una cuerda: tamaño, espaciado y energía de ligadura
+
+Toda cuerda aislada de tamaño *n* tiene tres propiedades medibles. Su extensión espacial se reduce como 2 dividido por el producto de la fuerza de acoplamiento y (*n* − 1), así que las cuerdas más grandes son más compactas. Su energía de ligadura crece aproximadamente como *n*³ para *n* grande, lo que significa que el coste energético de romper una cuerda aumenta abruptamente con el tamaño. Y su energía total se separa limpiamente en una parte de centro de masa, que depende del momento total de la cuerda, más una parte negativa de ligadura.
+
+Los números siguientes se calcularon a partir de las expresiones ideales de Lieb-Liniger para el cesio con una fuerza de interacción de un micrómetro inverso —el régimen explorado en el reciente trabajo con átomos fríos. Ilustran el escalamiento, no un aparato en particular.
+
+| Tamaño de cuerda *n* | Longitud de enlace (μm) | Energía de ligadura (h × Hz) | Ligadura por partícula (h × Hz) |
+|---|---|---|---|
+| 2 | 2,00 | 19 | 9,5 |
+| 3 | 1,00 | 76 | 25 |
+| 4 | 0,67 | 190 | 48 |
+| 5 | 0,50 | 380 | 76 |
+| 6 | 0,40 | 666 | 111 |
+| 10 | 0,22 | 3138 | 314 |
+
+Una sutileza crucial: las cuerdas solo están bien definidas cuando su longitud de enlace supera ampliamente la longitud de confinamiento transversal. Si se comprime demasiado, los procesos moleculares de corto alcance las destruyen antes de que pueda aplicarse la física del modelo de Lieb-Liniger.
+
+## Cómo crean y detectan los físicos las cuerdas de Bethe
+
+El estado fundamental de un gas de Bose 1D atractivo es una única cuerda gigante que contiene todas las partículas. Para obtener una *distribución* de cuerdas más pequeñas, hay que trabajar fuera del equilibrio. La receta estándar es una rampa de interacción: comenzar en el régimen de Tonks-Girardeau fuertemente repulsivo y luego barrer el acoplamiento a través de cero hacia el lado atractivo a una tasa finita. La temperatura y la densidad iniciales determinan la mezcla de tamaños de cuerda que se acaba obteniendo.
+
+En el experimento de 2026, se cargaron átomos de cesio en miles de tubos unidimensionales independientes formados por haces de red cruzados, con entre siete y treinta átomos por tubo y temperaturas de unos pocos nanokelvin. Después se barrió la interacción a una tasa casi constante de aproximadamente −0,038 por micrómetro por milisegundo. La detección se basó en un protocolo de expansión en dos pasos: primero el gas se expande dentro de los tubos y luego se libera en tres dimensiones.
+
+| Medición | Qué revela | Firma observada |
+|---|---|---|
+| Energía de liberación en 1D frente a 3D | Si los estados ligados sobreviven dentro del tubo pero se rompen al liberarse | La energía en 1D alcanza una meseta cerca de h × 35 Hz mientras que la energía en 3D asciende hasta h × 110 Hz |
+| Distribución de momento tras la expansión | Ensanchamiento causado por la extensión finita de la cuerda | El ancho se estrecha cerca del acoplamiento cero y luego casi se duplica en el lado atractivo |
+| Dependencia con la temperatura | Cómo compite la energía térmica con la ligadura | Los gases más calientes forman menos cuerdas y de menor tamaño |
+| Contacto de Tan | Correlaciones de pares de corto alcance ligadas a la termodinámica | El contacto sigue una relación tipo virial incluso fuera del equilibrio |
+
+Todas estas mediciones concordaron estrechamente con la hidrodinámica generalizada, una teoría que sigue cómo evolucionan las distribuciones de rapideces en el espacio y el tiempo. La principal discrepancia provino de las pérdidas de tres cuerpos, que compactan las cuerdas con una atracción más fuerte y eliminan las más grandes —un recordatorio de que los experimentos reales solo son aproximadamente integrables.
+
+## Dónde aparecen las cuerdas de Bethe más allá de los átomos fríos
+
+Los gases fríos son el escenario más limpio, pero no el único. En 2018, la espectroscopia de terahercios de alta resolución identificó estados de dos y tres cuerdas en un imán cuántico; en 2020, la dispersión de neutrones resolvió dispersiones de cuerdas de Bethe de muchos cuerpos. En las cadenas de espín, las cuerdas grandes dominan el transporte anómalo e impulsan el sistema hacia la clase de universalidad de Kardar-Parisi-Zhang, la misma matemática que describe interfaces en crecimiento. Aparecen estructuras relacionadas en física de altas energías, donde la integrabilidad en teorías de gauge conecta problemas espectrales con construcciones de teoría de cuerdas.
+
+| Sistema | Papel de las cuerdas de Bethe |
+|---|---|
+| Gases de Bose 1D ultrafríos | Estados ligados de múltiples partículas creados por rampas de interacción |
+| Imanes cuánticos y cadenas de espín | Excitaciones identificadas mediante espectroscopía de terahercios y estudios posteriores con neutrones |
+| Transporte e hidrodinámica | Fuente de superdifusión anómala y escalamiento KPZ |
+| Teoría de altas energías | Estructuras de estados ligados en modelos integrables de gauge y de cuerdas |
+
+## Conclusiones prácticas para estudiantes e investigadores
+
+- **Sigue las rapideces, no las partículas.** Casi todos los resultados sobre cuerdas de Bethe se vuelven transparentes una vez que se representa la distribución de rapideces y se buscan agrupamientos complejos.
+- **Controla la tasa de la rampa.** Los barridos adiabáticos producen una única cuerda gigante; los barridos rápidos producen una amplia distribución de tamaños.
+- **Vigila la temperatura.** La energía cinética térmica suprime las cuerdas grandes, así que enfriar no solo mejora la relación señal-ruido: cambia la física.
+- **Compara la liberación en 1D y en 3D.** La diferencia de energía entre ambas es una de las señales experimentales más limpias de la energía de ligadura.
+- **Ten en cuenta las pérdidas.** La recombinación de tres cuerpos escala abruptamente con el tamaño de la cuerda y truncará silenciosamente tu distribución con una atracción fuerte.
+
+## Preguntas frecuentes
+
+**¿Qué es exactamente una cuerda de Bethe?**
+Una cuerda de Bethe es un estado ligado de varias partículas en un sistema cuántico integrable unidimensional, representado en el ansatz de Bethe por un agrupamiento de rapideces complejas que comparten la misma parte real. Las cuerdas de Bethe se comportan como cuasipartículas compuestas estables que portan tanto momento del centro de masa como energía de ligadura.
+
+**¿Por qué no decaen las cuerdas de Bethe?**
+Los sistemas integrables no tienen colisiones difractivas. Cuando dos cuasipartículas se encuentran, intercambian momento y adquieren una fase, pero nunca generan nuevos canales de momento. Sin canales de decaimiento disponibles, el estado ligado es estable.
+
+**¿Cómo se crean cuerdas de Bethe en el laboratorio?**
+Barriendo la fuerza de interacción desde repulsiva hasta atractiva a través del punto no interactuante a una tasa finita. Esto deja el gas en un estado lejos del equilibrio poblado por muchos tamaños de cuerda diferentes en lugar de un único agrupamiento ligado gigante.
+
+**¿Existen cuerdas de Bethe en más de una dimensión?**
+Los ejemplos más limpios son unidimensionales, porque la integrabilidad es lo que las estabiliza. Los sistemas de dimensiones superiores generalmente carecen de la solución exacta, aunque aparece física de estados ligados relacionada en materiales fuertemente correlacionados y en entornos de átomos fríos con confinamiento diseñado.

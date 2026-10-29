@@ -9,7 +9,13 @@
   "nav": {
     "home": "Home",
     "menu": "Menu",
-    "toggleTheme": "Toggle theme"
+    "toggleTheme": "Toggle theme",
+    "guide": "Guide",
+    "mechanics": "Mechanics",
+    "research": "Research",
+    "community": "Community",
+    "tutorial": "Tutorial",
+    "media": "Media"
   },
   "home": {
     "meta": {
@@ -403,5 +409,29 @@
     "buildGuide": "About",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
+  },
+  "guide": {
+    "overviewTitle": "Bethe Strings Guide",
+    "overviewDescription": "Start with clear explanations of Bethe strings, bound states, and one-dimensional quantum systems."
+  },
+  "mechanics": {
+    "overviewTitle": "Bethe Strings Mechanics",
+    "overviewDescription": "Explore the Bethe ansatz, rapidities, quantum states, and the mechanics of bound particle clusters."
+  },
+  "research": {
+    "overviewTitle": "Bethe Strings Research",
+    "overviewDescription": "Read about experiments, scientific papers, and the evidence behind Bethe string observations."
+  },
+  "community": {
+    "overviewTitle": "Bethe Strings Community",
+    "overviewDescription": "Find discussions and community resources related to Bethe strings research."
+  },
+  "tutorial": {
+    "overviewTitle": "Bethe Strings Tutorials",
+    "overviewDescription": "Follow beginner explanations and learning resources for Bethe strings and quantum physics."
+  },
+  "media": {
+    "overviewTitle": "Bethe Strings Media",
+    "overviewDescription": "Explore videos and news coverage about Bethe strings and related experiments."
   }
 }

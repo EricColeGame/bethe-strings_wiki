@@ -1,0 +1,108 @@
+export const metadata = {
+  title: "Bethe Strings e Teoria das Cordas: Como Estados Ligados Conectam a Matéria Quântica e as Cordas",
+  description: "Um guia com foco na mecânica sobre Bethe strings, a conexão de integrabilidade com a teoria das cordas e como os laboratórios detectam esses estados ligados de múltiplas partículas em gases 1D.",
+  category: "mechanics",
+  date: "2026-10-20",
+}
+
+Bethe strings são estados ligados de múltiplas partículas que surgem quando certos sistemas quânticos unidimensionais se tornam atrativos, e ficam no cruzamento entre a física da matéria condensada e a teoria de altas energias. Se você já se perguntou por que a conexão entre Bethe strings e teoria das cordas continua aparecendo em artigos sobre cadeias de spin e átomos ultrafrios, a resposta é a integrabilidade: a mesma matemática que organiza os espectros de cordas também organiza esses aglomerados ligados. Isso faz da sobreposição entre Bethe strings e teoria das cordas algo mais do que curiosidade — ela molda como os pesquisadores modelam transporte, emaranhamento e formação de estados ligados em sistemas que não se parecem em nada.
+
+## O que são Bethe strings? A mecânica essencial
+
+Em 1931, Hans Bethe resolveu a cadeia de spin de Heisenberg unidimensional com um ansatz que convertia um problema de muitos corpos em um conjunto de equações algébricas. A mesma abordagem, aplicada mais tarde ao modelo de Lieb-Liniger de bósons com interações do tipo delta, rotula cada autoestado com um conjunto de **rapidezes** — momentos generalizados para quasipartículas emergentes e estáveis.
+
+Quando a interação é repulsiva, essas rapidezes são números reais. Quando ela se torna atrativa, elas se tornam complexas: agrupam-se em clusters que compartilham a mesma parte real e se empilham simetricamente ao longo do eixo imaginário, espaçadas pela intensidade da interação. Cada cluster é uma Bethe string. Uma string de tamanho *n* se comporta como uma partícula composta com uma energia de centro de massa mais uma energia de ligação que cresce acentuadamente com *n*.
+
+Por que esses estados ligados simplesmente não se desfazem? Em um sistema integrável, as colisões são não difrativas — as partículas se espalham sem se ramificar em novos canais de momento. Isso fecha as rotas de decaimento que um estado ligado normalmente tomaria, e é por isso que as Bethe strings sobrevivem como excitações nítidas e de longa vida, em vez de se diluírem em um contínuo.
+
+| Elemento | O que é | Por que importa |
+|---|---|---|
+| Rapidez θ | Momento generalizado que rotula um autoestado | Real para gases repulsivos, complexa para os atrativos |
+| String de tamanho *n* | Cluster de *n* rapidezes que compartilham uma parte real λ | Comporta-se como uma quasipartícula composta |
+| Espaçamento imaginário | Fixado pela intensidade da interação | Define quão firmemente a string se liga |
+| Comprimento de ligação Δz | Encolhe aproximadamente como 1/(intensidade × (n−1)) | Deve exceder o comprimento de confinamento transversal |
+| Energia de ligação | Escala com intensidade² × *n*(*n*²−1) | Cresce rápido com o tamanho, impulsiona as assinaturas de laboratório |
+| Energia de centro de massa | Depende de λ e *n* | A parte que sobrevive a uma expansão puramente 1D |
+
+## Por que a conexão entre Bethe strings e teoria das cordas importa
+
+No limite planar da teoria N=4 super Yang-Mills, o espectro de operadores compostos é mapeado em uma cadeia de spin integrável, e as dimensões anômalas são calculadas com equações de Bethe ansatz em vez de diagramas de Feynman. Configurações de estado ligado das rapidezes — estruturalmente os mesmos objetos que aparecem em um tubo de átomos frios — surgem como soluções dessas equações. Esse é o cerne prático da relação entre Bethe strings e teoria das cordas: um único ferramental algébrico descreve tanto um gás de bancada quanto uma teoria de gauge fortemente acoplada com uma descrição gravitacional dual.
+
+Para leitores que desejam a versão rigorosa, a [Review of AdS/CFT Integrability](https://arxiv.org/abs/1012.3982), de Beisert e colaboradores, é o ponto de entrada padrão, e o [relatório da Nature Communications sobre a sondagem de Bethe strings em um gás de bósons 1D atrativo](https://www.nature.com/articles/s41467-026-76018-0) documenta o lado experimental moderno.
+
+| Plataforma | Papel da string | Observável típico |
+|---|---|---|
+| Gás de bósons 1D (Lieb-Liniger) | Estados ligados atrativos de múltiplas partículas | Energia de liberação, largura de momento |
+| Cadeias de spin quânticas | Estados ligados de múltiplos magnons | Transporte de spin, difusão anômala |
+| Ímãs quânticos | Modos de magnon ligados | Dispersões de espalhamento inelástico |
+| Teoria de gauge/cordas (AdS/CFT) | Soluções de estado ligado das equações de Bethe | Dimensões anômalas, Bethe ansatz termodinâmico |
+
+## Como as Bethe strings se formam: mecânica da rampa e controle de tamanho
+
+Há duas maneiras muito diferentes de alcançar o regime atrativo. Siga o estado fundamental adiabaticamente através do ponto não interagente e cada partícula colapsa em um único aglomerado gigante de *N* constituintes. Varra a interação a uma taxa finita, em vez disso, e o sistema fica longe do equilíbrio, povoado por uma ampla distribuição de strings menores. A temperatura inicial, a taxa de varredura e a densidade atômica decidem essa distribuição.
+
+| Regime | Sinal da interação | Estrutura de rapidezes | Imagem física |
+|---|---|---|---|
+| Quase-condensado | Fracamente repulsiva | Quase reais, densamente empacotadas | Gás coerente e fracamente interagente |
+| Tonks-Girardeau | Fortemente repulsiva | Reais, espalhadas | Bósons de núcleo duro fermionizados |
+| Super Tonks-Girardeau | Quench fortemente atrativo | Excitadas, metaestáveis | Estado gasoso altamente correlacionado |
+| Strings atrativas | Negativa | Complexas, agrupadas | Strings ligadas de tamanhos variados |
+| Travessia adiabática | Através de zero | Um único aglomerado gigante | Estado fundamental com *N* constituintes |
+
+Em um experimento em Innsbruck, um gás de césio começou com uma interação moderadamente repulsiva de cerca de 3,4 μm⁻¹ e foi varrido a aproximadamente −0,038 μm⁻¹ por milissegundo através do ponto não interagente. Em −1 μm⁻¹, uma string de quatro partículas tinha um comprimento de ligação próximo de 0,67 μm e uma energia de ligação em torno de 9 nK expressa em unidades de temperatura. Esses números importam porque uma string só é bem definida quando seu comprimento de ligação excede em muito a escala de confinamento transversal.
+
+| Temperatura inicial | Tamanhos de string dominantes | Efeito na largura de momento |
+|---|---|---|
+| Baixa | Strings grandes sobrevivem | Forte alargamento longe da interação zero |
+| Média | Distribuição mista | Alargamento moderado |
+| Alta | Majoritariamente strings curtas | Fraca sensibilidade a mudanças na interação |
+
+Temperatura mais alta significa que a energia cinética supera a energia de interação, então a probabilidade de montar strings longas cai e a energia de ligação média por partícula cai junto.
+
+## Como os físicos detectam Bethe strings: quatro assinaturas
+
+**Energia de liberação em 1D versus 3D.** Expanda o gás dentro dos tubos primeiro e depois o libere em três dimensões. As strings permanecem intactas durante a fase 1D, então a energia medida permanece baixa; a liberação súbita em 3D as despedaça e converte a energia de ligação em energia cinética. A diferença entre os dois números é um meio direto de acessar a energia de ligação.
+
+**Largura da distribuição de momento.** À medida que a interação cruza zero, o perfil de momento se estreita; continuar para o lado atrativo o alarga novamente, quase dobrando a largura em execuções relatadas. Uma string mais firme localiza as partículas no espaço, então argumentos do princípio da incerteza preveem uma janela de liberação de momento mais ampla.
+
+**Contato de Tan.** As correlações de pares de curto alcance crescem quando as partículas se agrupam em strings, e o contato de Tan liga essas correlações microscópicas a quantidades termodinâmicas como energia interna e potencial.
+
+**Perda de átomos.** A recombinação de três corpos se torna apreciável à medida que as strings se apertam com atração mais forte. O ajuste das curvas de perda fornece uma taxa consistente com medições 3D independentes, o que também explica por que as maiores strings desaparecem primeiro.
+
+| Medição | O que é comparado | O que revela |
+|---|---|---|
+| Energia de liberação 1D vs 3D | Energia por partícula em cada geometria | Energia de ligação da população de strings |
+| FWHM de momento | Largura antes e depois de cruzar zero | Alargamento causado pela formação de estados ligados |
+| Contato de Tan | Contato extraído do balanço de energia | Correlações de pares de curto alcance aprimoradas |
+| Decaimento do número de átomos | Taxa de perda versus interação | Perdas de três corpos dentro de strings apertadas |
+
+## Bethe strings e teoria das cordas na pesquisa moderna
+
+O arcabouço de Bethe strings e teoria das cordas se justifica porque as strings grandes controlam o comportamento macroscópico. Em cadeias de spin integráveis, as strings longas dominam o transporte anômalo e empurram a dinâmica para a classe de universalidade de Kardar-Parisi-Zhang, produzindo espalhamento superdifusivo que já foi observado em microscópios de gases quânticos e em materiais magnéticos. As mesmas estruturas informam trabalhos sobre pré-termalização, pesos de Drude e dinâmica fora do equilíbrio em sistemas quânticos confinados.
+
+Para quem modela esses sistemas numericamente, a hidrodinâmica generalizada é a ferramenta principal: ela acompanha a distribuição de tamanhos de string em vez de partículas individuais, e reproduz dados de energia de liberação, distribuição de momento e contato sem ajuste livre, uma vez fixadas a temperatura inicial e a densidade. Se você quiser raciocinar sobre Bethe strings no estilo da teoria das cordas, pense em distribuições de quasipartículas, não em funções de onda de partícula única.
+
+## Uma lista de verificação prática para trabalhar com Bethe strings
+
+1. **Fixe a geometria primeiro.** Confirme que o sistema é genuinamente unidimensional, verificando que nenhum modo transversal está excitado.
+2. **Saiba o sinal da sua interação.** Rapidezes reais significam repulsão; rapidezes complexas e agrupadas significam strings.
+3. **Controle a rampa.** Uma taxa de varredura finita produz uma mistura de tamanhos de string; uma varredura lenta e adiabática produz um único aglomerado gigante.
+4. **Meça duas vezes, em duas geometrias.** Comparar a expansão 1D e 3D separa o movimento de centro de massa da energia de ligação.
+5. **Observe o canal de perda.** A recombinação de três corpos trunca as maiores strings e enviesa qualquer estimativa de tamanho para cima ou para baixo, dependendo do ajuste.
+6. **Valide contra a hidrodinâmica generalizada.** A concordância em toda a faixa de interação é uma forte verificação de consistência das condições iniciais.
+
+## Perguntas frequentes
+
+**O que exatamente é uma Bethe string?**
+É um aglomerado de rapidezes — os momentos generalizados que rotulam os autoestados de um modelo integrável — agrupadas em torno de uma parte real compartilhada, com partes imaginárias espaçadas pela intensidade da interação. Fisicamente, comporta-se como um estado ligado de várias partículas se movendo juntas.
+
+**A conexão entre Bethe strings e teoria das cordas é apenas uma analogia matemática?**
+É mais profunda que uma analogia. As mesmas equações de Bethe ansatz que resolvem o problema espectral planar de N=4 super Yang-Mills também descrevem soluções de estado ligado em sistemas de matéria condensada, então resultados e técnicas se transferem em ambas as direções.
+
+**Por que as Bethe strings precisam de uma dimensão?**
+Em dimensões mais altas, o espalhamento é difrativo e os estados ligados têm canais de decaimento. A integrabilidade em 1D remove esses canais, e é isso que permite que as strings persistam como excitações estáveis.
+
+**O que limita o tamanho da string em um experimento real?**
+Temperatura, densidade e perda de três corpos. Gases mais quentes favorecem strings curtas, enquanto a ligação mais firme com atração mais forte aumenta a perda dos maiores aglomerados.
+
+A conclusão: Bethe strings não são uma curiosidade confinada a um único subcampo. Elas são o ponto de encontro da mecânica quântica exatamente solúvel, dos experimentos de precisão com átomos frios e das estruturas integráveis por trás da teoria das cordas moderna — e a mecânica agora é mensurável, não apenas derivável.

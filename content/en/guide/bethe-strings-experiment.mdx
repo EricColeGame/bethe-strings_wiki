@@ -1,0 +1,101 @@
+export const metadata = {
+  title: "Bethe Strings Experiment Guide: How Physicists Probe Quantum Bound States",
+  description: "A practical guide to the Bethe strings experiment: how one-dimensional ultracold gases form multi-particle bound states and how labs detect them.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+## Why Attraction Doesn't Always Mean Collapse
+
+Few results in quantum physics are as counterintuitive as this: in one dimension, attraction does not have to end in collapse. A well-designed Bethe strings experiment shows that attractively interacting particles can instead lock together into stable multi-particle clusters — and those clusters survive precisely because the underlying system is integrable. That is why the Bethe strings experiment has become a benchmark for testing quantum integrability in the laboratory, turning a prediction that dates back to Hans Bethe's 1931 work into something a camera can capture.
+
+This guide breaks down how such experiments are built, what the detectors actually record, and how to read the results without over-interpreting them. If you have ever wondered how a theoretical "string" of complex rapidities becomes a measurable release energy, this is the walkthrough you want.
+
+## What a Bethe String Actually Is
+
+Start with the model. The Lieb-Liniger Hamiltonian describes bosons in one dimension with a contact interaction of strength *c̃*. Its kinetic term is ordinary; the interaction term is a delta function that only fires when two particles occupy the same point. Bethe ansatz solutions label every eigenstate with a set of **rapidities** — generalized momenta for emergent quasiparticles.
+
+In the repulsive regime (*c̃* > 0), those rapidities are real. Push repulsion hard enough and the gas fermionizes into the Tonks-Girardeau state. Flip the sign, and something structural changes: rapidities become complex, clustering around a shared real part and stacking symmetrically along the imaginary axis at a spacing set by |*c̃*|. Those clusters are the strings.
+
+| Regime | Interaction | Rapidity structure | What you observe |
+|---|---|---|---|
+| Quasi-condensate | *c̃* → 0 | Rapidities bunch near zero | Narrow momentum distribution |
+| Repulsive (Lieb-Liniger) | *c̃* > 0 | Real rapidities | Fermionization toward Tonks-Girardeau |
+| Super Tonks-Girardeau | Quench to strong *c̃* < 0 | Strongly correlated excited gas | Gaseous, not bound |
+| Attractive, finite-rate sweep | *c̃* < 0 | Complex rapidities in vertical clusters | A mixture of strings of many sizes |
+| Adiabatic crossing | *c̃* < 0 | One giant cluster | Ground-state giant Bethe state |
+
+Two scaling laws do most of the explanatory work in any Bethe strings experiment. The spatial extent of a string of size *n* shrinks as 2/(|*c̃*|(*n* − 1)), so bigger strings are tighter. Its binding energy grows roughly as *n*(*n*² − 1), so bigger strings are also far more fragile against loss. A string with four constituents at *c̃* = −1 µm⁻¹ has a bond length near 0.67 µm and a binding energy around *k*_B* × 9 nK — small numbers that demand very cold, very clean samples.
+
+## Why Physicists Care Beyond Cold Atoms
+
+Strings are not a cold-atom curiosity. They show up as stable excitations in quantum spin chains and quantum magnets, where their stability traces to the absence of diffractive collisions in integrable systems — bound states simply cannot decay into lower-lying configurations. Large strings are now understood to shape anomalous transport in integrable spin chains and to drive the emergence of Kardar-Parisi-Zhang universality, the same scaling class that governs growing interfaces.
+
+The reach extends further. Integrable structures of this type appear in high-energy theory and string theory through AdS/CFT integrability. A controllable platform that can create dense intermixtures of strings of different sizes is therefore valuable well outside condensed matter.
+
+## Inside the Apparatus: Building the Experiment
+
+The most cited recent demonstration used ultracold cesium. A three-dimensional Bose-Einstein condensate is prepared in a crossed-beam optical dipole trap and levitated against gravity by a magnetic force, then loaded into two lattice beams crossing at 90° in the horizontal plane. The result is thousands of independent one-dimensional tubes, each holding a handful of atoms.
+
+| Parameter | Typical value | Why it matters |
+|---|---|---|
+| Atomic species | Cesium (Cs) | Broad Feshbach resonance for tuning |
+| Trap | Crossed dipole beams, magnetic levitation | Stable 3D condensate as a starting point |
+| Lattice | 532.2 nm spacing, depth ~25 *E*_r | Creates roughly 3,000–5,000 isolated tubes |
+| Transverse confinement | *ω*⊥/2*π* ≈ 10.5 kHz | Sets *a*⊥ ≈ 83 nm and enforces 1D physics |
+| Longitudinal confinement | *ω*_z*/2*π* ≈ 29.3 Hz | Sets *a*_ho ≈ 1.6 µm |
+| Atoms per tube | 7–30 | Controls the density that seeds string size |
+| 1D temperature | 3–35 nK | Balances kinetic against interaction energy |
+| Interaction ramp | ≈ −0.038 µm⁻¹ ms⁻¹ | Finite rate creates a far-from-equilibrium state |
+
+The key move is the sweep. Rather than jumping straight to attraction, the experiment ramps *c̃* from a moderately repulsive value down through zero and into the attractive side at a controlled rate. Passing through the non-interacting point with a finite rate — rather than adiabatically — prevents the system from collapsing into one giant cluster and instead populates a broad distribution of string sizes. The distribution is set mainly by the initial temperature and the atomic density in each tube.
+
+## Three Ways to Detect a String
+
+Because strings are bound states, they leave fingerprints in how the cloud expands once confinement is removed. The standard protocol is a two-step release: first let the gas expand inside the tubes for a time *t*₁D, then switch off the transverse confinement and let it fly in 3D for *t*₃D. During the 1D phase, strings scatter but stay bound; during the 3D release, they break apart.
+
+| Observable | How it is measured | Signature of strings |
+|---|---|---|
+| Release energy | Second moment of the cloud versus *t*₁D and *t*₃D | 3D release energy exceeds 1D release energy by the binding energy |
+| Momentum distribution | Longitudinal profile after expansion, converted to momentum | Broadening that grows as interactions become more attractive |
+| Tan's contact | Extracted from internal and potential energy via the virial relation | Contact scales with pair correlations and tracks string formation |
+
+The release-energy comparison is the cleanest evidence. In the repulsive regime the 1D and 3D release energies match, because there are no bound states to break. On the attractive side they diverge sharply — the 1D value plateaus at roughly *h* × 35 Hz while the 3D value climbs toward *h* × 110 Hz at *c̃* = −1.0 µm⁻¹. The difference is the average binding energy, and it gives a model-independent lower bound on the largest string present.
+
+Momentum distributions tell a complementary story. In a representative run, the full width at half maximum narrows from about ℏ × 6.0 µm⁻¹ at the start of the ramp to ℏ × 3.0 µm⁻¹ near zero interaction, then nearly doubles by *c̃* = −2.0 µm⁻¹. Heisenberg's uncertainty principle explains the rebound: a tighter string releases momentum over a wider window.
+
+## Temperature, Size, and Loss
+
+Temperature is the master variable. Higher temperature means kinetic energy dominates interaction energy, so the probability of assembling a large string drops. That shows up as weaker broadening of the momentum distribution at higher *T*.
+
+| 1D temperature | Large-string probability | Momentum broadening | Practical note |
+|---|---|---|---|
+| ≈ 3 nK | High | Strong | Best regime for large-*n* strings |
+| ≈ 15 nK | Moderate | Moderate | Common choice for hydrodynamic comparisons |
+| ≈ 35 nK | Low | Weak | Kinetic energy washes out the effect |
+
+Loss matters too. Three-body recombination scales steeply with string size, so tightly bound large strings disappear first as attraction strengthens. Fitting loss curves with a single global three-body rate gives a coefficient near 1.1 × 10⁻⁸ cm² s⁻¹, which converts to roughly 1.5 × 10⁻²⁷ cm⁶ s⁻¹ in three dimensions — consistent with independent measurements.
+
+## Practical Tips for Reading Results
+
+- **Check the sweep rate before the numbers.** A slow ramp produces one giant cluster; a fast ramp produces a distribution. Almost every reported string size is conditional on the ramp.
+- **Trust the difference, not the absolute value.** The 1D-versus-3D release-energy gap isolates binding energy; absolute release energies mix in center-of-mass motion.
+- **Treat size estimates as lower bounds** unless a full hydrodynamic model backs them up.
+- **Watch the loss channel.** Disagreement between data and simulation usually concentrates where three-body loss bites.
+- **Confirm you are still in 1D.** An absence of transverse excitation in time-of-flight images is the standard sanity check.
+
+For the full experimental detail, the peer-reviewed report on [probing Bethe strings in an attractive one-dimensional Bose gas](https://www.nature.com/articles/s41467-026-76018-0) in *Nature Communications* is the best starting point.
+
+## FAQ
+
+**What is a Bethe string in plain terms?**
+It is a bound cluster of particles in a one-dimensional quantum system, held together by attractive interactions and described by a stack of complex rapidities. In the semiclassical limit, strings converge to the bright solitons of the nonlinear Schrödinger equation.
+
+**Why do strings need one dimension?**
+Integrability is the ingredient that matters. In 1D, collisions are non-diffractive, so a bound state has no decay channel into lower-lying states. Remove that protection and the cluster dissolves.
+
+**How does a Bethe strings experiment prove strings exist?**
+No single measurement does it alone. Evidence comes from three converging signals: a 1D/3D release-energy mismatch equal to the binding energy, interaction-dependent broadening of the momentum distribution, and Tan's contact tracking short-range pair correlations. Agreement with generalized hydrodynamics across all three is what makes the case.
+
+**What limits the largest string you can observe?**
+Temperature and loss. Warmer clouds rarely assemble large clusters, and tighter strings suffer three-body recombination faster. Reported sizes are therefore conservative estimates of what the system actually produced.

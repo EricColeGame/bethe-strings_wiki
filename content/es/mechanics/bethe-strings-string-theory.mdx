@@ -1,0 +1,108 @@
+export const metadata = {
+  title: "Cadenas de Bethe y teoría de cuerdas: cómo los estados ligados conectan la materia cuántica y las cuerdas",
+  description: "Una guía centrada en la mecánica de las cadenas de Bethe, su vínculo con la integrabilidad de la teoría de cuerdas y cómo los laboratorios detectan estos estados ligados de múltiples partículas en gases unidimensionales.",
+  category: "mechanics",
+  date: "2026-10-20",
+}
+
+Las cadenas de Bethe son estados ligados de múltiples partículas que aparecen cuando ciertos sistemas cuánticos unidimensionales se vuelven atractivos, y se sitúan en la encrucijada entre la física de la materia condensada y la teoría de altas energías. Si te has preguntado por qué la conexión entre las cadenas de Bethe y la teoría de cuerdas reaparece una y otra vez en artículos sobre cadenas de espín y átomos ultrafríos, la respuesta es la integrabilidad: la misma matemática que organiza los espectros de cuerdas organiza también estos conglomerados ligados. Eso hace que el solapamiento entre cadenas de Bethe y teoría de cuerdas sea mucho más que una curiosidad: determina cómo los investigadores modelan el transporte, el entrelazamiento y la formación de estados ligados en sistemas que no se parecen en nada.
+
+## ¿Qué son las cadenas de Bethe? La mecánica fundamental
+
+En 1931, Hans Bethe resolvió la cadena de espín de Heisenberg unidimensional con un ansatz que convertía un problema de muchos cuerpos en un conjunto de ecuaciones algebraicas. El mismo enfoque, aplicado después al modelo de Lieb-Liniger de bosones con interacciones de función delta, etiqueta cada autoestado con un conjunto de **rapideces**: momentos generalizados de cuasipartículas emergentes y estables.
+
+Cuando la interacción es repulsiva, esas rapideces son números reales. Cuando se vuelve atractiva, se vuelven complejas: se agrupan en conglomerados que comparten la misma parte real y se apilan simétricamente a lo largo del eje imaginario, espaciadas por la intensidad de la interacción. Cada conglomerado es una cadena de Bethe. Una cadena de tamaño *n* se comporta como una única partícula compuesta con una energía de centro de masa más una energía de ligadura que aumenta abruptamente con *n*.
+
+¿Por qué estos estados ligados no se desintegran sin más? En un sistema integrable, las colisiones no son difractivas: las partículas se dispersan sin ramificarse hacia nuevos canales de momento. Eso cierra las rutas de decaimiento que un estado ligado tomaría normalmente, y por eso las cadenas de Bethe sobreviven como excitaciones nítidas y longevas en lugar de difuminarse en un continuo.
+
+| Elemento | Qué es | Por qué importa |
+|---|---|---|
+| Rapidez θ | Momento generalizado que etiqueta un autoestado | Real en gases repulsivos, compleja en los atractivos |
+| Cadena de tamaño *n* | Conglomerado de *n* rapideces que comparten una parte real λ | Se comporta como una cuasipartícula compuesta |
+| Espaciado imaginario | Fijado por la intensidad de la interacción | Determina cuán fuertemente se liga la cadena |
+| Longitud de enlace Δz | Se reduce aproximadamente como 1/(intensidad × (n−1)) | Debe superar la longitud de confinamiento transversal |
+| Energía de ligadura | Escala como intensidad² × *n*(*n*²−1) | Crece rápido con el tamaño y potencia las señales de laboratorio |
+| Energía del centro de masa | Depende de λ y *n* | La parte que sobrevive a una expansión puramente 1D |
+
+## Por qué importa el vínculo entre cadenas de Bethe y teoría de cuerdas
+
+En el límite planar de la teoría N=4 super Yang-Mills, el espectro de operadores compuestos se corresponde con una cadena de espín integrable, y las dimensiones anómalas se calculan con las ecuaciones del ansatz de Bethe en lugar de con diagramas de Feynman. Las configuraciones de estados ligados de rapideces —estructuralmente los mismos objetos que aparecen en un tubo de átomos fríos— surgen como soluciones de esas ecuaciones. Ese es el núcleo práctico de la relación entre cadenas de Bethe y teoría de cuerdas: un mismo conjunto de herramientas algebraicas describe tanto un gas de laboratorio como una teoría de gauge fuertemente acoplada con una descripción gravitatoria dual.
+
+Para los lectores que quieran la versión rigurosa, la [Review of AdS/CFT Integrability](https://arxiv.org/abs/1012.3982) de Beisert y colaboradores es el punto de entrada estándar, y el [informe de Nature Communications sobre la detección de cadenas de Bethe en un gas de Bose 1D atractivo](https://www.nature.com/articles/s41467-026-76018-0) documenta el lado experimental moderno.
+
+| Plataforma | Papel de la cadena | Observable típico |
+|---|---|---|
+| Gas de Bose 1D (Lieb-Liniger) | Estados ligados atractivos de múltiples partículas | Energía de liberación, anchura de momento |
+| Cadenas de espín cuánticas | Estados ligados de múltiples magnones | Transporte de espín, difusión anómala |
+| Imanes cuánticos | Modos de magnones ligados | Dispersiones de dispersión inelástica |
+| Teoría de gauge/cuerdas (AdS/CFT) | Soluciones de estado ligado de las ecuaciones de Bethe | Dimensiones anómalas, ansatz termodinámico de Bethe |
+
+## Cómo se forman las cadenas de Bethe: mecánica del barrido y control del tamaño
+
+Hay dos formas muy distintas de alcanzar el régimen atractivo. Si se sigue el estado fundamental de forma adiabática a través del punto no interactuante, todas las partículas colapsan en un único conglomerado gigante de *N* constituyentes. Si, en cambio, se barre la interacción a una velocidad finita, el sistema queda lejos del equilibrio, poblado por una amplia distribución de cadenas más pequeñas. La temperatura inicial, la velocidad de barrido y la densidad atómica deciden esa distribución.
+
+| Régimen | Signo de la interacción | Estructura de rapideces | Imagen física |
+|---|---|---|---|
+| Cuasicondensado | Débilmente repulsiva | Casi reales, muy empaquetadas | Gas coherente, débilmente interactuante |
+| Tonks-Girardeau | Fuertemente repulsiva | Reales, extendidas | Bosones de núcleo duro fermionizados |
+| Super Tonks-Girardeau | Fuertemente atractiva tras un quench | Excitadas, metaestables | Estado gaseoso altamente correlacionado |
+| Cadenas atractivas | Negativa | Complejas, agrupadas | Cadenas ligadas de tamaños variados |
+| Cruce adiabático | A través de cero | Un único conglomerado gigante | Estado fundamental con *N* constituyentes |
+
+En un experimento realizado en Innsbruck, un gas de cesio partió de una interacción moderadamente repulsiva de unos 3,4 μm⁻¹ y se barrió a aproximadamente −0,038 μm⁻¹ por milisegundo a través del punto no interactuante. A −1 μm⁻¹, una cadena de cuatro partículas tenía una longitud de enlace cercana a 0,67 μm y una energía de ligadura de unos 9 nK expresada en unidades de temperatura. Esos números importan porque una cadena solo está bien definida cuando su longitud de enlace supera ampliamente la escala de confinamiento transversal.
+
+| Temperatura inicial | Tamaños de cadena dominantes | Efecto sobre la anchura de momento |
+|---|---|---|
+| Baja | Sobreviven las cadenas grandes | Fuerte ensanchamiento al alejarse de la interacción nula |
+| Media | Distribución mixta | Ensanchamiento moderado |
+| Alta | Mayormente cadenas cortas | Escasa sensibilidad a los cambios de interacción |
+
+Una temperatura más alta implica que la energía cinética supera a la energía de interacción, de modo que la probabilidad de ensamblar cadenas largas disminuye y la energía de ligadura media por partícula cae con ella.
+
+## Cómo detectan los físicos las cadenas de Bethe: cuatro firmas
+
+**Energía de liberación en 1D frente a 3D.** Primero se expande el gas dentro de los tubos y luego se libera en tres dimensiones. Las cadenas permanecen intactas durante la fase 1D, por lo que la energía medida se mantiene baja; la súbita liberación en 3D las desgarra y convierte la energía de ligadura en energía cinética. La diferencia entre ambos valores es una medida directa de la energía de ligadura.
+
+**Anchura de la distribución de momento.** A medida que la interacción cruza cero, el perfil de momento se estrecha; al continuar hacia el lado atractivo vuelve a ensancharse, casi duplicando la anchura en las mediciones publicadas. Una cadena más compacta localiza las partículas en el espacio, por lo que los argumentos del principio de incertidumbre predicen una ventana de liberación de momento más amplia.
+
+**Contacto de Tan.** Las correlaciones de pares a corto alcance crecen cuando las partículas se agrupan en cadenas, y el contacto de Tan vincula esas correlaciones microscópicas con magnitudes termodinámicas como la energía interna y la energía potencial.
+
+**Pérdida de átomos.** La recombinación de tres cuerpos se vuelve apreciable a medida que las cadenas se aprietan con una atracción más intensa. El ajuste de las curvas de pérdida arroja una tasa consistente con mediciones 3D independientes, lo que también explica por qué las cadenas más grandes desaparecen primero.
+
+| Medición | Qué se compara | Qué revela |
+|---|---|---|
+| Energía de liberación 1D frente a 3D | Energía por partícula en cada geometría | Energía de ligadura de la población de cadenas |
+| FWHM de momento | Anchura antes y después de cruzar cero | Ensanchamiento causado por la formación de estados ligados |
+| Contacto de Tan | Contacto extraído del balance energético | Correlaciones de pares a corto alcance reforzadas |
+| Decaimiento del número de átomos | Tasa de pérdida frente a la interacción | Pérdidas de tres cuerpos dentro de cadenas compactas |
+
+## Cadenas de Bethe y teoría de cuerdas en la investigación moderna
+
+El marco de las cadenas de Bethe y la teoría de cuerdas se justifica porque las cadenas grandes controlan el comportamiento macroscópico. En las cadenas de espín integrables, las cadenas largas dominan el transporte anómalo e impulsan la dinámica hacia la clase de universalidad de Kardar-Parisi-Zhang, produciendo una propagación superdifusiva que ya se ha observado en microscopios de gases cuánticos y en materiales magnéticos. Las mismas estructuras orientan el trabajo sobre pretermalización, pesos de Drude y dinámica fuera del equilibrio en sistemas cuánticos confinados.
+
+Para quien modele estos sistemas numéricamente, la hidrodinámica generalizada es la herramienta de referencia: sigue la distribución de tamaños de cadena en lugar de partículas individuales, y reproduce los datos de energía de liberación, distribución de momento y contacto sin ajustes libres una vez fijadas la temperatura y la densidad iniciales. Si quieres razonar sobre cadenas de Bethe al estilo de la teoría de cuerdas, piensa en distribuciones de cuasipartículas, no en funciones de onda de una sola partícula.
+
+## Una lista de comprobación práctica para trabajar con cadenas de Bethe
+
+1. **Fija primero la geometría.** Confirma que el sistema es genuinamente unidimensional comprobando que no se excita ningún modo transversal.
+2. **Conoce el signo de tu interacción.** Rapideces reales significan repulsión; rapideces complejas y agrupadas significan cadenas.
+3. **Controla el barrido.** Una velocidad de barrido finita produce una mezcla de tamaños de cadena; un barrido lento y adiabático produce un único conglomerado gigante.
+4. **Mide dos veces, en dos geometrías.** Comparar la expansión 1D y 3D separa el movimiento del centro de masa de la energía de ligadura.
+5. **Vigila el canal de pérdidas.** La recombinación de tres cuerpos trunca las cadenas más grandes y sesga cualquier estimación de tamaño hacia arriba o hacia abajo según el ajuste.
+6. **Valida frente a la hidrodinámica generalizada.** La concordancia en todo el rango de interacción es una sólida comprobación de consistencia de las condiciones iniciales.
+
+## Preguntas frecuentes
+
+**¿Qué es exactamente una cadena de Bethe?**
+Es un conglomerado de rapideces —los momentos generalizados que etiquetan los autoestados de un modelo integrable— agrupadas en torno a una parte real compartida, con partes imaginarias espaciadas por la intensidad de la interacción. Físicamente, se comporta como un estado ligado de varias partículas que se mueven juntas.
+
+**¿Es la conexión entre cadenas de Bethe y teoría de cuerdas solo una analogía matemática?**
+Es más profundo que una analogía. Las mismas ecuaciones del ansatz de Bethe que resuelven el problema espectral planar de N=4 super Yang-Mills describen también soluciones de estado ligado en sistemas de materia condensada, por lo que los resultados y las técnicas se transfieren en ambas direcciones.
+
+**¿Por qué necesitan las cadenas de Bethe una dimensión?**
+En dimensiones superiores, la dispersión es difractiva y los estados ligados tienen canales de decaimiento. La integrabilidad en 1D elimina esos canales, y eso es lo que permite que las cadenas persistan como excitaciones estables.
+
+**¿Qué limita el tamaño de las cadenas en un experimento real?**
+La temperatura, la densidad y las pérdidas de tres cuerpos. Los gases más calientes favorecen cadenas cortas, mientras que una ligadura más fuerte con mayor atracción incrementa la pérdida de los conglomerados más grandes.
+
+En resumen: las cadenas de Bethe no son una curiosidad confinada a una sola subdisciplina. Son el punto de encuentro de la mecánica cuántica exactamente resoluble, los experimentos de precisión con átomos fríos y las estructuras integrables que sustentan la teoría de cuerdas moderna, y su mecánica ya es medible, no solo deducible.

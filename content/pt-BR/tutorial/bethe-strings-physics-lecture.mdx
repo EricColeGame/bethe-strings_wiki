@@ -1,0 +1,128 @@
+export const metadata = {
+  title: "Aula de Física sobre Cordas de Bethe: Estados Ligados em Gases Quânticos 1D Explicados",
+  description: "Uma aula completa de física sobre cordas de Bethe: rapidezas, energia de ligação, tamanho das cordas e como gases de Bose ultrafrios 1D revelam esses estados ligados exóticos.",
+  category: "tutorial",
+  date: "2026-10-20",
+}
+
+Por que interações atrativas em um gás quântico unidimensional criam aglomerados estáveis em vez de um colapso? Essa pergunta está no cerne de qualquer boa aula de física sobre cordas de Bethe, porque a resposta reescreve como os físicos pensam sobre estados ligados em sistemas integráveis. Neste roteiro de aula de física sobre cordas de Bethe, você encontra os conceitos, as fórmulas e as assinaturas experimentais organizados em uma ordem amigável ao ensino — para que você possa explicar o tema ou estudá-lo sem se afogar em notação.
+
+## O que são cordas de Bethe? A definição central
+
+Em 1931, Hans Bethe resolveu a cadeia de spin de Heisenberg unidimensional escrevendo autoestados de muitos corpos como superposições de ondas planas com momentos escolhidos cuidadosamente. Esses momentos são chamados de **rapidezas** (θ) e se comportam como momentos generalizados para quasipartículas emergentes.
+
+Em um gás 1D repulsivo, as rapidezas são números reais. Torne a interação atrativa e elas se tornam complexas: as rapidezas se agrupam, compartilhando a mesma parte real λ enquanto ocupam valores imaginários uniformemente espaçados, separados por |c̃|. Cada aglomerado é uma **corda de Bethe**, e seu tamanho *n* é simplesmente o número de rapidezas dentro dele.
+
+| Quantidade | Símbolo / expressão | O que indica |
+|---|---|---|
+| Tamanho da corda | *n* | Número de rapidezas (partículas) ligadas no aglomerado |
+| Parte real | λ ≡ Re(θ) | Momento do centro de massa da corda inteira |
+| Espaçamento imaginário | \|c̃\| | Intervalo entre rapidezas vizinhas no aglomerado |
+| Extensão espacial | Δz_n = 2 / [\|c̃\|(n−1)] | Comprimento de ligação do estado ligado |
+| Energia de ligação | E_b,n = ℏ²c̃²n(n²−1)/(24m) | Energia recuperada se a corda se desfizer |
+| Energia do centro de massa | E_com,n = nℏ²λ²/(2m) | Energia cinética da corda movendo-se como uma unidade |
+
+Duas consequências decorrem imediatamente. Primeiro, uma corda fica **mais compacta** à medida que *n* cresce ou que a atração se intensifica, porque Δz_n diminui. Segundo, o verdadeiro estado fundamental de *N* partículas atrativas é uma única corda gigante com *N* constituintes — portanto, qualquer corda *menor* que você observe precisa ter sido criada fora do equilíbrio.
+
+## Os regimes de interação que uma aula de física sobre cordas de Bethe precisa cobrir
+
+O modelo de Lieb-Liniger (LL) é o palco canônico para essa física: energia cinética livre mais uma interação de contato de intensidade c̃. O sinal de c̃ decide tudo.
+
+| Regime | Sinal de c̃ | Estrutura de rapidezas | Quadro físico |
+|---|---|---|---|
+| Sem interação | c̃ = 0 | Reais, degeneradas | Gás de Bose ideal / quase-condensado |
+| Repulsivo | c̃ > 0 | Reais | De fracamente a fortemente interagente; fermionização no acoplamento forte (Tonks-Girardeau) |
+| Super Tonks-Girardeau | Quench para c̃ → −∞ | Complexas, mas semelhantes a gás | Estado gasoso metaestável e excitado |
+| Atrativo, equilíbrio | c̃ < 0 | Aglomerados complexos | Estado fundamental de corda gigante |
+| Atrativo, com quench | c̃ < 0 após uma rampa finita | Tamanhos de aglomerados mistos | Gás fora do equilíbrio de cordas de Bethe |
+
+Essa última linha é o ponto ideal experimental. Varrer a interação do lado repulsivo, passando por zero, até o lado atrativo a uma **taxa finita** prende o gás em um estado longe do equilíbrio, populado por cordas de muitos tamanhos diferentes.
+
+## Fórmulas centrais que uma aula de física sobre cordas de Bethe deve colocar no quadro
+
+O hamiltoniano LL é o ponto de partida: energia cinética para partículas de massa *m*, mais um termo de interação delta ponderado por ℏ²c̃/2m. Diagonalizá-lo via ansatz de Bethe produz um conjunto de rapidezas que rotulam cada autoestado.
+
+Para uma corda isolada de tamanho *n*, as rapidezas são simétricas em relação ao eixo real:
+
+**θ_j = λ + i\|c̃\|(n+1−2j)/2**, para j = 1 … n.
+
+| Conceito | Expressão | Nota de ensino |
+|---|---|---|
+| Hamiltoniano LL | Ĥ = −(ℏ²/2m)Σ∂²/∂z² + (ℏ²c̃/2m)Σδ(z_i−z_j) | Termo cinético mais interação de contato |
+| Conjunto de rapidezas | θ_j = λ + i\|c̃\|(n+1−2j)/2 | Espaçamento simétrico ao longo do eixo imaginário |
+| Extensão da corda | Δz_n = 2/[\|c̃\|(n−1)] | Diminui com *n* maior ou atração mais forte |
+| Energia de ligação | E_b,n = ℏ²c̃²n(n²−1)/(24m) | Escala aproximadamente como *n*³ |
+| Energia total da corda | E_n = E_com,n − E_b,n | Energia do centro de massa menos ligação |
+| Contato de Tan | C = c̃²G₂ | Sonda correlações locais de pares |
+| Relação do virial | C = (2mc̃/ℏ²)(U − E_V) | Conecta o contato à energia interna e potencial |
+
+Uma verificação de consistência útil para estudantes: cordas só são bem definidas quando Δz_n é muito maior que o comprimento de confinamento transversal. Force demais a atração e a descrição deixa de valer, à medida que a perda molecular de curto alcance assume o controle.
+
+## Como os experimentos realmente detectam cordas de Bethe
+
+A demonstração mais clara até hoje vem de átomos de césio ultrafrios carregados em uma matriz de tubos unidimensionais, conforme relatado no [estudo publicado na Nature Communications sobre a sondagem de cordas de Bethe em um gás de Bose 1D atrativo](https://www.nature.com/articles/s41467-026-76018-0). Uma ressonância de Feshbach ajusta a interação, e uma rampa controlada leva o gás do lado repulsivo, passando pelo ponto sem interação, até o regime atrativo.
+
+A detecção usa um **protocolo de medição de rapidezas** em duas etapas: primeiro a nuvem se expande dentro dos tubos por um tempo t_1D, depois é liberada em três dimensões por t_3D. A lógica é elegante — durante a expansão 1D, as cordas se espalham, mas permanecem ligadas, então a energia de liberação permanece baixa. Durante a liberação 3D, o confinamento desaparece, as cordas se rompem e sua energia de ligação se converte em energia cinética.
+
+| Observável | Regime repulsivo | Regime atrativo | Interpretação |
+|---|---|---|---|
+| Energia de liberação em 1D (E_1D) | Corresponde a E_3D | Forma um platô em um valor baixo | Apenas o movimento do centro de massa é medido |
+| Energia de liberação em 3D (E_3D) | Corresponde a E_1D | Sobe bem acima de E_1D | Energia de ligação convertida em energia cinética |
+| Largura do momento (FWHM) | Estreita-se aproximando de c̃ = 0 | Alarga-se acentuadamente afastando-se de c̃ = 0 | Ligação mais forte libera uma janela de momento mais ampla |
+| Contato de Tan | Segue a relação do virial | Modificado por correlações de pares intensificadas | Sonda de correlação de curto alcance |
+
+A diferença entre E_3D e E_1D é a energia média de ligação por partícula. Como a energia de ligação cresce monotonicamente com o tamanho da corda, essa diferença estabelece um **limite inferior** para a maior corda presente — nos dados relatados, pelo menos seis constituintes, com modelagem hidrodinâmica prevendo uma distribuição ainda mais ampla.
+
+A distribuição de momento conta a mesma história por outro ângulo. No regime repulsivo, a distribuição é efetivamente a distribuição de rapidezas, e ela se estreita à medida que as interações enfraquecem. Passe para a atração e as quasipartículas se ligam, alargando o perfil — uma consequência direta do princípio da incerteza atuando sobre uma corda de comprimento de ligação finito.
+
+## Temperatura, tamanho das cordas e os limites da medição
+
+A temperatura é o botão que decide quão grandes as cordas ficam. Energia térmica mais alta supera a energia de interação, então aglomerados grandes se tornam estatisticamente improváveis. Qualquer aula honesta de física sobre cordas de Bethe também deve dedicar alguns minutos aos modos de falha.
+
+| Efeito | O que acontece | Por que importa |
+|---|---|---|
+| Energia térmica | Temperatura mais alta suprime cordas grandes | A energia cinética domina sobre a energia de interação |
+| Perda de três corpos | Cordas fortemente ligadas desaparecem mais rápido | As taxas de perda crescem acentuadamente com *n* e com \|c̃\| |
+| Quebra de integrabilidade | A teoria superestima cordas grandes em atração forte | Explica a lacuna residual entre dados e teoria |
+| Confinamento transversal | Cordas ficam mal definidas quando Δz_n se aproxima da largura do tubo | Processos moleculares de curto alcance assumem o controle |
+
+Os experimentos relatados abrangeram aproximadamente 3–35 nK de temperatura 1D, com as assinaturas de ligação mais claras aparecendo na extremidade mais fria. Modelar toda a expansão com hidrodinâmica generalizada (GHD) reproduz bem os dados ao longo da faixa de interação, o que é, por si só, um resultado notável: uma estrutura hidrodinâmica construída para sistemas integráveis descreve quantitativamente um gás finito, aprisionado e com perdas.
+
+## Montando sua própria aula de física sobre cordas de Bethe: um plano passo a passo
+
+Se você está ensinando um seminário ou revisando para uma prova, a sequência importa mais que a densidade. Aqui está uma estrutura que funciona.
+
+1. **Comece com o enigma.** Bósons atrativos em 3D colapsam; em sistemas integráveis 1D, eles formam aglomerados estáveis. Esse contraste chama a atenção imediatamente.
+2. **Introduza o ansatz de Bethe em uma cadeia de spin.** As rapidezas são mais fáceis de aceitar quando os estudantes já as viram rotulando autoestados antes.
+3. **Desenhe o plano de rapidezas.** Eixo real para repulsão, pares complexos simétricos para atração — uma imagem substitui uma página de álgebra.
+4. **Derive o ansatz de corda.** Mostre θ_j = λ + i|c̃|(n+1−2j)/2 e deixe os estudantes verificarem a simetria.
+5. **Faça o orçamento de energia explicitamente.** Energia do centro de massa menos energia de ligação explica quase toda medição que vem a seguir.
+6. **Percorra a expansão de 1D para 3D.** Este é o desfecho: um estado ligado que sobrevive a uma expansão e se despedaça na outra.
+7. **Encerre com questões abertas.** Cordas grandes impulsionam transporte anômalo e a classe de universalidade Kardar-Parisi-Zhang, e a mesma matemática aparece em física de altas energias e teoria das cordas.
+
+| Segmento | Tempo sugerido | Conclusão central |
+|---|---|---|
+| Noções básicas do ansatz de Bethe | 8 min | Autoestados são rotulados por rapidezas |
+| O plano de rapidezas | 7 min | Aglomerados complexos *são* cordas de Bethe |
+| Orçamento de energia | 10 min | Energia do centro de massa versus energia de ligação |
+| Assinaturas experimentais | 12 min | Energias de liberação em 1D versus 3D divergem |
+| Problemas em aberto | 5 min | Transporte KPZ, átomos frios, AdS/CFT |
+
+Se você tiver apenas dez minutos, ensine o plano de rapidezas e as duas medições de energia de liberação. Essas duas ideias carregam a maior parte do peso conceitual.
+
+## Perguntas frequentes
+
+**O que exatamente é uma corda de Bethe, em termos simples?**
+É um aglomerado de partículas em um gás quântico atrativo unidimensional que se comporta como um único objeto composto. Matematicamente, é um grupo de rapidezas complexas que compartilham a mesma parte real e estão uniformemente espaçadas ao longo do eixo imaginário.
+
+**Por que as cordas de Bethe aparecem apenas em sistemas integráveis unidimensionais?**
+Sistemas integráveis não têm colisões difrativas, então um estado ligado não tem caminho para decair em estados de energia mais baixa. Essa proteção é o que permite que as cordas persistam como excitações estáveis em cadeias de spin, ímãs quânticos e gases atômicos frios.
+
+**O que uma aula introdutória de física sobre cordas de Bethe deve incluir primeiro?**
+Comece com o quadro de rapidezas em vez do ansatz de Bethe algébrico completo. Assim que os estudantes conseguem ver rapidezas reais versus complexas em um plano, as fórmulas para comprimento de ligação e energia de ligação se tornam contabilidade, não mistério.
+
+**Como os experimentos provam que as cordas de Bethe existem?**
+Comparando dois protocolos de expansão. As cordas sobrevivem à expansão dentro de um tubo unidimensional, mas se desfazem quando liberadas em três dimensões, produzindo uma diferença mensurável de energia de liberação e um alargamento característico da distribuição de momento.
+
+**As cordas de Bethe são úteis fora dos átomos frios?**
+Sim. Elas moldam o transporte anômalo em cadeias de spin integráveis, estão por trás da superdifusão de Kardar-Parisi-Zhang e aparecem na caixa de ferramentas de integrabilidade usada em teoria de altas energias — e é exatamente por isso que o tema continua ganhando espaço nos currículos modernos de física.

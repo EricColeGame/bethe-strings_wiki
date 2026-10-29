@@ -1,0 +1,99 @@
+export const metadata = {
+  title: "Tutorial de cuerdas de Bethe: domina los estados ligados cuánticos en 1D paso a paso",
+  description: "Un tutorial práctico sobre las cuerdas de Bethe que abarca rapideces, energía de ligadura, detección experimental y los errores típicos de los gases cuánticos atractivos en 1D.",
+  category: "tutorial",
+  date: "2026-10-20",
+}
+
+## ¿Qué son las cuerdas de Bethe?
+
+Las cuerdas de Bethe son estados ligados de múltiples partículas que emergen en sistemas cuánticos integrables unidimensionales cuando las partículas se atraen entre sí. En lugar de colapsar, el gas se organiza en cúmulos de dos, tres o muchas partículas que viajan juntas y se comportan como una única cuasipartícula emergente. La idea se remonta a la solución de Hans Bethe de 1931 para la cadena de espín unidimensional, y por eso un tutorial serio sobre cuerdas de Bethe tiene que empezar por el ansatz y no por el hardware de laboratorio.
+
+¿Por qué importa? Porque estos estados ligados no son curiosidades frágiles. Los sistemas integrables no tienen colisiones difractivas, así que una cuerda no puede dispersarse hacia un estado de menor energía y desintegrarse. Esa estabilidad convierte a las cuerdas en portadoras de transporte anómalo —incluido el comportamiento superdifusivo de Kardar–Parisi–Zhang observado en cadenas de espín— y las lleva a gases atómicos fríos, imanes cuánticos e incluso a la teoría de altas energías. Un buen tutorial sobre cuerdas de Bethe debería, por tanto, conectar tres capas: la matemática de las rapideces, la firma experimental y las consecuencias físicas.
+
+El marco más limpio es el modelo de Lieb–Liniger: bosones sobre una línea con una interacción de contacto de intensidad c̃. Un c̃ positivo significa repulsión; uno negativo, atracción. El signo de c̃ determina todo el patrón de rapideces.
+
+| Régimen | Interacción | Estructura de rapideces | Imagen física |
+|---|---|---|---|
+| Repulsivo | c̃ > 0 | Rapideces reales | Cuasicondensado que evoluciona hacia el gas de Tonks–Girardeau a medida que crece c̃ |
+| Sin interacción | c̃ = 0 | Momentos de partícula libre | Punto de cruce del gas ideal |
+| Atractivo, con quench | c̃ < 0 | Rapideces complejas agrupadas en cúmulos | Estado de super Tonks–Girardeau |
+| Atractivo, adiabático | c̃ < 0 | Un único cúmulo gigante | "Estado de Bethe gigante" del estado fundamental |
+
+## Cómo leer el patrón de rapideces
+
+Cada autoestado del hamiltoniano de Lieb–Liniger queda etiquetado por un conjunto de rapideces θ, que actúan como los momentos generalizados de cuasipartículas estables. En el régimen repulsivo las rapideces son números reales. Si se aumenta la interacción lo suficiente, los bosones se fermionizan en el estado de Tonks–Girardeau, pero las rapideces permanecen sobre el eje real.
+
+Al cruzar hacia la atracción, la imagen cambia cualitativamente. Las rapideces se vuelven complejas y se organizan en cúmulos que comparten la misma parte real λ = Re(θ) y se espacian simétricamente a lo largo del eje imaginario con separación |c̃|. Cada cúmulo *es* una cuerda de Bethe. Una cuerda aislada de tamaño n tiene una función de onda proporcional a exp(i Σ θⱼzⱼ) con rapideces θⱼ = λ + i|c̃|(n + 1 − 2j)/2.
+
+Esa única fórmula es la recompensa de cualquier tutorial sobre cuerdas de Bethe: te dice que una cuerda es un objeto ligado con una escalera interna de momentos imaginarios, y no solo un par suelto.
+
+| Propiedad | Expresión | Qué te indica |
+|---|---|---|
+| Número de constituyentes | n | Cuántas partículas comparten una cuerda |
+| Espaciado de rapideces | \|c̃\| a lo largo del eje imaginario | Estructura interna del estado ligado |
+| Extensión espacial | Δz_n = 2 / [\|c̃\|(n − 1)] | Longitud de enlace; se reduce al crecer n o \|c̃\| |
+| Energía de ligadura | E_b,n = ℏ²c̃²n(n² − 1) / (24m) | Aumenta abruptamente con el tamaño de la cuerda |
+| Energía del centro de masas | E_com,n = nℏ²λ² / (2m) | Energía cinética que transporta la cuerda completa |
+
+De ello se siguen dos consecuencias prácticas. Primero, las cuerdas más grandes son más compactas: duplicar n acorta la longitud de enlace y aumenta la energía de ligadura por partícula, así que las cuerdas grandes son los objetos más fuertemente ligados del gas. Segundo, las cuerdas solo están bien definidas mientras su longitud de enlace siga siendo mucho mayor que la longitud de confinamiento transversal; a distancias más cortas, las pérdidas moleculares de corto alcance toman el relevo y la descripción de Lieb–Liniger deja de ser válida.
+
+## Cómo las detectan realmente los experimentos
+
+Un tutorial moderno sobre cuerdas de Bethe no puede quedarse en la teoría, porque la pregunta interesante es cómo se construyen pruebas de que una cuerda existe. La respuesta es un protocolo de expansión en dos etapas.
+
+1. **Preparar un gas unidimensional.** Cargar un condensado de Bose–Einstein en un par de haces de red cruzados, produciendo miles de tubos independientes. La intensidad de interacción se fija mediante c̃ ≈ 4a₃D/a⊥², donde a₃D se ajusta con una resonancia de Feshbach.
+2. **Barrer la interacción a través de cero.** Variar c̃ desde el régimen repulsivo hasta el atractivo a una tasa finita. Pasar por el punto sin interacción convierte el estado inicial en una distribución de cuerdas en lugar de un único cúmulo gigante.
+3. **Expandir primero en 1D y después en 3D.** Durante la expansión dentro del tubo, las cuerdas se dispersan pero siguen ligadas. Al liberar el confinamiento transversal se rompen y convierten la energía de ligadura en energía cinética.
+4. **Comparar las dos energías de liberación.** En el régimen repulsivo los valores en 1D y en 3D coinciden. En el régimen atractivo, el valor en 3D supera al de 1D aproximadamente en la energía de ligadura media por partícula.
+5. **Revisar la distribución de momentos.** Tras cruzar el cero, el perfil de momentos se ensancha —casi duplicando su anchura en los datos publicados— porque una cuerda con longitud de enlace Δz libera momento en una ventana Δp ≈ ℏ/(2Δz).
+6. **Medir el contacto de Tan.** El contacto C = c̃²G₂ vincula las correlaciones de pares de corto alcance con la termodinámica mediante C = (2mc̃/ℏ²)(U − E_V).
+
+| Medición | Qué se compara | Firma de las cuerdas |
+|---|---|---|
+| Energía de liberación | Expansión en 1D frente a 3D | La energía en 3D supera a la de 1D cuando c̃ < 0 |
+| Anchura de momentos | f(p/ℏ) a lo largo del barrido | Ensanchamiento tras cruzar c̃ = 0 |
+| Contacto de Tan | Contacto frente a intensidad de interacción | Sigue las correlaciones de pares y coincide con la teoría |
+| Barrido de temperatura | Anchura frente a T con c̃ fijo | El ensanchamiento se debilita al subir la temperatura |
+
+La dependencia con la temperatura es la parte sutil. Una temperatura más alta implica que la energía cinética domina sobre la energía de interacción, lo que suprime la probabilidad de formar cuerdas grandes y reduce la energía de ligadura media por partícula. Un tutorial cuidadoso sobre cuerdas de Bethe siempre citará la temperatura en 1D junto con la intensidad de interacción, porque ambas determinan conjuntamente la distribución de tamaños de cuerda.
+
+## Dónde aparecen las cuerdas de Bethe
+
+Las cuerdas no se limitan a los átomos fríos. La misma matemática aparece en varias plataformas, y la hidrodinámica generalizada (GHD) es actualmente la teoría de referencia para describir cómo evoluciona un gas de cuerdas fuera del equilibrio. El [estudio de Nature Communications sobre la observación de cuerdas de Bethe en un gas de Bose atractivo en 1D](https://www.nature.com/articles/s41467-026-76018-0) es un buen punto de entrada para ver la teoría y el experimento lado a lado.
+
+| Plataforma | Sistema típico | Qué se mide |
+|---|---|---|
+| Gas de Bose ultrafrío en 1D | Átomos de cesio con interacción atractiva en tubos de red | Energía de liberación, distribución de momentos, contacto de Tan |
+| Cadenas de espín cuánticas | Materiales de Heisenberg anisótropos | Transporte de espín, dispersión de excitaciones |
+| Imanes cuánticos | Aislantes magnéticos de baja dimensionalidad | Espectros de dispersión que muestran modos de cuerda |
+| Teoría de altas energías | Modelos integrables de gauge y de cuerdas | Espectro de excitaciones compuestas |
+
+En el límite semiclásico, las cuerdas convergen hacia solitones brillantes de la ecuación de Schrödinger no lineal, y aparecen trenes de solitones en condensados débilmente atractivos. Esa correspondencia es una intuición útil pero un atajo peligroso: el lenguaje de solitones falla en cuanto se entra en el régimen cuántico, donde solo el ansatz de Bethe y la GHD dan respuestas cuantitativas.
+
+## Errores comunes y cómo evitarlos
+
+| Error | Por qué duele | Solución |
+|---|---|---|
+| Tratar las cuerdas como solitones | Los solitones suponen un acoplamiento débil y semiclásico | Trabajar en el régimen cuántico con GHD |
+| Ignorar la temperatura | El movimiento térmico suprime las cuerdas grandes | Reportar T junto con c̃ en cada conjunto de datos |
+| Olvidar las pérdidas de tres cuerpos | Las cuerdas grandes fuertemente ligadas decaen más rápido | Incluir un modelo de pérdidas o mantenerse en atracción débil |
+| Suponer un barrido adiabático | Las tasas de barrido finitas dejan un estado lejos del equilibrio | Ajustar la tasa de barrido a la simulación |
+| Usar la teoría de Gross–Pitaevskii | Falla en gases 1D fuertemente correlacionados | Usar el ansatz de Bethe o la GHD en su lugar |
+| Citar solo el tamaño medio de cuerda | Las distribuciones son anchas y asimétricas | Reportar la distribución de probabilidad completa |
+
+Una comprobación de coherencia útil: calcular una cota inferior del tamaño de la cuerda más grande presente a partir de la energía de ligadura media por partícula medida. Si la energía de ligadura media supera E_b,n/n para algún n, el sistema debe contener cuerdas de al menos ese tamaño —una estimación rápida que suele situarse en el rango de seis o más constituyentes antes de cualquier modelado detallado.
+
+## Preguntas frecuentes
+
+**¿Qué es una cuerda de Bethe en lenguaje sencillo?**
+Es un cúmulo de partículas en un gas cuántico atractivo unidimensional que se mueve como un solo objeto. Matemáticamente, las rapideces de las partículas se vuelven complejas y se alinean a lo largo del eje imaginario con un espaciado fijo. Cualquier tutorial sobre cuerdas de Bethe que merezca la pena debería mostrarte tanto la imagen como el patrón de rapideces.
+
+**¿Existen las cuerdas de Bethe fuera de una dimensión?**
+La solución exacta de cuerdas es un fenómeno unidimensional ligado a la integrabilidad. Sin embargo, los estados ligados tipo cuerda y sus firmas aparecen en gases cuasi-1D, cadenas de espín e imanes cuánticos, y por eso el concepto se extiende tanto.
+
+**¿Por qué no colapsan las cuerdas de Bethe atractivas?**
+Porque los sistemas integrables carecen de colisiones difractivas. Sin esas colisiones, un estado ligado de múltiples partículas no tiene canal de decaimiento hacia estados de menor energía, así que sobrevive aunque la interacción sea atractiva. Las pérdidas de tres cuerpos son el proceso principal que acaba eliminando las cuerdas más grandes.
+
+**¿Adónde debería ir después de este tutorial sobre cuerdas de Bethe?**
+Leer el artículo de Bethe de 1931 para el origen, la solución de Lieb–Liniger para el modelo y el trabajo de McGuire para el caso atractivo. Después, seguir un tratamiento moderno de GHD para ver cómo evolucionan en el tiempo las distribuciones de cuerdas —ahí es donde se sitúa la mayor parte de la investigación actual.

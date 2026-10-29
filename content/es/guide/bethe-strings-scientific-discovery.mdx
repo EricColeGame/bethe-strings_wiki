@@ -1,0 +1,109 @@
+export const metadata = {
+  title: "El descubrimiento científico de las cuerdas de Bethe: cómo se captaron los estados ligados cuánticos",
+  description: "Un experimento con átomos ultrafríos de 2026 convirtió las cuerdas de Bethe de una predicción de 1931 en estados ligados medidos. Así funcionó — y por qué importa.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+La física cuántica rara vez ofrece una predicción que sobreviva casi un siglo y luego aparezca en un laboratorio exactamente como se describió. El descubrimiento científico de las cuerdas de Bethe es ese caso excepcional: una familia de estados ligados de múltiples partículas que el ansatz de Hans Bethe de 1931 implicaba décadas antes de que alguien pudiera construir un experimento lo bastante sensible para verlos. Lo que hace que este descubrimiento científico de las cuerdas de Bethe merezca tu atención no es solo la elegancia matemática: estos objetos parecen gobernar cómo viajan la energía y el espín a través de algunos de los sistemas cuánticos más estudiados que se conocen.
+
+Durante la mayor parte del siglo pasado, las cuerdas de Bethe vivieron en el papel. En 2026, un equipo que trabajaba con átomos de cesio ultrafríos en tubos unidimensionales publicó evidencia experimental directa de ellas, reportada en [el estudio de Nature Communications sobre la observación de cuerdas de Bethe en un gas de Bose 1D atractivo](https://www.nature.com/articles/s41467-026-76018-0). Esta guía explica qué son las cuerdas, cómo las detectó el equipo y qué significan realmente los números.
+
+## ¿Qué son exactamente las cuerdas de Bethe?
+
+Las cuerdas de Bethe son estados ligados en los que varias partículas de un sistema cuántico unidimensional se agrupan y se mueven como un único objeto compuesto. Solo existen en sistemas *integrables*: modelos en los que las colisiones no son difractivas, es decir, una colisión no puede fragmentar un estado ligado en configuraciones de menor energía. Esa estabilidad intrínseca es lo que distingue una cuerda de Bethe de un estado ligado ordinario y frágil que se desintegraría casi al instante.
+
+Su hogar natural es el modelo de Lieb-Liniger, que describe bosones en una dimensión con un término cinético más interacciones de contacto de intensidad c̃. Sus autoestados se etiquetan mediante *rapideces*: momentos generalizados de cuasipartículas emergentes. Cuando las interacciones son repulsivas, las rapideces son números reales. Cuando las interacciones se vuelven atractivas, las rapideces se vuelven complejas y se organizan en grupos que comparten una parte real común, espaciados uniformemente a lo largo del eje imaginario.
+
+| Régimen | Signo de la interacción | Estructura de rapideces | Qué se obtiene |
+|---|---|---|---|
+| Cuasicondensado | c̃ ≈ 0 | Reales, muy juntas cerca de cero | Gas débilmente interactuante |
+| Tonks-Girardeau | c̃ ≫ 0 | Reales, dispersas | Bosones que se comportan como fermiones |
+| Super Tonks-Girardeau | Quench súbito a c̃ → −∞ | Reales (metaestable) | Estado gaseoso altamente excitado |
+| Atractivo / cuerdas | c̃ < 0 | Complejas, agrupadas | Cuerdas de Bethe de múltiples partículas |
+
+Una cuerda de tamaño *n* se comporta como una partícula con estructura interna. Su extensión espacial se reduce según Δz_n = 2/[|c̃|(n−1)], mientras que su energía de ligadura crece según E_b,n = ℏ²c̃²n(n²−1)/(24m). Las cuerdas más grandes son más compactas y están más profundamente ligadas, un detalle que importa enormemente para el experimento.
+
+## Por qué el descubrimiento científico de las cuerdas de Bethe importa más allá de los átomos fríos
+
+Las cuerdas de Bethe no son una curiosidad de los átomos fríos. Aparecen dondequiera que surja física integrable, y su influencia llega a problemas de transporte que han frustrado a los físicos durante años.
+
+| Contexto | Cómo aparecen las cuerdas | Por qué les importa a los investigadores |
+|---|---|---|
+| Gases de Bose 1D | Estados ligados de bosones con interacción atractiva | Banco de pruebas limpio para la integrabilidad y la hidrodinámica generalizada |
+| Cadenas de espín cuánticas | Excitaciones multi-espín estables | Las cuerdas grandes impulsan el transporte anómalo y la superdifusión KPZ |
+| Imanes cuánticos | Estados ligados de múltiples magnones en dispersión | Explica rasgos espectrales en materiales magnéticos reales |
+| Física de altas energías | Estructuras de estados ligados en espectros integrables | Conecta la materia condensada con la teoría de cuerdas y AdS/CFT |
+
+El ángulo del transporte es lo más destacado. Se ha demostrado que las cuerdas de Bethe grandes determinan las propiedades de transporte anómalo de las cadenas de espín integrables e impulsan la aparición de la clase de universalidad Kardar-Parisi-Zhang, la misma matemática que describe interfaces en crecimiento y frentes de llama. Si quieres entender por qué algunos sistemas cuánticos se niegan a termalizarse con normalidad, tienes que entender las cuerdas.
+
+## Cómo los físicos lograron detectarlas
+
+El equipo partió de un condensado de Bose-Einstein tridimensional de cesio, levitado contra la gravedad y cargado en dos haces de red cruzados. Esos haces dividieron la nube en miles de tubos unidimensionales independientes: esencialmente un conjunto paralelo de cables cuánticos, cada uno con unas pocas docenas de átomos.
+
+| Parámetro | Valor |
+|---|---|
+| Especie atómica | Cesio |
+| Átomos en el BEC | 2×10⁴ a 6×10⁴ |
+| Temperatura del BEC | 10–35 nK |
+| Espaciado de la red | 532,2 nm |
+| Profundidad de la red | 20–25 energías de retroceso |
+| Frecuencia de trampa transversal | 10,5 kHz |
+| Frecuencia de trampa longitudinal | 29,3 Hz |
+| Átomos por tubo | 7–30 |
+| Tubos poblados | 3.000–5.000 |
+| Interacción inicial | c̃ = 3,4 μm⁻¹ (Tonks-Girardeau moderado) |
+| Tasa de rampa | ≈ −0,038 μm⁻¹ ms⁻¹ |
+
+El movimiento clave fue la rampa de interacción. Partiendo del lado repulsivo, el equipo barrió la intensidad de la interacción a través de cero hacia el régimen atractivo a una tasa controlada y finita. Un barrido lento y perfectamente adiabático habría producido una única cuerda gigante que contendría todos los átomos. Un quench súbito habría producido algo completamente distinto. El barrido a tasa finita los llevó a un estado lejos del equilibrio que contenía una *mezcla* de tamaños de cuerda, exactamente lo que predecía la teoría.
+
+## Tres firmas independientes que lo confirmaron
+
+Ninguna medición por sí sola habría sido convincente. La colaboración utilizó tres sondas complementarias, cada una sensible a una consecuencia diferente de la formación de cuerdas.
+
+| Firma | Qué se midió | Qué reveló |
+|---|---|---|
+| Energía de liberación | Expansión 1D frente a expansión 3D | La energía 1D se estabilizó cerca de h × 35 Hz, mientras que la energía 3D subió hasta aproximadamente h × 110 Hz en c̃ = −1,0 μm⁻¹ |
+| Distribución de momento | Anchura del perfil de momento | Se estrechó de 6,0 a 3,0 μm⁻¹ al acercarse a c̃ = 0, y luego casi se duplicó hacia c̃ = −2,0 μm⁻¹ |
+| Contacto de Tan | Correlaciones de pares de corto alcance mediante una relación virial | El contacto escaló con la intensidad de la interacción, siguiendo la formación de cuerdas |
+
+La prueba de la energía de liberación es la más intuitiva. Durante la expansión dentro de los tubos, las cuerdas se dispersan pero permanecen ligadas, por lo que la energía medida se mantiene baja. Si se libera el gas en tres dimensiones, el confinamiento desaparece, las cuerdas se rompen y su energía de ligadura se convierte en energía cinética. Esa diferencia entre las dos mediciones es una huella directa de los estados ligados.
+
+El momento cuenta una historia complementaria. Una cuerda con longitud de enlace Δz libera momento en una ventana inversamente proporcional a esa longitud, por lo que distribuciones de momento más anchas indican cuerdas más grandes. Las temperaturas más altas suprimen la formación de cuerdas grandes, y los datos mostraron exactamente esa tendencia.
+
+## Leer la letra pequeña: tamaño, temperatura y pérdida
+
+La teoría ofrece un escalamiento limpio de cómo las propiedades de las cuerdas dependen del tamaño. Los valores siguientes se derivan directamente de las fórmulas del modelo evaluadas en |c̃| = 1 μm⁻¹, con energías de ligadura mostradas en relación con una cuerda de cuatro partículas.
+
+| Tamaño de cuerda *n* | Longitud de enlace Δz_n | Energía de ligadura relativa |
+|---|---|---|
+| 2 | 2,00 μm | 0,10 |
+| 3 | 1,00 μm | 0,40 |
+| 4 | 0,67 μm | 1,00 |
+| 5 | 0,50 μm | 2,00 |
+| 6 | 0,40 μm | 3,50 |
+| 10 | 0,22 μm | 16,50 |
+
+A partir de la energía de ligadura medida sola, el equipo pudo extraer un límite inferior: el sistema debe contener cuerdas de al menos seis partículas. Un modelado más refinado con hidrodinámica generalizada predijo otras aún más grandes.
+
+También hay un techo práctico. A medida que las cuerdas se vuelven más compactas con una atracción más fuerte, las colisiones de tres cuerpos se vuelven apreciables y se pierden átomos. La tasa de pérdida medida coincidió estrechamente con un modelo de tres cuerpos, y la tasa 3D correspondiente concordó con mediciones independientes: una comprobación de consistencia tranquilizadora. En resumen: si empujas la atracción demasiado, pierdes las mismas cuerdas que quieres estudiar.
+
+## Qué cambia el descubrimiento científico de las cuerdas de Bethe
+
+Este trabajo convierte una construcción teórica de 95 años en un objeto de laboratorio manipulable. Los investigadores ahora pueden crear mezclas densas de cuerdas de diferentes tamaños, ajustar su distribución con temperatura y densidad, y observar cómo evolucionan. Eso abre la puerta a poner a prueba la hidrodinámica generalizada en regímenes donde las aproximaciones convencionales fallan por completo, y a conectar experimentos con átomos fríos con el transporte en cadenas de espín, el magnetismo cuántico e incluso la teoría de cuerdas.
+
+La lección más amplia del descubrimiento científico de las cuerdas de Bethe tiene que ver con la integrabilidad misma. Los sistemas que parecen irremediablemente complejos pueden ocultar estructuras estables y longevas que sobreviven lejos del equilibrio. Aprender a crear y controlar esas estructuras es cómo el campo pasa de describir la materia cuántica a diseñarla.
+
+## Preguntas frecuentes
+
+**¿Qué son las cuerdas de Bethe en términos sencillos?**
+Son grupos de partículas en un sistema cuántico unidimensional que se mantienen unidas y viajan como un solo objeto. Debido a que el sistema subyacente es integrable, las colisiones no pueden romper el grupo, por lo que persiste en lugar de desintegrarse.
+
+**¿Por qué tardó tanto observarlas?**
+La predicción data de 1931, pero detectar cuerdas requería tres cosas que solo recientemente se volvieron rutinarias: átomos ultrafríos confinados en geometrías verdaderamente unidimensionales, interacciones ajustables mediante resonancias de Feshbach y herramientas teóricas como la hidrodinámica generalizada para interpretar los datos.
+
+**¿Existen las cuerdas de Bethe en materiales reales?**
+Sí: se han reportado firmas en imanes cuánticos y compuestos de cadenas de espín. El experimento con átomos fríos añade algo que los materiales no pueden ofrecer: control directo sobre el tamaño y la densidad de las cuerdas.
+
+**¿Qué sigue para la investigación sobre las cuerdas de Bethe?**
+Las direcciones probables incluyen estudiar cómo interactúan las cuerdas entre sí en mezclas densas, sondear más directamente su papel en el transporte anómalo y comprobar si las descripciones basadas en cuerdas se sostienen en sistemas con ruptura controlada de la integrabilidad. El descubrimiento científico de las cuerdas de Bethe es un punto de partida, no una meta final.
