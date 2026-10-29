@@ -13,8 +13,8 @@
   },
   "home": {
     "meta": {
-      "title": "My Seafood Stand Wiki — Codes, Recipes, Upgrades & Guides",
-      "description": "Complete My Seafood Stand guide on Roblox with active working codes, all fish & recipes, best upgrades tier list, and fast cash tips."
+      "title": "Bethe Strings Wiki — Bound States, Experiments & Research",
+      "description": "Explore Bethe strings in one-dimensional quantum systems, from the Bethe ansatz to experimental evidence in ultracold gases and spin chains."
     },
     "hero": {
       "eyebrow": "Independent science reference",
@@ -32,299 +32,331 @@
       "videoLabel": "Research video"
     },
     "updates": {
-      "title": "Latest Updates",
-      "browse": "Browse All Guides",
+      "title": "Recent Research",
+      "browse": "Browse Research Articles",
       "viewAll": "View All"
     },
     "start": {
       "eyebrow": "Start Here",
-      "title": "Your My Seafood Stand Journey",
+      "title": "Your Bethe Strings Reading Path",
       "cards": [
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Start with a plain-language explanation of Bethe strings and why bound states form in one-dimensional systems."
         },
         {
           "number": "2",
-          "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "title": "The Bethe Ansatz",
+          "description": "Learn how rapidities and the Bethe ansatz describe clusters of particles that move together."
         },
         {
           "number": "3",
-          "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "title": "Experimental Evidence",
+          "description": "See how researchers use ultracold cesium and expansion measurements to probe bound-state mixtures."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in My Seafood Stand."
+          "title": "Read the Research",
+          "description": "Follow the primary papers and learn what their measurements establish in each physical system."
         }
       ]
     },
     "popular": {
       "eyebrow": "Popular Pages",
-      "title": "Trending Now",
+      "title": "Explore the Research",
       "quickLinks": [
-        "Hollow Progression",
-        "Fastest Leveling",
-        "Spirit Charms",
-        "All Boss Guides"
+        "Beginner explanation",
+        "Bethe ansatz",
+        "Ultracold atoms",
+        "Primary papers"
       ],
       "cards": [
         {
-          "badge": "Beginner",
-          "title": "Beginner Guide",
-          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
-          "href": "/beginner-guide"
+          "badge": "Start Here",
+          "title": "Bethe Strings for Beginners",
+          "description": "A clear introduction to bound states, rapidities, and one-dimensional quantum physics.",
+          "href": "/tutorial/bethe-strings-beginner-explanation"
         },
         {
-          "badge": "Updated",
-          "title": "Active Codes",
-          "description": "All working codes with rewards redeem before they expire.",
-          "href": "/codes"
+          "badge": "Guide",
+          "title": "Bethe Strings Explained",
+          "description": "How bound clusters form, where they appear, and why they matter.",
+          "href": "/guide/bethe-strings-explained"
         },
         {
-          "badge": "Updated",
-          "title": "Equipment Database",
-          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
-          "href": "/equipment"
+          "badge": "Experiment",
+          "title": "Ultracold Atom Evidence",
+          "description": "How the one-dimensional cesium experiment inferred mixtures of bound states.",
+          "href": "/guide/bethe-strings-ultracold-atoms"
         },
         {
-          "badge": "Popular",
-          "title": "Which Race Should You Pick?",
-          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
-          "href": "/races/best-race"
+          "badge": "Theory",
+          "title": "The Bethe Ansatz",
+          "description": "An accessible route from rapidities to many-particle bound states.",
+          "href": "/mechanics/bethe-strings-bethe-ansatz"
         },
         {
-          "badge": "New",
-          "title": "Enemies & Monsters",
-          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
-          "href": "/enemies"
+          "badge": "Research",
+          "title": "Reading the Scientific Papers",
+          "description": "Trace claims about Bethe strings back to measurements and original studies.",
+          "href": "/research/bethe-strings-scientific-paper"
         },
         {
-          "badge": "Popular",
-          "title": "Boss Locations & Drops",
-          "description": "Every boss location, drop table, and respawn timer in one reference.",
-          "href": "/boss-locations-drops-respawn-times"
-        },
-        {
-          "badge": "Popular",
-          "title": "Best Builds",
-          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
-          "href": "/builds/best-builds"
-        },
-        {
-          "badge": "New",
-          "title": "Shikai Tier List",
-          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
-          "href": "/tier-list/shikai"
-        },
-        {
-          "badge": "New",
-          "title": "World Events Guide",
-          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
-          "href": "/world-events"
+          "badge": "Guide",
+          "title": "Quantum States",
+          "description": "Compare Bethe strings with nearby states in one-dimensional gases.",
+          "href": "/guide/bethe-strings-quantum-state"
         }
       ]
     },
     "aboutGame": {
-      "title": "What is My Seafood Stand?",
+      "title": "What Are Bethe Strings?",
       "paragraphs": [
-        "My Seafood Stand is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "Bethe strings are bound-state excitations in integrable one-dimensional quantum systems. In the Bethe ansatz, their particles are described by complex rapidities arranged in regular patterns. The same framework helps explain bound clusters in attractive Bose gases and collective excitations in quantum spin chains.",
+        "Experiments probe these states through measurable signatures. Earlier magnetic-material studies detected string excitations through spectroscopy, while a 2026 Nature Communications study used an attractive one-dimensional cesium gas to investigate a mixture of different string sizes through expansion energy, momentum distributions, and correlations."
       ],
       "stats": [
         {
-          "label": "Developer",
-          "value": "Midnight Continent"
+          "label": "Research field",
+          "value": "Quantum many-body physics"
         },
         {
-          "label": "Platform",
-          "value": "Roblox"
+          "label": "Core method",
+          "value": "Bethe ansatz"
         },
         {
-          "label": "Genre",
-          "value": "Fighting RPG"
+          "label": "Gas platform",
+          "value": "1D ultracold cesium"
         },
         {
-          "label": "Visits",
-          "value": "12.6M+"
+          "label": "Other platform",
+          "value": "Quantum spin chains"
         },
         {
-          "label": "Favorites",
-          "value": "243K+"
+          "label": "Key observable",
+          "value": "Release energy"
         },
         {
-          "label": "Total Skills",
-          "value": "130+"
-        },
-        {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Primary study",
+          "value": "Nature Communications"
         }
       ],
-      "cta": "Explore All Guides"
+      "cta": "Explore the Research"
     },
     "explore": {
-      "title": "Explore My Seafood Stand Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "title": "Explore Bethe Strings Research",
+      "description": "Follow the ideas, experiments, and primary sources behind bound-state excitations in one-dimensional quantum systems.",
       "modules": [
         {
           "order": 1,
-          "name": "My Seafood Stand Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes/my-seafood-stand-codes",
-          "displayType": "code-box",
+          "name": "Bethe Strings Explained",
+          "description": "An accessible introduction to bound-state excitations in integrable one-dimensional systems.",
+          "href": "/guide/bethe-strings-explained",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "Bound",
+              "detail": "Attractive interactions can bind particles into moving clusters."
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "1D",
+              "detail": "One-dimensional dynamics make integrable models especially useful."
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "States",
+              "detail": "Different string sizes correspond to different bound states."
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
-          "href": "/guide/my-seafood-stand-beginner-guide",
-          "displayType": "feature-cards",
+          "name": "Bethe Strings Experimental Evidence",
+          "description": "Explore what the 2026 attractive-gas study measured and how it relates to earlier spin-chain experiments.",
+          "href": "/guide/bethe-strings-ultracold-atoms",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "1D",
+              "detail": "Bound clusters remain together during expansion along the tubes."
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "3D",
+              "detail": "Release from the tubes breaks clusters and exposes binding energy."
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "2018",
+              "detail": "Magnetic-material spectroscopy had already reported string signatures."
+            },
+            {
+              "label": "2026",
+              "detail": "An attractive cesium gas provided evidence for mixed string sizes."
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/seafood/my-seafood-stand-tier-list",
-          "displayType": "tier-grid",
+          "name": "Bethe Strings and the Bethe Ansatz",
+          "description": "Build from one-dimensional models to the rapidity patterns that represent bound states.",
+          "href": "/mechanics/bethe-strings-bethe-ansatz",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "1",
+              "detail": "Begin with interacting particles confined to one dimension."
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "2",
+              "detail": "Use the Bethe ansatz to describe allowed quantum states."
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
+              "label": "3",
+              "detail": "Identify complex rapidities grouped around a shared center."
             },
             {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "4",
+              "detail": "Interpret each group as a multi-particle bound state."
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/upgrades/my-seafood-stand-best-upgrades",
-          "displayType": "feature-cards",
+          "name": "Bethe Strings Research Papers and Sources",
+          "description": "Read named original studies and separate their experimental results from later summaries.",
+          "href": "/research/bethe-strings-scientific-paper",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "Bethe",
+              "detail": "The 1931 ansatz introduced the underlying exact-solution method."
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "Magnets",
+              "detail": "Spectroscopy established earlier evidence in magnetic materials."
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "Bose Gas",
+              "detail": "The 2026 study probed bound clusters in an attractive cesium gas."
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide/my-seafood-stand-how-to-get-cash-fast",
-          "displayType": "feature-cards",
+          "name": "Bethe Strings Frequently Asked Questions",
+          "description": "Find clear answers about bound states, measurements, and related quantum concepts.",
+          "href": "/tutorial/bethe-strings-beginner-explanation",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "Meaning",
+              "detail": "The word string describes a pattern of complex rapidities."
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "Evidence",
+              "detail": "Different experiments measure different signatures of these states."
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "Theory",
+              "detail": "Integrability explains why these bound excitations can persist."
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
-          "href": "/upgrades/my-seafood-stand-how-to-upgrade-plot",
-          "displayType": "feature-cards",
+          "name": "Bethe Strings in Ultracold Atoms",
+          "description": "Walk through the experimental preparation and measurements of an attractive one-dimensional Bose gas.",
+          "href": "/guide/bethe-strings-experiment",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "1",
+              "detail": "Prepare an ultracold cesium gas."
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "2",
+              "detail": "Confine atoms in narrow one-dimensional tubes."
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "3",
+              "detail": "Sweep interactions from repulsive to attractive."
+            },
+            {
+              "label": "4",
+              "detail": "Compare expansion along the tubes with release into three dimensions."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Bethe Strings Learning Levels",
+          "description": "Choose a reading level, from the central idea to more specialized research concepts.",
+          "href": "/tutorial/bethe-strings-tutorial",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Start here: bound states and one-dimensional motion."
+            },
+            {
+              "label": "A",
+              "detail": "Next: rapidities and the Bethe ansatz."
+            },
+            {
+              "label": "B",
+              "detail": "Then: ultracold-gas and spin-chain evidence."
+            },
+            {
+              "label": "C",
+              "detail": "Further study: generalized hydrodynamics and transport."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Bethe Strings in Quantum States",
+          "description": "Compare bound clusters with neighboring states in one-dimensional quantum gases.",
+          "href": "/guide/bethe-strings-quantum-state",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Repulsion",
+              "detail": "Repulsive gases have real rapidities rather than bound clusters."
+            },
+            {
+              "label": "Attraction",
+              "detail": "Attractive interactions can populate strings of several sizes."
+            },
+            {
+              "label": "Solitons",
+              "detail": "The semiclassical picture helps connect strings with matter-wave solitons."
             }
           ]
         }
       ]
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "description": "Quick answers to the most common questions about My Seafood Stand.",
+      "title": "Bethe Strings Frequently Asked Questions",
+      "description": "Short answers about the theory and experimental evidence behind Bethe strings.",
       "items": [
         {
-          "question": "What is My Seafood Stand?",
-          "answer": "My Seafood Stand is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "question": "What are Bethe strings?",
+          "answer": "Bethe strings are bound-state excitations in certain one-dimensional integrable quantum systems. Their name comes from the string-like arrangement of complex rapidities in Bethe ansatz solutions."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "How do Bethe strings form in an ultracold gas?",
+          "answer": "In the cited cesium experiment, researchers confined atoms to narrow tubes and swept their interactions from repulsive to attractive. This produced a mixture of bound clusters with different sizes."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "How are Bethe strings detected?",
+          "answer": "Researchers compare how the gas expands along its one-dimensional tubes and after release into three dimensions. Differences in release energy, together with momentum and correlation measurements, support the bound-state interpretation."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "Were Bethe strings observed before the 2026 gas experiment?",
+          "answer": "Yes. Earlier spectroscopy experiments in magnetic materials reported signatures of Bethe string excitations. The 2026 study investigated a different platform: an attractive one-dimensional Bose gas."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "Are Bethe strings the strings of string theory?",
+          "answer": "Here, a string is a pattern of rapidities describing a bound state in quantum matter. It is distinct from the fundamental strings proposed in high-energy string theory."
         }
       ]
     },
